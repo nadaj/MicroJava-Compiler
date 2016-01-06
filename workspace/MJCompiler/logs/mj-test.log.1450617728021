@@ -1,0 +1,17 @@
+INFO  14:21:34,669 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:21:34,674 - #2 program
+INFO  14:21:34,674 - #3 Program
+INFO  14:21:34,674 - #4 {
+INFO  14:21:34,674 - #5 }
+INFO  14:21:34,674 - Broj definicija globalnih promenljivih:0
+INFO  14:21:34,674 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  14:21:34,674 - Broj definicija globalnih konstanti:0
+INFO  14:21:34,674 - Broj deklaracija globalnih nizova:0
+INFO  14:21:34,675 - Broj definicija funkcija u glavnom programu:0
+INFO  14:21:34,675 - Broj blokova naredbi:0
+INFO  14:21:34,675 - Broj poziva funkcija u telu metode main:0
+INFO  14:21:34,675 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:21:34,675 - Broj definicija unutrasnjih klasa:0
+INFO  14:21:34,675 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:21:34,675 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:21:34,675 - Parsiranje je uspesno zavrseno!

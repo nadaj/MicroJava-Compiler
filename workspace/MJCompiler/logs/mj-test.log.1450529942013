@@ -1,0 +1,80 @@
+INFO  13:58:42,339 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:58:42,345 - #2 program
+INFO  13:58:42,345 - #3 test03
+INFO  13:58:42,345 - #6 const
+INFO  13:58:42,345 - #3 int
+INFO  13:58:42,346 - #3 a
+INFO  13:58:42,346 - #8 =
+INFO  13:58:42,346 - #9 3
+INFO  13:58:42,346 - #7 ;
+INFO  13:58:42,346 - #3 int
+INFO  13:58:42,346 - #3 x
+INFO  13:58:42,346 - #13 ,
+INFO  13:58:42,346 - #3 y
+INFO  13:58:42,346 - #7 ;
+INFO  13:58:42,347 - #3 char
+INFO  13:58:42,347 - #3 z
+INFO  13:58:42,347 - #7 ;
+INFO  13:58:42,347 - #4 {
+INFO  13:58:42,347 - #18 void
+INFO  13:58:42,347 - #3 main
+INFO  13:58:42,347 - #19 (
+INFO  13:58:42,347 - #20 )
+INFO  13:58:42,348 - #4 {
+INFO  13:58:42,348 - #27 read
+INFO  13:58:42,348 - #19 (
+INFO  13:58:42,348 - #3 a
+INFO  13:58:42,348 - #20 )
+INFO  13:58:42,348 - #7 ;
+INFO  13:58:42,348 - #3 a
+INFO  13:58:42,348 - #8 =
+INFO  13:58:42,349 - #9 5
+INFO  13:58:42,349 - #7 ;
+INFO  13:58:42,349 - #3 x
+INFO  13:58:42,349 - #8 =
+INFO  13:58:42,349 - #9 1
+INFO  13:58:42,349 - #7 ;
+INFO  13:58:42,349 - #3 y
+INFO  13:58:42,349 - #8 =
+INFO  13:58:42,349 - #9 3
+INFO  13:58:42,349 - #7 ;
+INFO  13:58:42,350 - #3 z
+INFO  13:58:42,350 - #8 =
+INFO  13:58:42,350 - #10 b
+INFO  13:58:42,350 - #7 ;
+INFO  13:58:42,350 - #24 while
+INFO  13:58:42,350 - #19 (
+INFO  13:58:42,350 - #3 z
+INFO  13:58:42,350 - #39 <
+INFO  13:58:42,350 - #3 a
+INFO  13:58:42,350 - #20 )
+INFO  13:58:42,351 - #4 {
+INFO  13:58:42,351 - #3 z
+INFO  13:58:42,351 - #8 =
+INFO  13:58:42,351 - #3 y
+INFO  13:58:42,351 - #41 +
+INFO  13:58:42,351 - #3 x
+INFO  13:58:42,351 - #7 ;
+INFO  13:58:42,351 - #3 x
+INFO  13:58:42,351 - #8 =
+INFO  13:58:42,351 - #3 x
+INFO  13:58:42,351 - #41 +
+INFO  13:58:42,351 - #9 1
+INFO  13:58:42,351 - #7 ;
+INFO  13:58:42,351 - #5 }
+INFO  13:58:42,352 - #25 break
+INFO  13:58:42,352 - #7 ;
+INFO  13:58:42,352 - #5 }
+INFO  13:58:42,352 - #5 }
+INFO  13:58:42,352 - Broj definicija globalnih promenljivih:3
+INFO  13:58:42,352 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  13:58:42,352 - Broj definicija globalnih konstanti:1
+INFO  13:58:42,352 - Broj deklaracija globalnih nizova:0
+INFO  13:58:42,352 - Broj definicija funkcija u glavnom programu:1
+INFO  13:58:42,353 - Broj blokova naredbi:1
+INFO  13:58:42,353 - Broj poziva funkcija u telu metode main:1
+INFO  13:58:42,353 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  13:58:42,353 - Broj definicija unutrasnjih klasa:0
+INFO  13:58:42,353 - Broj definicija metoda unutrasnjih klasa:0
+INFO  13:58:42,353 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  13:58:42,353 - Parsiranje je uspesno zavrseno!

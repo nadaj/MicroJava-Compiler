@@ -1,0 +1,148 @@
+INFO  20:40:19,381 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  20:40:19,385 - #2 program
+INFO  20:40:19,385 - #3 Test
+INFO  20:40:19,385 - #3 int
+INFO  20:40:19,385 - #3 a
+INFO  20:40:19,385 - #13 ,
+INFO  20:40:19,386 - #3 c
+INFO  20:40:19,386 - #13 ,
+INFO  20:40:19,386 - #3 maxcif
+INFO  20:40:19,386 - #7 ;
+INFO  20:40:19,386 - #3 char
+INFO  20:40:19,386 - #3 e
+INFO  20:40:19,386 - #8 =
+ERROR 20:40:19,386 - 
+Sintaksna greska
+INFO  20:40:19,386 - #10 2
+INFO  20:40:19,386 - #7 ;
+INFO  20:40:19,386 - #3 int
+INFO  20:40:19,387 - #3 a
+INFO  20:40:19,387 - #13 ,
+ERROR 20:40:19,387 - [Definicija globalne promenljive] Izvrsen oporavak do ; u liniji 5
+INFO  20:40:19,387 - #3 b
+INFO  20:40:19,387 - #3 c
+ERROR 20:40:19,387 - 
+Sintaksna greska
+INFO  20:40:19,387 - #7 ;
+INFO  20:40:19,388 - #3 bool
+INFO  20:40:19,388 - #3 flag
+INFO  20:40:19,388 - #8 =
+ERROR 20:40:19,388 - [Definicija globalne promenljive] Izvrsen oporavak do ; u liniji 6
+ERROR 20:40:19,388 - 
+Sintaksna greska
+INFO  20:40:19,388 - #11 true
+INFO  20:40:19,388 - #13 ,
+INFO  20:40:19,388 - #3 flag_f
+INFO  20:40:19,388 - #13 ,
+INFO  20:40:19,388 - #3 flag_d
+ERROR 20:40:19,388 - [Definicija globalne promenljive] Izvrsen oporavak do , u liniji 8
+INFO  20:40:19,388 - #7 ;
+INFO  20:40:19,388 - #4 {
+INFO  20:40:19,388 - #18 void
+INFO  20:40:19,388 - #3 a
+INFO  20:40:19,389 - #19 (
+INFO  20:40:19,389 - #20 )
+INFO  20:40:19,389 - #3 char
+INFO  20:40:19,389 - #3 b
+INFO  20:40:19,389 - #3 c
+ERROR 20:40:19,389 - 
+Sintaksna greska
+INFO  20:40:19,389 - #7 ;
+INFO  20:40:19,389 - #3 int
+INFO  20:40:19,389 - #3 a
+INFO  20:40:19,389 - #7 ;
+ERROR 20:40:19,389 - [Deklaracija lokalne promenljive] Izvrsen oporavak do ; u liniji 11
+INFO  20:40:19,389 - #4 {
+INFO  20:40:19,389 - #5 }
+INFO  20:40:19,389 - #18 void
+INFO  20:40:19,389 - #3 a
+INFO  20:40:19,389 - #19 (
+INFO  20:40:19,389 - #20 )
+INFO  20:40:19,390 - #3 int
+INFO  20:40:19,390 - #3 g
+INFO  20:40:19,390 - #7 ;
+INFO  20:40:19,390 - #3 char
+INFO  20:40:19,390 - #3 b
+INFO  20:40:19,390 - #3 c
+ERROR 20:40:19,390 - 
+Sintaksna greska
+INFO  20:40:19,390 - #7 ;
+INFO  20:40:19,390 - #3 int
+INFO  20:40:19,390 - #3 a
+INFO  20:40:19,390 - #7 ;
+ERROR 20:40:19,390 - [Deklaracija lokalne promenljive] Izvrsen oporavak do ; u liniji 16
+INFO  20:40:19,390 - #4 {
+INFO  20:40:19,390 - #5 }
+INFO  20:40:19,390 - #18 void
+INFO  20:40:19,390 - #3 main
+INFO  20:40:19,390 - #19 (
+INFO  20:40:19,390 - #20 )
+INFO  20:40:19,390 - #3 char
+INFO  20:40:19,391 - #3 a
+INFO  20:40:19,391 - #7 ;
+INFO  20:40:19,391 - #3 int
+INFO  20:40:19,391 - #3 x
+INFO  20:40:19,391 - #13 ,
+INFO  20:40:19,391 - #3 z
+INFO  20:40:19,391 - #8 =
+ERROR 20:40:19,391 - 
+Sintaksna greska
+INFO  20:40:19,391 - #9 0
+INFO  20:40:19,391 - #4 {
+INFO  20:40:19,391 - #27 read
+INFO  20:40:19,391 - #19 (
+INFO  20:40:19,391 - #3 a
+ERROR 20:40:19,391 - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 21
+INFO  20:40:19,391 - #20 )
+INFO  20:40:19,391 - #7 ;
+INFO  20:40:19,391 - #3 maxcif
+INFO  20:40:19,391 - #8 =
+INFO  20:40:19,391 - #9 0
+INFO  20:40:19,392 - #7 ;
+INFO  20:40:19,392 - #24 while
+INFO  20:40:19,392 - #19 (
+INFO  20:40:19,392 - #3 z
+INFO  20:40:19,392 - #36 !=
+INFO  20:40:19,392 - #9 0
+INFO  20:40:19,392 - #20 )
+INFO  20:40:19,392 - #4 {
+INFO  20:40:19,392 - #3 c
+INFO  20:40:19,392 - #8 =
+INFO  20:40:19,392 - #3 a
+INFO  20:40:19,392 - #44 %
+INFO  20:40:19,392 - #9 10
+INFO  20:40:19,392 - #7 ;
+INFO  20:40:19,392 - #3 a
+INFO  20:40:19,392 - #8 =
+INFO  20:40:19,392 - #3 a
+INFO  20:40:19,392 - #43 /
+INFO  20:40:19,393 - #9 10
+INFO  20:40:19,393 - #7 ;
+INFO  20:40:19,393 - #5 }
+INFO  20:40:19,393 - #27 read
+INFO  20:40:19,393 - #19 (
+INFO  20:40:19,393 - #3 x
+INFO  20:40:19,393 - #20 )
+INFO  20:40:19,393 - #7 ;
+INFO  20:40:19,393 - #3 x
+INFO  20:40:19,393 - #21 ++
+INFO  20:40:19,393 - #7 ;
+INFO  20:40:19,393 - #3 z
+INFO  20:40:19,393 - #8 =
+INFO  20:40:19,393 - #3 x
+INFO  20:40:19,393 - #21 ++
+ERROR 20:40:19,393 - 
+Sintaksna greska
+INFO  20:40:19,393 - #7 ;
+INFO  20:40:19,394 - #3 flag_f
+INFO  20:40:19,394 - #8 =
+INFO  20:40:19,394 - #11 true
+INFO  20:40:19,394 - #7 ;
+INFO  20:40:19,394 - #29 print
+INFO  20:40:19,394 - #19 (
+INFO  20:40:19,394 - #3 x
+INFO  20:40:19,394 - #20 )
+INFO  20:40:19,394 - #7 ;
+INFO  20:40:19,394 - #5 }
+INFO  20:40:19,394 - #5 }
+ERROR 20:40:19,394 - Parsiranje nije uspesno zavrseno!

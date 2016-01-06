@@ -1,0 +1,76 @@
+INFO  14:31:42,924 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:31:42,929 - #2 program
+INFO  14:31:42,929 - #3 Program
+INFO  14:31:42,929 - #6 const
+INFO  14:31:42,929 - #3 int
+INFO  14:31:42,930 - #3 N
+INFO  14:31:42,930 - #8 =
+INFO  14:31:42,930 - #9 2
+INFO  14:31:42,930 - #7 ;
+INFO  14:31:42,930 - #6 const
+INFO  14:31:42,930 - #3 char
+INFO  14:31:42,930 - #3 c
+INFO  14:31:42,930 - #8 =
+INFO  14:31:42,930 - #10 a
+INFO  14:31:42,930 - #7 ;
+INFO  14:31:42,930 - #6 const
+INFO  14:31:42,931 - #3 bool
+INFO  14:31:42,931 - #3 flag
+INFO  14:31:42,931 - #8 =
+INFO  14:31:42,931 - #11 true
+INFO  14:31:42,931 - #7 ;
+INFO  14:31:42,931 - #6 const
+INFO  14:31:42,931 - #3 string
+INFO  14:31:42,931 - #3 s
+INFO  14:31:42,931 - #8 =
+INFO  14:31:42,931 - #12 ispravan ulaz
+INFO  14:31:42,931 - #7 ;
+INFO  14:31:42,931 - #3 int
+INFO  14:31:42,932 - #3 globalna_pr
+INFO  14:31:42,932 - #13 ,
+INFO  14:31:42,932 - #3 glob_niz
+INFO  14:31:42,932 - #14 [
+INFO  14:31:42,932 - #15 ]
+INFO  14:31:42,932 - #7 ;
+INFO  14:31:42,932 - #3 bool
+INFO  14:31:42,932 - #3 flag_global
+INFO  14:31:42,932 - #7 ;
+INFO  14:31:42,932 - #3 char
+INFO  14:31:42,932 - #3 char_global
+INFO  14:31:42,932 - #7 ;
+INFO  14:31:42,932 - #16 class
+INFO  14:31:42,933 - #3 A
+INFO  14:31:42,933 - #4 {
+INFO  14:31:42,933 - #5 }
+INFO  14:31:42,933 - #16 class
+INFO  14:31:42,933 - #3 B
+INFO  14:31:42,933 - #17 extends
+INFO  14:31:42,933 - #3 A
+INFO  14:31:42,933 - #4 {
+INFO  14:31:42,933 - #5 }
+INFO  14:31:42,933 - #4 {
+INFO  14:31:42,933 - #18 void
+INFO  14:31:42,933 - #3 main
+INFO  14:31:42,933 - #19 (
+INFO  14:31:42,933 - #20 )
+INFO  14:31:42,933 - #3 int
+INFO  14:31:42,933 - #3 b
+INFO  14:31:42,933 - #7 ;
+INFO  14:31:42,933 - #3 bool
+INFO  14:31:42,934 - #3 c
+INFO  14:31:42,934 - #7 ;
+INFO  14:31:42,934 - #4 {
+INFO  14:31:42,934 - #5 }
+INFO  14:31:42,934 - #5 }
+INFO  14:31:42,934 - Broj definicija globalnih promenljivih:3
+INFO  14:31:42,934 - Broj definicija lokalnih promenljivih (u main funkciji):2
+INFO  14:31:42,934 - Broj definicija globalnih konstanti:4
+INFO  14:31:42,934 - Broj deklaracija globalnih nizova:1
+INFO  14:31:42,934 - Broj definicija funkcija u glavnom programu:1
+INFO  14:31:42,934 - Broj blokova naredbi:0
+INFO  14:31:42,934 - Broj poziva funkcija u telu metode main:0
+INFO  14:31:42,934 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:31:42,934 - Broj definicija unutrasnjih klasa:2
+INFO  14:31:42,934 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:31:42,934 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:31:42,934 - Parsiranje je uspesno zavrseno!

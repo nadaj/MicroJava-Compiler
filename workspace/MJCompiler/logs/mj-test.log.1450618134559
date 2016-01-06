@@ -1,0 +1,59 @@
+INFO  14:27:35,731 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:27:35,736 - #2 program
+INFO  14:27:35,736 - #3 Program
+INFO  14:27:35,736 - #6 const
+INFO  14:27:35,736 - #3 int
+INFO  14:27:35,736 - #3 N
+INFO  14:27:35,737 - #8 =
+INFO  14:27:35,737 - #9 2
+INFO  14:27:35,737 - #7 ;
+INFO  14:27:35,737 - #6 const
+INFO  14:27:35,737 - #3 char
+INFO  14:27:35,737 - #3 c
+INFO  14:27:35,737 - #8 =
+INFO  14:27:35,737 - #10 a
+INFO  14:27:35,737 - #7 ;
+INFO  14:27:35,737 - #6 const
+INFO  14:27:35,737 - #3 bool
+INFO  14:27:35,738 - #3 flag
+INFO  14:27:35,738 - #8 =
+INFO  14:27:35,738 - #11 true
+INFO  14:27:35,738 - #7 ;
+INFO  14:27:35,738 - #6 const
+INFO  14:27:35,738 - #3 bool
+INFO  14:27:35,738 - #3 flag_f
+INFO  14:27:35,738 - #8 =
+INFO  14:27:35,738 - #11 false
+INFO  14:27:35,738 - #7 ;
+INFO  14:27:35,738 - #6 const
+INFO  14:27:35,738 - #3 string
+INFO  14:27:35,738 - #3 s
+INFO  14:27:35,738 - #8 =
+INFO  14:27:35,738 - #12 ispravan ulaz
+INFO  14:27:35,739 - #7 ;
+INFO  14:27:35,739 - #4 {
+INFO  14:27:35,739 - #18 void
+INFO  14:27:35,739 - #3 main
+INFO  14:27:35,739 - #19 (
+INFO  14:27:35,739 - #20 )
+INFO  14:27:35,739 - #3 int
+INFO  14:27:35,739 - #3 b
+INFO  14:27:35,739 - #7 ;
+INFO  14:27:35,739 - #3 bool
+INFO  14:27:35,739 - #3 c
+INFO  14:27:35,739 - #7 ;
+INFO  14:27:35,739 - #4 {
+INFO  14:27:35,739 - #5 }
+INFO  14:27:35,739 - #5 }
+INFO  14:27:35,740 - Broj definicija globalnih promenljivih:0
+INFO  14:27:35,740 - Broj definicija lokalnih promenljivih (u main funkciji):2
+INFO  14:27:35,740 - Broj definicija globalnih konstanti:5
+INFO  14:27:35,740 - Broj deklaracija globalnih nizova:0
+INFO  14:27:35,740 - Broj definicija funkcija u glavnom programu:1
+INFO  14:27:35,740 - Broj blokova naredbi:0
+INFO  14:27:35,740 - Broj poziva funkcija u telu metode main:0
+INFO  14:27:35,740 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:27:35,740 - Broj definicija unutrasnjih klasa:0
+INFO  14:27:35,740 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:27:35,740 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:27:35,740 - Parsiranje je uspesno zavrseno!

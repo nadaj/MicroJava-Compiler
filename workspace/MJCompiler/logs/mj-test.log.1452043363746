@@ -1,0 +1,9 @@
+INFO  02:08:38,895 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:13:33,837 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:16:09,003 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:17:16,608 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:17:16,625 - Greska na liniji 37: ocekivana klasa! 
+INFO  02:20:24,479 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:20:24,496 - Greska na liniji 37: ocekivana klasa! 
+INFO  02:21:48,464 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:21:48,481 - Greska na liniji 37: ocekivana klasa! 

@@ -1,0 +1,53 @@
+INFO  13:52:14,532 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:52:14,537 - #2 program
+INFO  13:52:14,538 - #3 test06
+INFO  13:52:14,538 - #3 int
+INFO  13:52:14,538 - #3 a
+INFO  13:52:14,538 - #14 [
+INFO  13:52:14,538 - #15 ]
+INFO  13:52:14,538 - #13 ,
+INFO  13:52:14,538 - #3 b
+INFO  13:52:14,538 - #14 [
+INFO  13:52:14,538 - #15 ]
+INFO  13:52:14,538 - #13 ,
+INFO  13:52:14,539 - #3 x
+INFO  13:52:14,539 - #13 ,
+INFO  13:52:14,539 - #3 y
+INFO  13:52:14,539 - #7 ;
+INFO  13:52:14,539 - #3 char
+INFO  13:52:14,539 - #3 c
+INFO  13:52:14,539 - #14 [
+INFO  13:52:14,539 - #15 ]
+INFO  13:52:14,539 - #13 ,
+INFO  13:52:14,539 - #3 d
+INFO  13:52:14,539 - #14 [
+INFO  13:52:14,539 - #15 ]
+INFO  13:52:14,540 - #13 ,
+INFO  13:52:14,540 - #3 j
+INFO  13:52:14,540 - #7 ;
+INFO  13:52:14,540 - #4 {
+INFO  13:52:14,540 - #18 void
+INFO  13:52:14,540 - #3 main
+INFO  13:52:14,540 - #19 (
+INFO  13:52:14,541 - #20 )
+INFO  13:52:14,541 - #4 {
+INFO  13:52:14,541 - #3 x
+INFO  13:52:14,541 - #8 =
+INFO  13:52:14,541 - #9 3
+INFO  13:52:14,541 - #7 ;
+INFO  13:52:14,541 - #3 a
+INFO  13:52:14,541 - #8 =
+INFO  13:52:14,542 - #33 new
+INFO  13:52:14,542 - #3 char
+INFO  13:52:14,542 - #14 [
+INFO  13:52:14,542 - #9 5
+INFO  13:52:14,542 - #15 ]
+INFO  13:52:14,542 - #7 ;
+INFO  13:52:14,542 - #3 a
+INFO  13:52:14,542 - #14 [
+INFO  13:52:14,542 - #3 x
+INFO  13:52:14,542 - #21 ++
+ERROR 13:52:14,542 - 
+Sintaksna greska
+ERROR 13:52:14,543 - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 13:52:14,543 - Parsiranje nije uspesno zavrseno!

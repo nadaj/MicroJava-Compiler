@@ -1,0 +1,41 @@
+INFO  14:24:45,112 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:24:45,117 - #2 program
+INFO  14:24:45,117 - #3 Program
+INFO  14:24:45,117 - #6 const
+INFO  14:24:45,117 - #3 int
+INFO  14:24:45,117 - #3 N
+INFO  14:24:45,117 - #8 =
+INFO  14:24:45,117 - #9 2
+INFO  14:24:45,117 - #7 ;
+INFO  14:24:45,117 - #6 const
+INFO  14:24:45,117 - #3 char
+INFO  14:24:45,117 - #3 c
+INFO  14:24:45,117 - #8 =
+INFO  14:24:45,118 - #10 a
+INFO  14:24:45,118 - #7 ;
+INFO  14:24:45,118 - #4 {
+INFO  14:24:45,118 - #18 void
+INFO  14:24:45,118 - #3 main
+INFO  14:24:45,118 - #19 (
+INFO  14:24:45,118 - #20 )
+INFO  14:24:45,118 - #3 int
+INFO  14:24:45,118 - #3 b
+INFO  14:24:45,118 - #7 ;
+INFO  14:24:45,118 - #3 bool
+INFO  14:24:45,118 - #3 c
+INFO  14:24:45,118 - #7 ;
+INFO  14:24:45,119 - #4 {
+INFO  14:24:45,119 - #5 }
+INFO  14:24:45,119 - #5 }
+INFO  14:24:45,119 - Broj definicija globalnih promenljivih:0
+INFO  14:24:45,119 - Broj definicija lokalnih promenljivih (u main funkciji):2
+INFO  14:24:45,119 - Broj definicija globalnih konstanti:2
+INFO  14:24:45,119 - Broj deklaracija globalnih nizova:0
+INFO  14:24:45,119 - Broj definicija funkcija u glavnom programu:1
+INFO  14:24:45,119 - Broj blokova naredbi:0
+INFO  14:24:45,119 - Broj poziva funkcija u telu metode main:0
+INFO  14:24:45,119 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:24:45,119 - Broj definicija unutrasnjih klasa:0
+INFO  14:24:45,119 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:24:45,119 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:24:45,119 - Parsiranje je uspesno zavrseno!

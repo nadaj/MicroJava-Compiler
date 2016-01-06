@@ -1,0 +1,16 @@
+INFO  14:37:20,527 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:37:20,537 - #2 program
+INFO  14:37:20,537 - #3 MJProgram
+INFO  14:37:20,537 - #3 int
+INFO  14:37:20,538 - #3 x
+INFO  14:37:20,538 - #7 ;
+INFO  14:37:20,538 - Deklarisana promenljiva x na liniji 2
+INFO  14:37:20,538 - #3 int
+INFO  14:37:20,538 - #3 y
+INFO  14:37:20,538 - #7 ;
+INFO  14:37:20,538 - Deklarisana promenljiva y na liniji 3
+INFO  14:37:20,538 - #4 {
+INFO  14:37:20,539 - #18 void
+INFO  14:37:20,539 - #3 main
+INFO  14:37:20,539 - #19 (
+INFO  14:37:20,539 - Obradjuje se funkcija na liniji 6

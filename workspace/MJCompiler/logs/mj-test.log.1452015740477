@@ -1,0 +1,13 @@
+INFO  18:37:35,506 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+ERROR 18:37:35,518 - [Greska]Linija: 17	Nije pronadjen tip  C u tabeli simbola!
+ERROR 18:37:35,520 - [Greska]Linija: 22	Nije pronadjen tip  C u tabeli simbola!
+ERROR 18:37:35,521 - Greska na liniji 24: ocekivana klasa! 
+ERROR 18:37:35,521 - Greska na liniji 25: ocekivana klasa! 
+ERROR 18:37:35,523 - Greska na liniji 29: ocekivana klasa! 
+ERROR 18:37:35,524 - Greska na liniji 31: ocekivana klasa! 
+ERROR 18:37:35,525 - Greska na liniji 31: ocekivana klasa! 
+ERROR 18:37:35,525 - Greska na liniji 34: ocekivana klasa! 
+ERROR 18:37:35,526 - Greska na liniji 34: ocekivana klasa! 
+ERROR 18:37:35,527 - Greska na liniji 37: klasathis nije deklarisana! 
+ERROR 18:37:35,527 - Greska na liniji 37: klasathis nije deklarisana! 
+ERROR 18:37:35,528 - Parsiranje nije uspesno zavrseno!

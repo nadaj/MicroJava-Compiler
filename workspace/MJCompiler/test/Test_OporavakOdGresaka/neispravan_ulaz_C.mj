@@ -1,0 +1,88 @@
+//nivo C
+
+program Test
+class A{
+	int x[],y[];
+	{
+		int pr(int a) {
+			return 1;
+		}
+		
+		int pr1(int a, int b) { 
+			return 1;
+		}
+	}
+}
+
+const int pi = 3, e = 2;
+const string strin="aaa";
+
+class B extends A{
+	int i; int x[];
+	A theAA b								// deklaracija polja unutrasnje klase: oporavak do {
+	
+	
+	{	
+		void voidtest(int a,char b)
+			int c;
+		{
+			read(a); read(b);read(c);
+		}
+		
+		int met(int a) {
+			return a+1;
+		}
+		
+		int getValue(int a) int b; bool c;
+		{
+			 this.i=6;	
+			 return this.i + this.x[0] + this.met(a);
+		}
+	}
+}
+
+class C extends B{
+	A theA;
+	string a = "bas je roze i zut";          // deklaracija polja unutrasnje klase: oporavak do ;
+
+}
+
+class E extends {                           // deklaracija prosirenja natklase: oporavak do { 
+	bool b; 
+	C, cc,                                  // deklaracija polja unutrasnje klase: oporavak do ;
+	char e;
+}
+
+
+{
+
+	int met(int par)
+	{
+		return par-1;
+	}
+	
+	string strfunc(string s)
+	{
+		return s+"aa";
+	}
+	
+	void main() 
+	A a; 
+	B b; 
+	C c;
+	int x, y; 
+	string str1, str2;
+	{
+		str2 = "abcd";
+		str1 = "abc" + strfunc(str2);
+		
+		x = 1;
+		y = 2;
+		a.pr(,x);							// lista parametara u pozivu metode objekta: oporavak do )	
+		a.pr1(x y);							// lista parametara u pozivu metode objekta: oporavak do )	
+		
+		a.pr(,met(x));						// lista parametara u pozivu metode objekta: oporavak do )
+		a.pr(b.met(x),);					// lista parametara u pozivu metode objekta: oporavak do )
+		//a.pr(met(,x));						// lista parametara u pozivu metode objekta: oporavak do )	
+	}		
+}

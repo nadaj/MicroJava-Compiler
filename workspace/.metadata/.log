@@ -1,0 +1,2158 @@
+!SESSION 2015-12-22 12:50:57.795 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+This is a continuation of log file C:\pp1domaci\workspace\.metadata\.bak_1.log
+Created Time: 2015-12-22 16:59:52.705
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.707
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.707
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.714
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.714
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.722
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.722
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.729
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.729
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.736
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.736
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.744
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.744
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.751
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.751
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.759
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.759
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.766
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.766
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.773
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.773
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.780
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.780
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.787
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.787
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.794
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.794
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.801
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.801
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.810
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.810
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.820
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.820
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.828
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.828
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.835
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.835
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.843
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.843
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.850
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.850
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.858
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.859
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.866
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.866
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.874
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.874
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.883
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.883
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.892
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.892
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.899
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.900
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.906
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.907
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.914
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.914
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.925
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.925
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.932
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.932
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.940
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.940
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.948
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.948
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.955
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.955
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.962
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.962
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.970
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.970
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.977
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.977
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.984
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.984
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.991
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.991
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:52.998
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:52.998
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.007
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.007
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.015
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.015
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.025
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.025
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.033
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.033
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.041
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.041
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.049
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.049
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.057
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.057
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.065
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.065
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.073
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.073
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.081
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.081
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.089
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.089
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.097
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.097
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.105
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.105
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.113
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.113
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.121
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.121
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.129
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.129
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.138
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.138
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.147
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.147
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.156
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.156
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.166
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.166
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.175
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.175
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.184
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.184
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.194
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.194
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.203
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.203
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.213
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.213
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.222
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.222
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.231
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.232
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.241
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.241
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.250
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.250
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.259
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.259
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.269
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.269
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.278
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.278
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.287
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.287
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.298
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.298
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.308
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.308
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.317
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.317
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.326
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.326
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.335
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.335
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.345
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.345
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.354
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.354
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.363
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.363
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.372
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.372
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.382
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.382
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.391
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.392
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.401
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.401
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.410
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.410
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.419
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.419
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.428
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.429
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.438
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.438
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.448
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.448
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.457
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.457
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.466
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.467
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.476
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.476
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.485
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.485
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.495
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.495
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.505
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.505
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.515
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.515
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.935
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.935
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.949
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.949
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.960
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.960
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.978
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.978
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.990
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.990
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:53.999
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:53.999
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.010
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.010
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.020
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.020
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.030
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.030
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.039
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.039
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.049
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.049
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.061
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.061
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.071
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.071
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.082
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.082
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.091
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.091
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.101
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.101
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.124
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.124
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.134
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.134
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.144
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.144
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.154
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.154
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.164
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.164
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.173
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.173
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.183
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.183
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.194
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.194
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.203
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.203
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.213
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.213
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.222
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.222
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.232
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.232
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.243
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.243
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.253
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.253
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.264
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.264
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.271
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.271
+!MESSAGE   does not exist
+
+!ENTRY org.eclipse.recommenders.types.rcp 4 1 2015-12-22 16:59:54.281
+!MESSAGE An error occured while accessing search index.
+!STACK 1
+Java Model Exception: Java Model Status [  does not exist]
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:785)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:826)
+	at org.eclipse.jdt.internal.core.BinaryType.newSupertypeHierarchy(BinaryType.java:778)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.indexType(ProjectTypesIndex.java:429)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuildRoot(ProjectTypesIndex.java:373)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.rebuild(ProjectTypesIndex.java:360)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.doRun(ProjectTypesIndex.java:336)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex$2.run(ProjectTypesIndex.java:327)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.jdt.core 4 969 2015-12-22 16:59:54.281
+!MESSAGE   does not exist
+!SESSION 2015-12-23 10:23:45.013 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-12-23 10:24:14.904
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-05 18:02:37.250 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-05 18:02:56.645
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-05 18:38:17.131 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-05 18:38:30.865
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-06 01:44:51.659 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-06 01:45:12.139
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-06 01:50:30.347 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-06 01:51:18.802
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-06 02:22:16.576 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_60
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-06 02:22:30.268
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\Nada'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

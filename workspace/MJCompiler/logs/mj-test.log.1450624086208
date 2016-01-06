@@ -1,0 +1,152 @@
+INFO  15:01:45,843 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:01:45,848 - #2 program
+INFO  15:01:45,848 - #3 Program
+INFO  15:01:45,849 - #6 const
+INFO  15:01:45,849 - #3 int
+INFO  15:01:45,849 - #3 N
+INFO  15:01:45,849 - #8 =
+INFO  15:01:45,849 - #9 2
+INFO  15:01:45,849 - #7 ;
+INFO  15:01:45,849 - #6 const
+INFO  15:01:45,849 - #3 char
+INFO  15:01:45,849 - #3 c
+INFO  15:01:45,849 - #8 =
+INFO  15:01:45,849 - #10 a
+INFO  15:01:45,849 - #7 ;
+INFO  15:01:45,849 - #6 const
+INFO  15:01:45,850 - #3 bool
+INFO  15:01:45,850 - #3 flag
+INFO  15:01:45,850 - #8 =
+INFO  15:01:45,850 - #11 true
+INFO  15:01:45,850 - #7 ;
+INFO  15:01:45,850 - #6 const
+INFO  15:01:45,850 - #3 string
+INFO  15:01:45,850 - #3 s
+INFO  15:01:45,850 - #8 =
+INFO  15:01:45,850 - #12 ispravan ulaz
+INFO  15:01:45,850 - #7 ;
+INFO  15:01:45,850 - #3 int
+INFO  15:01:45,851 - #3 globalna_pr
+INFO  15:01:45,851 - #13 ,
+INFO  15:01:45,851 - #3 glob_niz
+INFO  15:01:45,851 - #14 [
+INFO  15:01:45,851 - #15 ]
+INFO  15:01:45,851 - #7 ;
+INFO  15:01:45,851 - #3 bool
+INFO  15:01:45,851 - #3 flag_global
+INFO  15:01:45,851 - #7 ;
+INFO  15:01:45,851 - #3 char
+INFO  15:01:45,852 - #3 char_global
+INFO  15:01:45,852 - #7 ;
+INFO  15:01:45,852 - #16 class
+INFO  15:01:45,852 - #3 A
+INFO  15:01:45,852 - #4 {
+INFO  15:01:45,852 - #5 }
+INFO  15:01:45,852 - #16 class
+INFO  15:01:45,852 - #3 B
+INFO  15:01:45,852 - #17 extends
+INFO  15:01:45,852 - #3 A
+INFO  15:01:45,852 - #4 {
+INFO  15:01:45,853 - #5 }
+INFO  15:01:45,853 - #16 class
+INFO  15:01:45,853 - #3 C
+INFO  15:01:45,853 - #4 {
+INFO  15:01:45,853 - #3 int
+INFO  15:01:45,853 - #3 c_int
+INFO  15:01:45,853 - #13 ,
+INFO  15:01:45,853 - #3 c_arr
+INFO  15:01:45,853 - #14 [
+INFO  15:01:45,853 - #15 ]
+INFO  15:01:45,853 - #7 ;
+INFO  15:01:45,853 - #3 bool
+INFO  15:01:45,853 - #3 c_bool
+INFO  15:01:45,853 - #7 ;
+INFO  15:01:45,853 - #3 char
+INFO  15:01:45,853 - #3 c_char
+INFO  15:01:45,853 - #7 ;
+INFO  15:01:45,853 - #5 }
+INFO  15:01:45,854 - #16 class
+INFO  15:01:45,854 - #3 D
+INFO  15:01:45,854 - #17 extends
+INFO  15:01:45,854 - #3 C
+INFO  15:01:45,854 - #4 {
+INFO  15:01:45,854 - #3 int
+INFO  15:01:45,854 - #3 d_int
+INFO  15:01:45,854 - #13 ,
+INFO  15:01:45,854 - #3 d_arr
+INFO  15:01:45,854 - #14 [
+INFO  15:01:45,854 - #15 ]
+INFO  15:01:45,854 - #7 ;
+INFO  15:01:45,854 - #3 bool
+INFO  15:01:45,854 - #3 d_bool
+INFO  15:01:45,854 - #7 ;
+INFO  15:01:45,854 - #3 char
+INFO  15:01:45,854 - #3 d_char
+INFO  15:01:45,854 - #7 ;
+INFO  15:01:45,854 - #5 }
+INFO  15:01:45,854 - #16 class
+INFO  15:01:45,855 - #3 E
+INFO  15:01:45,855 - #4 {
+INFO  15:01:45,855 - #3 int
+INFO  15:01:45,855 - #3 e_int
+INFO  15:01:45,855 - #13 ,
+INFO  15:01:45,855 - #3 e_arr
+INFO  15:01:45,855 - #14 [
+INFO  15:01:45,855 - #15 ]
+INFO  15:01:45,855 - #7 ;
+INFO  15:01:45,855 - #3 bool
+INFO  15:01:45,855 - #3 e_bool
+INFO  15:01:45,855 - #7 ;
+INFO  15:01:45,855 - #3 char
+INFO  15:01:45,855 - #3 e_char
+INFO  15:01:45,855 - #7 ;
+INFO  15:01:45,855 - #4 {
+INFO  15:01:45,855 - #5 }
+INFO  15:01:45,855 - #5 }
+INFO  15:01:45,855 - #16 class
+INFO  15:01:45,856 - #3 F
+INFO  15:01:45,856 - #17 extends
+INFO  15:01:45,856 - #3 E
+INFO  15:01:45,856 - #4 {
+INFO  15:01:45,856 - #3 int
+INFO  15:01:45,856 - #3 f_int
+INFO  15:01:45,856 - #13 ,
+INFO  15:01:45,856 - #3 f_arr
+INFO  15:01:45,856 - #14 [
+INFO  15:01:45,856 - #15 ]
+INFO  15:01:45,856 - #7 ;
+INFO  15:01:45,856 - #3 bool
+INFO  15:01:45,856 - #3 f_bool
+INFO  15:01:45,856 - #7 ;
+INFO  15:01:45,856 - #3 char
+INFO  15:01:45,856 - #3 f_char
+INFO  15:01:45,856 - #7 ;
+INFO  15:01:45,856 - #4 {
+INFO  15:01:45,857 - #5 }
+INFO  15:01:45,857 - #5 }
+INFO  15:01:45,857 - #4 {
+INFO  15:01:45,857 - #18 void
+INFO  15:01:45,857 - #3 main
+INFO  15:01:45,857 - #19 (
+INFO  15:01:45,857 - #20 )
+INFO  15:01:45,857 - #3 int
+INFO  15:01:45,857 - #3 b
+INFO  15:01:45,857 - #7 ;
+INFO  15:01:45,857 - #3 bool
+INFO  15:01:45,857 - #3 c
+INFO  15:01:45,858 - #7 ;
+INFO  15:01:45,858 - #4 {
+INFO  15:01:45,858 - #5 }
+INFO  15:01:45,858 - #5 }
+INFO  15:01:45,858 - Broj definicija globalnih promenljivih:3
+INFO  15:01:45,858 - Broj definicija lokalnih promenljivih (u main funkciji):2
+INFO  15:01:45,858 - Broj definicija globalnih konstanti:4
+INFO  15:01:45,858 - Broj deklaracija globalnih nizova:1
+INFO  15:01:45,858 - Broj definicija funkcija u glavnom programu:1
+INFO  15:01:45,858 - Broj blokova naredbi:0
+INFO  15:01:45,858 - Broj poziva funkcija u telu metode main:0
+INFO  15:01:45,858 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  15:01:45,858 - Broj definicija unutrasnjih klasa:6
+INFO  15:01:45,858 - Broj definicija metoda unutrasnjih klasa:0
+INFO  15:01:45,858 - Broj deklaracija polja unutrasnjih klasa:16
+INFO  15:01:45,858 - Parsiranje je uspesno zavrseno!

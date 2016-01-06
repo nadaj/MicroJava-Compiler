@@ -1,0 +1,46 @@
+//nivo B
+
+program Test
+	int xa, ya, xb, yb, xc;          
+	char cccc;
+	int a, b, c, d[];                              
+	int u,v;
+{
+	int distance(int x1, int y1, int x2, int y2)
+	{
+		return 1;         
+	}                                          
+	
+	int obim(int ,a) char o;							// deklaracija formalnog parametra: oporavak do )
+	{
+		return 2;
+	}
+	
+	void povrsina(int a, int b  v, int c) string s;		// deklaracija formalnog parametra: oporavak do ,
+	{
+		
+	} 
+	
+	int pogresna(int x, z, int)							// deklaracija formalnog parametra: oporavak do )
+	{              
+		return 1;
+	}
+
+	void main() bool b; string p; int i;{            
+		if (cccc <> 'c')       							// logicki izraz: oporavak do )
+			p = "blabla";
+		
+		while (cccc <> 'c')       						// logicki izraz: oporavak do )
+			p = "blabla";	
+		
+		if (b == true)									// logicki izraz: oporavak do )
+			b = 0;
+			
+		while (b == true)								// logicki izraz: oporavak do )
+			b = 0;
+			
+		i = 0;
+		d = new int[5];
+		d[i++] = 2;										// izraz za indeksiranje niza: oporavak do ]
+	}
+}

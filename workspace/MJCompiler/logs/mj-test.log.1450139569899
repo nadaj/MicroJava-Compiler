@@ -1,0 +1,45 @@
+INFO  01:19:07,916 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  01:19:07,923 - #2 program
+INFO  01:19:07,924 - #3 Program
+INFO  01:19:07,924 - #16 class
+INFO  01:19:07,924 - #3 A
+INFO  01:19:07,924 - #4 {
+INFO  01:19:07,924 - #3 int
+INFO  01:19:07,924 - #3 x
+INFO  01:19:07,924 - #14 [
+INFO  01:19:07,924 - #15 ]
+INFO  01:19:07,924 - #13 ,
+INFO  01:19:07,924 - #3 y
+INFO  01:19:07,925 - #14 [
+INFO  01:19:07,925 - #15 ]
+INFO  01:19:07,925 - #7 ;
+INFO  01:19:07,925 - #5 }
+INFO  01:19:07,925 - #6 const
+INFO  01:19:07,925 - #3 int
+INFO  01:19:07,925 - #3 pi
+INFO  01:19:07,925 - #8 =
+INFO  01:19:07,925 - #9 3
+INFO  01:19:07,925 - #13 ,
+INFO  01:19:07,925 - #3 e
+INFO  01:19:07,925 - #8 =
+INFO  01:19:07,925 - #9 2
+INFO  01:19:07,925 - #7 ;
+INFO  01:19:07,926 - #16 class
+INFO  01:19:07,926 - #3 B
+INFO  01:19:07,926 - #17 extends
+INFO  01:19:07,926 - #3 A
+INFO  01:19:07,926 - #4 {
+INFO  01:19:07,926 - #3 int
+INFO  01:19:07,926 - #3 i
+INFO  01:19:07,926 - #7 ;
+INFO  01:19:07,926 - #3 int
+INFO  01:19:07,926 - #3 x
+INFO  01:19:07,926 - #14 [
+INFO  01:19:07,926 - #15 ]
+INFO  01:19:07,926 - #7 ;
+INFO  01:19:07,926 - #3 int
+INFO  01:19:07,926 - #3 getValue
+INFO  01:19:07,926 - #19 (
+ERROR 01:19:07,927 - 
+Sintaksna greska
+ERROR 01:19:07,927 - Fatalna greska, parsiranje se ne moze nastaviti

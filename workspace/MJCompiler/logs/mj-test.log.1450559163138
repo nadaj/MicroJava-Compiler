@@ -1,0 +1,26 @@
+INFO  22:05:42,987 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  22:05:42,991 - #2 program
+INFO  22:05:42,991 - #3 Program
+INFO  22:05:42,991 - #4 {
+INFO  22:05:42,991 - #18 void
+INFO  22:05:42,991 - #3 main
+INFO  22:05:42,991 - #19 (
+INFO  22:05:42,991 - #20 )
+INFO  22:05:42,991 - #3 string
+INFO  22:05:42,991 - #3 s
+INFO  22:05:42,992 - #7 ;
+INFO  22:05:42,992 - #4 {
+INFO  22:05:42,992 - #3 s
+INFO  22:05:42,992 - #8 =
+INFO  22:05:42,992 - #12 mama" + "tata
+INFO  22:05:42,992 - #7 ;
+INFO  22:05:42,992 - #24 while
+INFO  22:05:42,992 - #19 (
+INFO  22:05:42,992 - #3 str2
+INFO  22:05:42,992 - #35 ==
+INFO  22:05:42,992 - #12 kraj" || str1 == "kraj
+INFO  22:05:42,992 - #20 )
+INFO  22:05:42,992 - #4 {
+INFO  22:05:42,992 - #5 }
+INFO  22:05:42,993 - #5 }
+INFO  22:05:42,993 - #5 }

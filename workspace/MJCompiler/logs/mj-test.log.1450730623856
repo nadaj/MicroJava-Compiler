@@ -1,0 +1,140 @@
+INFO  21:43:10,231 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  21:43:10,235 - #2 program
+INFO  21:43:10,236 - #3 test04
+INFO  21:43:10,236 - #6 const
+INFO  21:43:10,236 - #3 string
+INFO  21:43:10,236 - #3 sa
+INFO  21:43:10,236 - #8 =
+INFO  21:43:10,236 - #12 nesto
+INFO  21:43:10,236 - #7 ;
+INFO  21:43:10,236 - #3 string
+INFO  21:43:10,236 - #3 sb
+INFO  21:43:10,236 - #7 ;
+INFO  21:43:10,236 - #3 int
+INFO  21:43:10,237 - #3 x
+INFO  21:43:10,237 - #13 ,
+INFO  21:43:10,237 - #3 y
+INFO  21:43:10,237 - #7 ;
+INFO  21:43:10,237 - #3 int
+INFO  21:43:10,237 - #3 a
+INFO  21:43:10,237 - #14 [
+INFO  21:43:10,237 - #15 ]
+INFO  21:43:10,237 - #7 ;
+INFO  21:43:10,237 - #3 bool
+INFO  21:43:10,238 - #3 log
+INFO  21:43:10,238 - #7 ;
+INFO  21:43:10,238 - #4 {
+INFO  21:43:10,238 - #3 int
+INFO  21:43:10,238 - #3 sum
+INFO  21:43:10,238 - #19 (
+INFO  21:43:10,238 - #3 int
+INFO  21:43:10,238 - #3 z
+INFO  21:43:10,238 - #13 ,
+INFO  21:43:10,238 - #3 int
+INFO  21:43:10,238 - #3 d
+INFO  21:43:10,239 - #20 )
+INFO  21:43:10,239 - #4 {
+INFO  21:43:10,239 - #26 return
+INFO  21:43:10,239 - #3 z
+INFO  21:43:10,239 - #41 +
+INFO  21:43:10,239 - #3 d
+INFO  21:43:10,239 - #7 ;
+INFO  21:43:10,239 - #5 }
+INFO  21:43:10,239 - #18 void
+INFO  21:43:10,239 - #3 main
+INFO  21:43:10,239 - #19 (
+INFO  21:43:10,239 - #20 )
+INFO  21:43:10,239 - #4 {
+INFO  21:43:10,239 - #27 read
+INFO  21:43:10,240 - #19 (
+INFO  21:43:10,240 - #3 sb
+INFO  21:43:10,240 - #20 )
+INFO  21:43:10,240 - #7 ;
+INFO  21:43:10,240 - #3 sb
+INFO  21:43:10,240 - #8 =
+INFO  21:43:10,240 - #3 sb
+INFO  21:43:10,240 - #41 +
+INFO  21:43:10,240 - #3 sa
+INFO  21:43:10,240 - #7 ;
+INFO  21:43:10,240 - #3 a
+INFO  21:43:10,240 - #8 =
+INFO  21:43:10,240 - #33 new
+INFO  21:43:10,240 - #3 int
+INFO  21:43:10,241 - #14 [
+INFO  21:43:10,241 - #9 5
+INFO  21:43:10,241 - #15 ]
+INFO  21:43:10,241 - #7 ;
+INFO  21:43:10,241 - #3 x
+INFO  21:43:10,241 - #8 =
+INFO  21:43:10,241 - #9 0
+INFO  21:43:10,241 - #7 ;
+INFO  21:43:10,241 - #3 y
+INFO  21:43:10,241 - #8 =
+INFO  21:43:10,242 - #9 3
+INFO  21:43:10,242 - #7 ;
+INFO  21:43:10,242 - #24 while
+INFO  21:43:10,242 - #19 (
+INFO  21:43:10,242 - #3 log
+INFO  21:43:10,242 - #20 )
+INFO  21:43:10,242 - #4 {
+INFO  21:43:10,242 - #3 a
+INFO  21:43:10,242 - #14 [
+INFO  21:43:10,242 - #3 x
+INFO  21:43:10,242 - #15 ]
+INFO  21:43:10,242 - #8 =
+INFO  21:43:10,242 - #3 sum
+INFO  21:43:10,242 - #19 (
+INFO  21:43:10,242 - #3 y
+INFO  21:43:10,242 - #13 ,
+INFO  21:43:10,243 - #3 x
+INFO  21:43:10,243 - #20 )
+INFO  21:43:10,243 - #41 +
+INFO  21:43:10,243 - #9 1
+INFO  21:43:10,243 - #7 ;
+INFO  21:43:10,243 - #3 x
+INFO  21:43:10,243 - #8 =
+INFO  21:43:10,243 - #3 sum
+INFO  21:43:10,243 - #19 (
+INFO  21:43:10,243 - #3 x
+INFO  21:43:10,243 - #13 ,
+INFO  21:43:10,243 - #9 1
+INFO  21:43:10,243 - #20 )
+INFO  21:43:10,243 - #7 ;
+INFO  21:43:10,243 - #23 if
+INFO  21:43:10,243 - #19 (
+INFO  21:43:10,244 - #3 x
+INFO  21:43:10,244 - #35 ==
+INFO  21:43:10,244 - #9 5
+INFO  21:43:10,244 - #20 )
+INFO  21:43:10,244 - #25 break
+INFO  21:43:10,244 - #7 ;
+INFO  21:43:10,244 - #5 }
+INFO  21:43:10,244 - #29 print
+INFO  21:43:10,244 - #19 (
+INFO  21:43:10,244 - #3 a
+INFO  21:43:10,244 - #14 [
+INFO  21:43:10,244 - #9 3
+INFO  21:43:10,244 - #15 ]
+INFO  21:43:10,245 - #20 )
+INFO  21:43:10,245 - #7 ;
+INFO  21:43:10,245 - #29 print
+INFO  21:43:10,245 - #19 (
+INFO  21:43:10,245 - #3 sb
+INFO  21:43:10,245 - #41 +
+INFO  21:43:10,245 - #12 jos nesto
+INFO  21:43:10,245 - #20 )
+INFO  21:43:10,245 - #7 ;
+INFO  21:43:10,245 - #5 }
+INFO  21:43:10,245 - #5 }
+INFO  21:43:10,245 - Broj definicija globalnih promenljivih:4
+INFO  21:43:10,245 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  21:43:10,245 - Broj definicija globalnih konstanti:1
+INFO  21:43:10,245 - Broj deklaracija globalnih nizova:1
+INFO  21:43:10,246 - Broj definicija funkcija u glavnom programu:2
+INFO  21:43:10,246 - Broj blokova naredbi:1
+INFO  21:43:10,246 - Broj poziva funkcija u telu metode main:5
+INFO  21:43:10,246 - Broj deklaracija formalnih argumenata funkcija:2
+INFO  21:43:10,246 - Broj definicija unutrasnjih klasa:0
+INFO  21:43:10,246 - Broj definicija metoda unutrasnjih klasa:0
+INFO  21:43:10,246 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  21:43:10,246 - Parsiranje je uspesno zavrseno!

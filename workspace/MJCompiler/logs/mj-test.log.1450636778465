@@ -1,0 +1,207 @@
+INFO  19:36:22,832 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:36:22,838 - #2 program
+INFO  19:36:22,838 - #3 Test
+INFO  19:36:22,839 - #3 int
+INFO  19:36:22,839 - #3 xa
+INFO  19:36:22,839 - #13 ,
+INFO  19:36:22,839 - #3 ya
+INFO  19:36:22,839 - #13 ,
+INFO  19:36:22,839 - #3 xb
+INFO  19:36:22,839 - #13 ,
+INFO  19:36:22,839 - #3 yb
+INFO  19:36:22,839 - #13 ,
+INFO  19:36:22,839 - #3 xc
+INFO  19:36:22,839 - #7 ;
+INFO  19:36:22,839 - #3 char
+INFO  19:36:22,840 - #3 cccc
+INFO  19:36:22,840 - #7 ;
+INFO  19:36:22,840 - #3 int
+INFO  19:36:22,840 - #3 a
+INFO  19:36:22,840 - #13 ,
+INFO  19:36:22,840 - #3 b
+INFO  19:36:22,840 - #13 ,
+INFO  19:36:22,840 - #3 c
+INFO  19:36:22,840 - #13 ,
+INFO  19:36:22,840 - #3 d
+INFO  19:36:22,840 - #14 [
+INFO  19:36:22,841 - #15 ]
+INFO  19:36:22,841 - #7 ;
+INFO  19:36:22,841 - #3 int
+INFO  19:36:22,841 - #3 u
+INFO  19:36:22,841 - #13 ,
+INFO  19:36:22,841 - #3 v
+INFO  19:36:22,841 - #7 ;
+INFO  19:36:22,841 - #4 {
+INFO  19:36:22,841 - #3 int
+INFO  19:36:22,842 - #3 distance
+INFO  19:36:22,842 - #19 (
+INFO  19:36:22,842 - #3 int
+INFO  19:36:22,842 - #3 x1
+INFO  19:36:22,842 - #13 ,
+INFO  19:36:22,842 - #3 int
+INFO  19:36:22,842 - #3 y1
+INFO  19:36:22,842 - #13 ,
+INFO  19:36:22,842 - #3 int
+INFO  19:36:22,842 - #3 x2
+INFO  19:36:22,843 - #13 ,
+INFO  19:36:22,843 - #3 int
+INFO  19:36:22,843 - #3 y2
+INFO  19:36:22,843 - #20 )
+INFO  19:36:22,843 - #4 {
+INFO  19:36:22,843 - #26 return
+INFO  19:36:22,843 - #9 1
+INFO  19:36:22,843 - #7 ;
+INFO  19:36:22,843 - #5 }
+INFO  19:36:22,843 - #3 int
+INFO  19:36:22,843 - #3 obim
+INFO  19:36:22,843 - #19 (
+INFO  19:36:22,844 - #3 int
+INFO  19:36:22,844 - #3 a
+INFO  19:36:22,844 - #13 ,
+INFO  19:36:22,844 - #3 int
+INFO  19:36:22,844 - #3 b
+INFO  19:36:22,844 - #13 ,
+INFO  19:36:22,844 - #3 int
+INFO  19:36:22,844 - #3 c
+INFO  19:36:22,844 - #20 )
+INFO  19:36:22,844 - #3 char
+INFO  19:36:22,844 - #3 o
+INFO  19:36:22,844 - #7 ;
+INFO  19:36:22,844 - #4 {
+INFO  19:36:22,844 - #26 return
+INFO  19:36:22,844 - #9 2
+INFO  19:36:22,844 - #7 ;
+INFO  19:36:22,845 - #5 }
+INFO  19:36:22,845 - #18 void
+INFO  19:36:22,845 - #3 povrsina
+INFO  19:36:22,845 - #19 (
+INFO  19:36:22,845 - #3 int
+INFO  19:36:22,845 - #3 a
+INFO  19:36:22,845 - #13 ,
+INFO  19:36:22,845 - #3 int
+INFO  19:36:22,845 - #3 b
+INFO  19:36:22,845 - #3 v
+ERROR 19:36:22,845 - 
+Sintaksna greska
+INFO  19:36:22,845 - #13 ,
+INFO  19:36:22,845 - #3 int
+INFO  19:36:22,845 - #3 c
+INFO  19:36:22,846 - #20 )
+ERROR 19:36:22,846 - [Deklaracija form. parametra funkcije] Izvrsen oporavak do , u liniji 19
+INFO  19:36:22,847 - #3 string
+INFO  19:36:22,847 - #3 s
+INFO  19:36:22,847 - #7 ;
+INFO  19:36:22,847 - #4 {
+INFO  19:36:22,847 - #5 }
+INFO  19:36:22,847 - #3 int
+INFO  19:36:22,847 - #3 pogresna
+INFO  19:36:22,847 - #19 (
+INFO  19:36:22,847 - #3 int
+INFO  19:36:22,847 - #3 x
+INFO  19:36:22,847 - #13 ,
+INFO  19:36:22,847 - #3 z
+INFO  19:36:22,847 - #13 ,
+ERROR 19:36:22,847 - 
+Sintaksna greska
+INFO  19:36:22,847 - #3 int
+INFO  19:36:22,847 - #20 )
+INFO  19:36:22,848 - #4 {
+INFO  19:36:22,848 - #26 return
+INFO  19:36:22,848 - #9 1
+ERROR 19:36:22,848 - [Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji 24
+INFO  19:36:22,848 - #7 ;
+INFO  19:36:22,848 - #5 }
+INFO  19:36:22,848 - #18 void
+INFO  19:36:22,848 - #3 main
+INFO  19:36:22,848 - #19 (
+INFO  19:36:22,848 - #20 )
+INFO  19:36:22,848 - #3 bool
+INFO  19:36:22,848 - #3 b
+INFO  19:36:22,849 - #7 ;
+INFO  19:36:22,849 - #3 string
+INFO  19:36:22,849 - #3 p
+INFO  19:36:22,849 - #7 ;
+INFO  19:36:22,849 - #3 int
+INFO  19:36:22,849 - #3 i
+INFO  19:36:22,849 - #7 ;
+INFO  19:36:22,849 - #4 {
+INFO  19:36:22,849 - #23 if
+INFO  19:36:22,849 - #19 (
+INFO  19:36:22,849 - #3 cccc
+INFO  19:36:22,849 - #39 <
+INFO  19:36:22,850 - #37 >
+ERROR 19:36:22,850 - 
+Sintaksna greska
+INFO  19:36:22,850 - #10 c
+INFO  19:36:22,850 - #20 )
+INFO  19:36:22,850 - #3 p
+INFO  19:36:22,850 - #8 =
+INFO  19:36:22,850 - #12 blabla
+ERROR 19:36:22,850 - [Logicki izraz] Izvrsen oporavak do ) u liniji 30
+INFO  19:36:22,851 - #7 ;
+INFO  19:36:22,851 - #24 while
+INFO  19:36:22,851 - #19 (
+INFO  19:36:22,851 - #3 cccc
+INFO  19:36:22,851 - #39 <
+INFO  19:36:22,851 - #37 >
+ERROR 19:36:22,851 - 
+Sintaksna greska
+INFO  19:36:22,852 - #10 c
+INFO  19:36:22,852 - #20 )
+INFO  19:36:22,852 - #3 p
+INFO  19:36:22,852 - #8 =
+INFO  19:36:22,852 - #12 blabla
+ERROR 19:36:22,852 - [Logicki izraz] Izvrsen oporavak do ) u liniji 33
+INFO  19:36:22,852 - #7 ;
+INFO  19:36:22,852 - #23 if
+INFO  19:36:22,852 - #19 (
+INFO  19:36:22,852 - #3 b
+INFO  19:36:22,852 - #35 ==
+INFO  19:36:22,853 - #11 true
+ERROR 19:36:22,853 - 
+Sintaksna greska
+INFO  19:36:22,853 - #20 )
+INFO  19:36:22,853 - #3 b
+INFO  19:36:22,853 - #8 =
+INFO  19:36:22,853 - #9 0
+ERROR 19:36:22,853 - [Logicki izraz] Izvrsen oporavak do ) u liniji 36
+INFO  19:36:22,853 - #7 ;
+INFO  19:36:22,853 - #24 while
+INFO  19:36:22,853 - #19 (
+INFO  19:36:22,853 - #3 b
+INFO  19:36:22,854 - #35 ==
+INFO  19:36:22,854 - #11 true
+ERROR 19:36:22,854 - 
+Sintaksna greska
+INFO  19:36:22,854 - #20 )
+INFO  19:36:22,854 - #3 b
+INFO  19:36:22,854 - #8 =
+INFO  19:36:22,854 - #9 0
+ERROR 19:36:22,854 - [Logicki izraz] Izvrsen oporavak do ) u liniji 39
+INFO  19:36:22,854 - #7 ;
+INFO  19:36:22,854 - #3 i
+INFO  19:36:22,854 - #8 =
+INFO  19:36:22,854 - #9 0
+INFO  19:36:22,854 - #7 ;
+INFO  19:36:22,855 - #3 d
+INFO  19:36:22,855 - #8 =
+INFO  19:36:22,855 - #33 new
+INFO  19:36:22,855 - #3 int
+INFO  19:36:22,855 - #14 [
+INFO  19:36:22,855 - #9 5
+INFO  19:36:22,855 - #15 ]
+INFO  19:36:22,855 - #7 ;
+INFO  19:36:22,855 - #3 d
+INFO  19:36:22,855 - #14 [
+INFO  19:36:22,855 - #3 i
+INFO  19:36:22,856 - #21 ++
+ERROR 19:36:22,856 - 
+Sintaksna greska
+INFO  19:36:22,856 - #15 ]
+INFO  19:36:22,856 - #8 =
+INFO  19:36:22,856 - #9 2
+INFO  19:36:22,856 - #7 ;
+ERROR 19:36:22,856 - [Izraz za indeksiranje niza] Izvrsen oporavak do ] u liniji 44
+INFO  19:36:22,856 - #5 }
+INFO  19:36:22,856 - #5 }
+ERROR 19:36:22,856 - Parsiranje nije uspesno zavrseno!

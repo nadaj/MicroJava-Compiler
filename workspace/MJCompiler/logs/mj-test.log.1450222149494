@@ -1,0 +1,5 @@
+INFO  00:28:23,701 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  00:28:23,725 - #3 P
+ERROR 00:28:23,725 - 
+Sintaksna greska
+ERROR 00:28:23,725 - Fatalna greska, parsiranje se ne moze nastaviti

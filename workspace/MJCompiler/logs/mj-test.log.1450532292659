@@ -1,0 +1,118 @@
+INFO  14:37:46,693 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:37:46,698 - #2 program
+INFO  14:37:46,698 - #3 Prilepi
+INFO  14:37:46,698 - #3 int
+INFO  14:37:46,698 - #3 a
+INFO  14:37:46,698 - #13 ,
+INFO  14:37:46,698 - #3 b
+INFO  14:37:46,698 - #7 ;
+INFO  14:37:46,698 - #3 int
+INFO  14:37:46,698 - #3 manji
+INFO  14:37:46,698 - #13 ,
+INFO  14:37:46,698 - #3 veci
+INFO  14:37:46,699 - #13 ,
+INFO  14:37:46,699 - #3 step
+INFO  14:37:46,699 - #13 ,
+INFO  14:37:46,699 - #3 pom
+INFO  14:37:46,699 - #13 ,
+INFO  14:37:46,699 - #3 novi
+INFO  14:37:46,699 - #7 ;
+INFO  14:37:46,699 - #6 const
+INFO  14:37:46,699 - #3 int
+INFO  14:37:46,699 - #3 x
+INFO  14:37:46,699 - #8 =
+INFO  14:37:46,699 - #9 10
+INFO  14:37:46,699 - #7 ;
+INFO  14:37:46,700 - #4 {
+INFO  14:37:46,700 - #18 void
+INFO  14:37:46,700 - #3 main
+INFO  14:37:46,700 - #19 (
+INFO  14:37:46,700 - #20 )
+INFO  14:37:46,700 - #4 {
+INFO  14:37:46,700 - #27 read
+INFO  14:37:46,700 - #19 (
+INFO  14:37:46,700 - #3 a
+INFO  14:37:46,700 - #20 )
+INFO  14:37:46,700 - #7 ;
+INFO  14:37:46,700 - #27 read
+INFO  14:37:46,700 - #19 (
+INFO  14:37:46,700 - #3 b
+INFO  14:37:46,701 - #20 )
+INFO  14:37:46,701 - #7 ;
+INFO  14:37:46,701 - #3 novi
+INFO  14:37:46,701 - #8 =
+INFO  14:37:46,701 - #9 0
+INFO  14:37:46,701 - #7 ;
+INFO  14:37:46,701 - #23 if
+INFO  14:37:46,701 - #19 (
+INFO  14:37:46,701 - #3 a
+INFO  14:37:46,701 - #39 <
+INFO  14:37:46,701 - #3 b
+INFO  14:37:46,701 - #20 )
+INFO  14:37:46,701 - #4 {
+INFO  14:37:46,701 - #3 manji
+INFO  14:37:46,701 - #8 =
+INFO  14:37:46,701 - #3 a
+INFO  14:37:46,701 - #7 ;
+INFO  14:37:46,702 - #3 veci
+INFO  14:37:46,702 - #8 =
+INFO  14:37:46,702 - #3 b
+INFO  14:37:46,702 - #7 ;
+INFO  14:37:46,702 - #5 }
+INFO  14:37:46,702 - #28 else
+INFO  14:37:46,702 - #4 {
+INFO  14:37:46,702 - #3 manji
+INFO  14:37:46,702 - #8 =
+INFO  14:37:46,702 - #3 b
+INFO  14:37:46,702 - #7 ;
+INFO  14:37:46,702 - #3 veci
+INFO  14:37:46,702 - #8 =
+INFO  14:37:46,702 - #3 a
+INFO  14:37:46,702 - #7 ;
+INFO  14:37:46,702 - #5 }
+INFO  14:37:46,702 - #3 pom
+INFO  14:37:46,703 - #8 =
+INFO  14:37:46,703 - #3 manji
+INFO  14:37:46,703 - #7 ;
+INFO  14:37:46,703 - #24 while
+INFO  14:37:46,703 - #19 (
+INFO  14:37:46,703 - #3 pom
+INFO  14:37:46,703 - #37 >
+INFO  14:37:46,703 - #9 0
+INFO  14:37:46,703 - #20 )
+INFO  14:37:46,703 - #4 {
+INFO  14:37:46,703 - #3 pom
+INFO  14:37:46,703 - #8 =
+INFO  14:37:46,703 - #3 pom
+INFO  14:37:46,703 - #43 /
+INFO  14:37:46,703 - #3 x
+INFO  14:37:46,704 - #7 ;
+INFO  14:37:46,704 - #3 step
+INFO  14:37:46,704 - #8 =
+INFO  14:37:46,704 - #3 step
+INFO  14:37:46,704 - #42 *
+INFO  14:37:46,704 - #3 x
+INFO  14:37:46,704 - #7 ;
+INFO  14:37:46,704 - #5 }
+INFO  14:37:46,704 - #3 novi
+INFO  14:37:46,704 - #8 =
+INFO  14:37:46,704 - #3 veci
+INFO  14:37:46,704 - #42 *
+INFO  14:37:46,704 - #3 step
+INFO  14:37:46,704 - #41 +
+INFO  14:37:46,704 - #3 manji
+INFO  14:37:46,705 - #7 ;
+INFO  14:37:46,705 - #5 }
+INFO  14:37:46,705 - #5 }
+INFO  14:37:46,705 - Broj definicija globalnih promenljivih:7
+INFO  14:37:46,705 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  14:37:46,705 - Broj definicija globalnih konstanti:1
+INFO  14:37:46,705 - Broj deklaracija globalnih nizova:0
+INFO  14:37:46,705 - Broj definicija funkcija u glavnom programu:1
+INFO  14:37:46,705 - Broj blokova naredbi:3
+INFO  14:37:46,705 - Broj poziva funkcija u telu metode main:2
+INFO  14:37:46,705 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:37:46,705 - Broj definicija unutrasnjih klasa:0
+INFO  14:37:46,705 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:37:46,705 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:37:46,705 - Parsiranje je uspesno zavrseno!

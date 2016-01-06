@@ -1,0 +1,17 @@
+INFO  14:53:29,873 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:53:29,877 - #2 program
+INFO  14:53:29,877 - #3 MaxCifra
+INFO  14:53:29,877 - #3 int
+INFO  14:53:29,877 - #3 a
+INFO  14:53:29,877 - #13 ,
+INFO  14:53:29,877 - #3 c
+INFO  14:53:29,877 - #13 ,
+INFO  14:53:29,878 - #3 maxcif
+INFO  14:53:29,878 - #7 ;
+INFO  14:53:29,878 - #3 char
+INFO  14:53:29,878 - #3 e
+INFO  14:53:29,878 - #8 =
+ERROR 14:53:29,878 - 
+Sintaksna greska
+ERROR 14:53:29,878 - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 14:53:29,878 - Parsiranje nije uspesno zavrseno!

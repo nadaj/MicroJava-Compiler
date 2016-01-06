@@ -1,0 +1,4 @@
+INFO  17:39:45,725 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+ERROR 17:39:45,745 - Greska na liniji 94: ime povrsina nije funkcija!
+ERROR 17:39:45,746 - Greska na liniji 98: ime racunaj nije funkcija!
+ERROR 17:39:45,747 - Parsiranje nije uspesno zavrseno!

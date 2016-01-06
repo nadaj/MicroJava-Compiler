@@ -1,0 +1,73 @@
+INFO  15:21:18,440 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  15:21:18,452 - #2 program
+INFO  15:21:18,452 - #3 MJProgram
+INFO  15:21:18,452 - #3 int
+INFO  15:21:18,452 - #3 x
+INFO  15:21:18,452 - #7 ;
+INFO  15:21:18,452 - Deklarisana promenljiva x na liniji 2
+INFO  15:21:18,452 - #3 int
+INFO  15:21:18,452 - #3 y
+INFO  15:21:18,452 - #7 ;
+INFO  15:21:18,452 - Deklarisana promenljiva y na liniji 3
+INFO  15:21:18,453 - #4 {
+INFO  15:21:18,453 - #3 int
+INFO  15:21:18,453 - #3 k
+INFO  15:21:18,453 - #19 (
+INFO  15:21:18,453 - Obradjuje se funkcija k na liniji 7
+INFO  15:21:18,453 - #20 )
+INFO  15:21:18,453 - #3 int
+INFO  15:21:18,453 - #3 c
+INFO  15:21:18,453 - #7 ;
+INFO  15:21:18,453 - Deklarisana promenljiva c na liniji 7
+INFO  15:21:18,453 - #4 {
+INFO  15:21:18,454 - #3 c
+INFO  15:21:18,454 - #8 =
+INFO  15:21:18,454 - #9 0
+INFO  15:21:18,454 - #7 ;
+INFO  15:21:18,454 - #26 return
+INFO  15:21:18,454 - #3 c
+INFO  15:21:18,454 - #41 +
+INFO  15:21:18,454 - #9 3
+INFO  15:21:18,454 - #7 ;
+INFO  15:21:18,454 - #5 }
+INFO  15:21:18,454 - #18 void
+INFO  15:21:18,455 - #3 main
+INFO  15:21:18,455 - #19 (
+INFO  15:21:18,455 - Obradjuje se funkcija main na liniji 13
+INFO  15:21:18,455 - #20 )
+INFO  15:21:18,455 - #4 {
+INFO  15:21:18,455 - #29 print
+INFO  15:21:18,455 - #19 (
+INFO  15:21:18,455 - #9 1
+INFO  15:21:18,455 - #20 )
+INFO  15:21:18,455 - #7 ;
+INFO  15:21:18,455 - #3 x
+INFO  15:21:18,455 - #8 =
+INFO  15:21:18,455 - #3 y
+INFO  15:21:18,455 - #41 +
+INFO  15:21:18,455 - #9 3
+INFO  15:21:18,455 - #7 ;
+INFO  15:21:18,456 - #3 k
+INFO  15:21:18,456 - #19 (
+INFO  15:21:18,456 - #20 )
+INFO  15:21:18,456 - #7 ;
+INFO  15:21:18,456 - #29 print
+INFO  15:21:18,456 - Pronadjen poziv funkcije k na liniji 17
+INFO  15:21:18,456 - #19 (
+INFO  15:21:18,456 - #9 2
+INFO  15:21:18,456 - #20 )
+INFO  15:21:18,456 - #7 ;
+INFO  15:21:18,456 - #5 }
+INFO  15:21:18,456 - #5 }
+INFO  15:21:18,457 - Broj definicija globalnih promenljivih:2
+INFO  15:21:18,457 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  15:21:18,458 - Broj definicija globalnih konstanti:0
+INFO  15:21:18,458 - Broj deklaracija globalnih nizova:0
+INFO  15:21:18,458 - Broj definicija funkcija u glavnom programu:2
+INFO  15:21:18,458 - Broj blokova naredbi:0
+INFO  15:21:18,458 - Broj poziva funkcija u telu metode main:3
+INFO  15:21:18,458 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  15:21:18,458 - Broj definicija unutrasnjih klasa:0
+INFO  15:21:18,458 - Broj definicija metoda unutrasnjih klasa:0
+INFO  15:21:18,458 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  15:21:18,458 - Parsiranje je uspesno zavrseno!

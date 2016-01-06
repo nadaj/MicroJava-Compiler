@@ -1,0 +1,4 @@
+INFO  17:14:16,224 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+ERROR 17:14:16,246 - Greska na liniji 94: ime kvad nije funkcija!
+ERROR 17:14:16,248 - Greska na liniji 98: ime racunaj nije funkcija!
+ERROR 17:14:16,249 - Parsiranje nije uspesno zavrseno!

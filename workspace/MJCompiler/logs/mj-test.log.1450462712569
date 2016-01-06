@@ -1,0 +1,33 @@
+INFO  19:15:27,036 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  19:15:27,040 - #2 program
+INFO  19:15:27,041 - #3 Program
+INFO  19:15:27,041 - #16 class
+INFO  19:15:27,041 - #3 A
+INFO  19:15:27,041 - #4 {
+INFO  19:15:27,041 - #3 int
+INFO  19:15:27,041 - #3 x
+INFO  19:15:27,041 - #14 [
+INFO  19:15:27,041 - #15 ]
+INFO  19:15:27,041 - #13 ,
+INFO  19:15:27,041 - #3 y
+INFO  19:15:27,041 - #14 [
+INFO  19:15:27,042 - #15 ]
+INFO  19:15:27,042 - #7 ;
+INFO  19:15:27,042 - #5 }
+INFO  19:15:27,042 - #6 const
+INFO  19:15:27,042 - #3 int
+INFO  19:15:27,042 - #3 pi
+INFO  19:15:27,042 - #8 =
+INFO  19:15:27,042 - #9 3
+INFO  19:15:27,042 - #13 ,
+INFO  19:15:27,042 - #3 e
+INFO  19:15:27,042 - #8 =
+INFO  19:15:27,043 - #9 2
+INFO  19:15:27,043 - #7 ;
+INFO  19:15:27,043 - #3 int
+INFO  19:15:27,043 - #3 glob
+INFO  19:15:27,043 - #8 =
+ERROR 19:15:27,043 - 
+Sintaksna greska
+ERROR 19:15:27,043 - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 19:15:27,043 - Parsiranje nije uspesno zavrseno!

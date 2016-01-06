@@ -1,0 +1,53 @@
+INFO  14:25:40,930 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  14:25:40,935 - #2 program
+INFO  14:25:40,935 - #3 Program
+INFO  14:25:40,936 - #6 const
+INFO  14:25:40,936 - #3 int
+INFO  14:25:40,936 - #3 N
+INFO  14:25:40,936 - #8 =
+INFO  14:25:40,936 - #9 2
+INFO  14:25:40,936 - #7 ;
+INFO  14:25:40,936 - #6 const
+INFO  14:25:40,936 - #3 char
+INFO  14:25:40,936 - #3 c
+INFO  14:25:40,936 - #8 =
+INFO  14:25:40,937 - #10 a
+INFO  14:25:40,937 - #7 ;
+INFO  14:25:40,937 - #6 const
+INFO  14:25:40,937 - #3 bool
+INFO  14:25:40,937 - #3 flag
+INFO  14:25:40,937 - #8 =
+INFO  14:25:40,937 - #11 true
+INFO  14:25:40,937 - #7 ;
+INFO  14:25:40,937 - #6 const
+INFO  14:25:40,937 - #3 bool
+INFO  14:25:40,937 - #3 flag_f
+INFO  14:25:40,938 - #8 =
+INFO  14:25:40,938 - #11 false
+INFO  14:25:40,938 - #7 ;
+INFO  14:25:40,938 - #4 {
+INFO  14:25:40,938 - #18 void
+INFO  14:25:40,938 - #3 main
+INFO  14:25:40,938 - #19 (
+INFO  14:25:40,938 - #20 )
+INFO  14:25:40,939 - #3 int
+INFO  14:25:40,939 - #3 b
+INFO  14:25:40,940 - #7 ;
+INFO  14:25:40,940 - #3 bool
+INFO  14:25:40,940 - #3 c
+INFO  14:25:40,940 - #7 ;
+INFO  14:25:40,940 - #4 {
+INFO  14:25:40,940 - #5 }
+INFO  14:25:40,940 - #5 }
+INFO  14:25:40,941 - Broj definicija globalnih promenljivih:0
+INFO  14:25:40,941 - Broj definicija lokalnih promenljivih (u main funkciji):2
+INFO  14:25:40,941 - Broj definicija globalnih konstanti:4
+INFO  14:25:40,941 - Broj deklaracija globalnih nizova:0
+INFO  14:25:40,941 - Broj definicija funkcija u glavnom programu:1
+INFO  14:25:40,941 - Broj blokova naredbi:0
+INFO  14:25:40,941 - Broj poziva funkcija u telu metode main:0
+INFO  14:25:40,941 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  14:25:40,941 - Broj definicija unutrasnjih klasa:0
+INFO  14:25:40,941 - Broj definicija metoda unutrasnjih klasa:0
+INFO  14:25:40,941 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  14:25:40,941 - Parsiranje je uspesno zavrseno!

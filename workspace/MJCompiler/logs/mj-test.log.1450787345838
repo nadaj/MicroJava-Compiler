@@ -1,0 +1,47 @@
+INFO  13:16:48,564 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
+INFO  13:16:48,575 - #2 program
+INFO  13:16:48,575 - #3 MJProgram
+INFO  13:16:48,575 - #3 int
+INFO  13:16:48,575 - #3 x
+INFO  13:16:48,575 - #7 ;
+INFO  13:16:48,575 - Deklarisana promenljiva x na liniji 2
+INFO  13:16:48,576 - #3 int
+INFO  13:16:48,576 - #3 y
+INFO  13:16:48,576 - #7 ;
+INFO  13:16:48,576 - Deklarisana promenljiva y na liniji 3
+INFO  13:16:48,576 - #4 {
+INFO  13:16:48,576 - #18 void
+INFO  13:16:48,576 - #3 main
+INFO  13:16:48,576 - #19 (
+INFO  13:16:48,576 - #20 )
+INFO  13:16:48,576 - #4 {
+INFO  13:16:48,576 - #29 print
+INFO  13:16:48,576 - #19 (
+INFO  13:16:48,577 - #9 1
+INFO  13:16:48,577 - #20 )
+INFO  13:16:48,577 - #7 ;
+INFO  13:16:48,577 - #3 x
+INFO  13:16:48,577 - #8 =
+INFO  13:16:48,577 - #3 y
+INFO  13:16:48,577 - #41 +
+INFO  13:16:48,577 - #9 3
+INFO  13:16:48,577 - #7 ;
+INFO  13:16:48,577 - #29 print
+INFO  13:16:48,577 - #19 (
+INFO  13:16:48,578 - #9 2
+INFO  13:16:48,578 - #20 )
+INFO  13:16:48,578 - #7 ;
+INFO  13:16:48,578 - #5 }
+INFO  13:16:48,578 - #5 }
+INFO  13:16:48,578 - Broj definicija globalnih promenljivih:2
+INFO  13:16:48,578 - Broj definicija lokalnih promenljivih (u main funkciji):0
+INFO  13:16:48,578 - Broj definicija globalnih konstanti:0
+INFO  13:16:48,578 - Broj deklaracija globalnih nizova:0
+INFO  13:16:48,578 - Broj definicija funkcija u glavnom programu:1
+INFO  13:16:48,578 - Broj blokova naredbi:0
+INFO  13:16:48,578 - Broj poziva funkcija u telu metode main:2
+INFO  13:16:48,578 - Broj deklaracija formalnih argumenata funkcija:0
+INFO  13:16:48,578 - Broj definicija unutrasnjih klasa:0
+INFO  13:16:48,578 - Broj definicija metoda unutrasnjih klasa:0
+INFO  13:16:48,579 - Broj deklaracija polja unutrasnjih klasa:0
+INFO  13:16:48,579 - Parsiranje je uspesno zavrseno!
