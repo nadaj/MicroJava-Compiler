@@ -466,7 +466,7 @@ ClassName ::= IDENT:className
 					  currentClass = Tab.insert(Obj.Type, className.toString(), new Struct(Struct.Class));
 				  }
 				  else
-					  parser.report_error("[Greska]Linija: " + classNameleft + "\t" + className + " je vec deklarisano", null);
+					  parser.report_error("[Greska]Linija: " + classNameleft + "\t" + varName + " je vec deklarisano", null);
 			  :};
 
 ClassBase ::= IDENT:baseName
@@ -659,7 +659,7 @@ FormPar ::= Type:methType IDENT:formVarName
 				parser.formal_param_cnt++;
 				if (parser.wrongReturnTypeOverride == false)
 				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
+					if (Tab.currentScope.findSymbol(constName.toString()) != null)
 				   		   parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
 					else 
 						Tab.insert(Obj.Var, formVarName.toString(), currentType);
@@ -682,7 +682,7 @@ FormPar ::= Type:methType IDENT:formVarName
 				parser.formal_param_cnt++;
 				if (parser.wrongReturnTypeOverride == false)
 				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
+					if (Tab.currentScope.findSymbol(constName.toString()) != null)
 				   		parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
 					else 
 						Tab.insert(Obj.Var, formVarName.toString(), new Struct(Struct.Array, currentType));
@@ -1054,6 +1054,7 @@ DesignatorPart ::= LBRACKET Expr RBRACKET
 							   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + namePartleft + " (" + namePart.toString() + ")" + ", nadjeno " + parser.writeObj(tempSubObj), null);
 						   lastClass = namePartleft;
 					   }
+					   //}
 					   RESULT = tempSubObj;
 				   :};
 

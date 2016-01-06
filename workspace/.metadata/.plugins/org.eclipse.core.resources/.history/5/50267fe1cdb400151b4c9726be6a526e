@@ -460,13 +460,8 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 
 ClassName ::= IDENT:className
 			  {:
-				  if (Tab.currentScope.findSymbol(className.toString()) == null)
-				  {
-					  parser.inner_class_cnt++;
-					  currentClass = Tab.insert(Obj.Type, className.toString(), new Struct(Struct.Class));
-				  }
-				  else
-					  parser.report_error("[Greska]Linija: " + classNameleft + "\t" + className + " je vec deklarisano", null);
+				  parser.inner_class_cnt++;
+				  currentClass = Tab.insert(Obj.Type, className.toString(), new Struct(Struct.Class));
 			  :};
 
 ClassBase ::= IDENT:baseName
@@ -658,12 +653,7 @@ FormPar ::= Type:methType IDENT:formVarName
 			{: 
 				parser.formal_param_cnt++;
 				if (parser.wrongReturnTypeOverride == false)
-				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
-				   		   parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
-					else 
-						Tab.insert(Obj.Var, formVarName.toString(), currentType);
-				}
+					Tab.insert(Obj.Var, formVarName.toString(), currentType);
 				if (overridenMethod != null && parser.mismatched == true)
 				{
 					int i = 0;
@@ -680,13 +670,7 @@ FormPar ::= Type:methType IDENT:formVarName
 			Type IDENT:formVarName LBRACKET RBRACKET 
 			{: 
 				parser.formal_param_cnt++;
-				if (parser.wrongReturnTypeOverride == false)
-				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
-				   		parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
-					else 
-						Tab.insert(Obj.Var, formVarName.toString(), new Struct(Struct.Array, currentType));
-				}
+				Tab.insert(Obj.Var, formVarName.toString(), new Struct(Struct.Array, currentType));
 				if (overridenMethod != null && parser.mismatched == true)
 				{
 					int i = 0;
@@ -1038,6 +1022,12 @@ DesignatorPart ::= LBRACKET Expr RBRACKET
 				   |
 				   DOT IDENT:namePart
 				   {:
+//					   if(currentDesignator.getType().getKind() != Struct.Class) moze i niz da bude 
+//					   {
+//						   parser.report_error("Greska na liniji " + lastClass + ": ocekivana klasa! " , null);
+//					   }
+//					   else
+//					   {
 					   Obj tempSubObj = Tab.noObj; 
 					   if (currentDesignator.getType().getKind() == Struct.Array)
 						   tempSubObj = currentDesignator.getType().getElemType().getMembersTable().searchKey(namePart.toString());
@@ -1054,6 +1044,7 @@ DesignatorPart ::= LBRACKET Expr RBRACKET
 							   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + namePartleft + " (" + namePart.toString() + ")" + ", nadjeno " + parser.writeObj(tempSubObj), null);
 						   lastClass = namePartleft;
 					   }
+					   //}
 					   RESULT = tempSubObj;
 				   :};
 
