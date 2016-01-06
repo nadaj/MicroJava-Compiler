@@ -1,0 +1,5 @@
+INFO  15:02:30,178 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 15:02:30,188 - Greska na liniji 11: imei nije deklarisano! 
+ERROR 15:02:30,189 - Greska na liniji 11: imex nije deklarisano! 
+ERROR 15:02:30,201 - Greska na liniji 56: imegetValue nije deklarisano! 
+ERROR 15:02:30,202 - Parsiranje nije uspesno zavrseno!

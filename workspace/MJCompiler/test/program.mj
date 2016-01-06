@@ -1,12 +1,16 @@
 program MJProgram
 	class A{
 		int x[],y[];
+		{
+			int b(int i){return i;}
+		}
 	}
 	
 	
 	class B extends A          {
 		int i;int a; 
 		{
+			char b(int j)int k;char t;{return i;}
 			int getValue(int a)int b; bool c;
 			{ return this.i + this.x[0] + a; }
 		}
@@ -14,10 +18,14 @@ program MJProgram
 	
 	class C {
 		A theA;
+		B theB;
 		int x[];
 		int i;
 	}
-	
+	const int pp = "fdsfs";
+	const string nekistring = "blabla";
+	const string nestotamo = "nestonesto";
+	const int a = 5;
 	int x, y,e,g ;
    string dt[] ;
 {
@@ -27,8 +35,9 @@ program MJProgram
 		return a;
 	}
 	
-	void main() A a; C c,r, u[]; int i, x[],g;
+	void main() A a; C c,r, u[]; int i, x[],g; string n;
 	{
+		n = nekistring;
 		a = new A;
 		a.x = new int[5];
 		a.y = new int[5];
@@ -50,7 +59,7 @@ program MJProgram
 			read(c.theA.x[i]);
 			inkrem(i);
 		}
-		print(c.getValue(c.theA.x[0]));
+		print(c.theB.getValue(c.theA.x[0]));
 	}
 }
 //Global vars = 5

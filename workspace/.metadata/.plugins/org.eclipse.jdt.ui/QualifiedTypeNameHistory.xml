@@ -5,4 +5,10 @@
 <fullyQualifiedTypeName name="org.apache.log4j.Appender"/>
 <fullyQualifiedTypeName name="org.apache.log4j.FileAppender"/>
 <fullyQualifiedTypeName name="rs.ac.bg.etf.pp1.util.DumpSymbolTableVisitorModified"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.LinkedList"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.structure.SymbolDataStructure"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.symboltable.structure.HashTableDataStructure"/>
 </qualifiedTypeNameHistroy>

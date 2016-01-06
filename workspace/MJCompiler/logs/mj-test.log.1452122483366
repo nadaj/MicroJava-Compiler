@@ -1,0 +1,3 @@
+INFO  00:20:28,254 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 00:20:28,278 - [Greska]Linija: 13	b ne odgovara potpisu natklase!
+ERROR 00:20:28,300 - Parsiranje nije uspesno zavrseno!

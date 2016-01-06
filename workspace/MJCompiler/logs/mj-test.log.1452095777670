@@ -1,0 +1,3 @@
+INFO  16:55:58,500 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 16:55:58,518 - [Greska]Linija: 24	a je vec deklarisano
+ERROR 16:55:58,531 - Parsiranje nije uspesno zavrseno!

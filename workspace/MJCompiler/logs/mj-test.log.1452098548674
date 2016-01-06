@@ -1,0 +1,5 @@
+INFO  17:42:14,239 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 17:42:14,248 - 
+Sintaksna greska
+ERROR 17:42:14,248 - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 17:42:14,249 - Parsiranje nije uspesno zavrseno!

@@ -1,0 +1,4 @@
+INFO  15:07:30,952 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 15:07:30,963 - Greska na liniji 11: ime i nije deklarisano! 
+ERROR 15:07:30,963 - Greska na liniji 11: ime x nije deklarisano! 
+ERROR 15:07:30,978 - Parsiranje nije uspesno zavrseno!
