@@ -1,3 +1,0 @@
-INFO  00:16:24,461 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 00:16:24,474 - [Greska]Linija: 13	b se razlikuje od metode natklase po povratnom tipu!
-ERROR 00:16:24,493 - Parsiranje nije uspesno zavrseno!

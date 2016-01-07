@@ -1,7 +1,0 @@
-INFO  14:21:18,299 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
-INFO  14:21:18,304 - #2 program
-INFO  14:21:18,304 - #3 Program
-ERROR 14:21:18,304 - 
-Sintaksna greska
-ERROR 14:21:18,304 - Fatalna greska, parsiranje se ne moze nastaviti
-ERROR 14:21:18,304 - Parsiranje nije uspesno zavrseno!

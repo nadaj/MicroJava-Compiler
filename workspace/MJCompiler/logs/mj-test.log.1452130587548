@@ -1,3 +1,0 @@
-INFO  01:54:02,555 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 01:54:02,579 - [Greska]Linija: 65	Parametri pri pozivu metode len moraju biti tipa string ili array!
-ERROR 01:54:02,580 - Parsiranje nije uspesno zavrseno!

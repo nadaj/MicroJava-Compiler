@@ -1,4 +1,0 @@
-INFO  20:27:56,146 - Compiling source file: C:\pp1domaci\workspace\MJCompiler\test\program.mj
-ERROR 20:27:56,169 - Greska na liniji 44: klasa this nije deklarisana! 
-ERROR 20:27:56,169 - Greska na liniji 44: klasa this nije deklarisana! 
-ERROR 20:27:56,170 - Parsiranje nije uspesno zavrseno!

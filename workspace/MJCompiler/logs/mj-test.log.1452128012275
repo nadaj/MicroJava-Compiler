@@ -1,3 +1,0 @@
-INFO  01:52:41,913 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 01:52:41,932 - [Greska]Linija: 41	Parametri pri pozivu metode chr mora biti tipa int!
-ERROR 01:52:41,944 - Parsiranje nije uspesno zavrseno!

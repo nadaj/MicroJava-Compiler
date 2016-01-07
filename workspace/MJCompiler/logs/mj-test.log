@@ -7,3 +7,25 @@ INFO  02:46:45,029 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompile
 INFO  02:46:51,346 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
 ERROR 02:46:51,377 - [Greska]Linija: 65	Funkcija len pri pozivu ima 1 parametar tipa string ili array!
 ERROR 02:46:51,379 - Parsiranje nije uspesno zavrseno!
+INFO  02:47:27,875 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:47:27,907 - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 02:47:27,908 - Parsiranje nije uspesno zavrseno!
+INFO  02:47:31,729 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:47:36,455 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:47:36,488 - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 02:47:36,489 - Parsiranje nije uspesno zavrseno!
+INFO  02:49:29,439 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:49:29,479 - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 02:49:29,480 - Parsiranje nije uspesno zavrseno!
+INFO  02:53:49,899 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:53:49,940 - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 02:53:49,941 - Parsiranje nije uspesno zavrseno!
+INFO  02:54:48,432 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:54:48,463 - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 02:54:48,464 - Parsiranje nije uspesno zavrseno!
+INFO  20160107@02:57:49,925:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@02:57:49,967:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 20160107@02:57:49,968:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
+INFO  20160107@02:58:31,574:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@02:58:31,603:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 65	Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 20160107@02:58:31,604:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -1,4 +1,0 @@
-INFO  01:19:31,720 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 01:19:31,737 - [Greska]Linija: 38	main mora da bude void metoda!
-ERROR 01:19:31,737 - [Greska]Linija: 38	j ne sme da bude parametar main metode jer main nema parametre!
-ERROR 01:19:31,750 - Parsiranje nije uspesno zavrseno!

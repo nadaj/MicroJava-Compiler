@@ -62,7 +62,7 @@ program MJProgram
 			inkrem(i);
 		}
 		print(c.theB.getValue(c.theA.x[0]));
-		fff = chr(c);
+		fff = chr(i,i);
 	}
 }
 //Global vars = 5
