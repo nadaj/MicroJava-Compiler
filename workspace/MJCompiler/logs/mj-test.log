@@ -1,3 +1,3 @@
-INFO  00:22:06,044 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 00:22:06,056 - [Greska]Linija: 13	b se razlikuje od metode natklase po povratnom tipu!
-ERROR 00:22:06,073 - Parsiranje nije uspesno zavrseno!
+INFO  01:54:02,555 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 01:54:02,579 - [Greska]Linija: 65	Parametri pri pozivu metode len moraju biti tipa string ili array!
+ERROR 01:54:02,580 - Parsiranje nije uspesno zavrseno!

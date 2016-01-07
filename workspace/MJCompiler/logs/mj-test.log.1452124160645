@@ -1,0 +1,4 @@
+INFO  00:48:52,708 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 00:48:52,721 - [Greska]Linija: 13	j je vec deklarisano
+ERROR 00:48:52,722 - [Greska]Linija: 13	b ne odgovara potpisu natklase!
+ERROR 00:48:52,739 - Parsiranje nije uspesno zavrseno!

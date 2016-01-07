@@ -10,7 +10,7 @@ program MJProgram
 	class B extends A          {
 		int i;int a; 
 		{
-			char b(int j)int k;char t;{return i;}
+			int b(int j)int k;char t;{return i;}
 			int getValue(int a)int b; bool c;
 			{ return this.i + this.x[0] + a; }
 		}
@@ -35,7 +35,8 @@ program MJProgram
 		return a;
 	}
 	
-	void main() A a; C c,r, u[]; int i, x[],g; string n;
+	void main() A a; C c,r, u[]; int i, x[],g; string n;char fff;
+	
 	{
 		n = nekistring;
 		a = new A;
@@ -54,12 +55,14 @@ program MJProgram
 		x = new int[3];
 		i=0;
 		read(c.i);
+		
 		while(i<5) {
 			read(c.x[i]); 
 			read(c.theA.x[i]);
 			inkrem(i);
 		}
 		print(c.theB.getValue(c.theA.x[0]));
+		fff = len(i);
 	}
 }
 //Global vars = 5

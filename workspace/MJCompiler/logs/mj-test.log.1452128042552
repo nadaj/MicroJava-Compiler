@@ -1,0 +1,3 @@
+INFO  01:53:55,391 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 01:53:55,419 - [Greska]Linija: 65	Parametri pri pozivu metode ord mora biti tipa int!
+ERROR 01:53:55,420 - Parsiranje nije uspesno zavrseno!

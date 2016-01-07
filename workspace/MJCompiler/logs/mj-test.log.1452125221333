@@ -1,0 +1,3 @@
+INFO  01:03:38,186 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 01:03:38,203 - [Greska]Linija: 38	b ne sme da bude parametar main metode jer main nema parametre!
+ERROR 01:03:38,216 - Parsiranje nije uspesno zavrseno!

@@ -511,7 +511,7 @@ MethodDeclPart ::= MethodName:methName OpenScope
 				   LPAREN MethodPars:numForPars 
 				   {:
 					   	// level = broj formalnih parametara
-					   if (!parser.wrongReturnTypeOverride)
+					   if (!parser.wrongReturnTypeOverride && !parser.mainMethod)
 					   {
 						   	currentMethod.setLevel(currentMethod.getLevel() + (int)numForPars);
 						    if (overridenMethod != null)
@@ -559,7 +559,11 @@ MethodDeclPart ::= MethodName:methName OpenScope
 MethodName ::= IDENT:methName
 			   {:
 				   if (methName.equals("main")) 
+				   {
+					   if (!currentType.equals(Tab.noType))
+						   parser.report_error("[Greska]Linija: " + methNameleft + "\t" + methName.toString() + " mora da bude void metoda!", null);
 					   parser.mainMethod = true;
+				   }
 			  	   
 				   // da li je takva metoda sa tim imenom vec deklarisana i nije u pitanju nasledjena metoda
 				   if (Tab.currentScope.findSymbol(methName.toString()) != null && baseClass == null)
@@ -659,7 +663,9 @@ FormPar ::= Type:methType IDENT:formVarName
 				parser.formal_param_cnt++;
 				if (parser.wrongReturnTypeOverride == false)
 				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
+					if (parser.mainMethod)
+						   parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName.toString() + " ne sme da bude parametar main metode jer main nema parametre!", null);
+					else if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
 				   		   parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
 					else 
 						Tab.insert(Obj.Var, formVarName.toString(), currentType);
@@ -682,7 +688,9 @@ FormPar ::= Type:methType IDENT:formVarName
 				parser.formal_param_cnt++;
 				if (parser.wrongReturnTypeOverride == false)
 				{
-					if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
+					if (parser.mainMethod)
+						   parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName.toString() + " ne sme da bude parametar main metode jer main nema parametre!", null);
+					else if (Tab.currentScope.findSymbol(formVarName.toString()) != null)
 				   		parser.report_error("[Greska]Linija: " + formVarNameleft + "\t" + formVarName + " je vec deklarisano", null);
 					else 
 						Tab.insert(Obj.Var, formVarName.toString(), new Struct(Struct.Array, currentType));
@@ -750,11 +758,23 @@ StatementMatched ::= Assignment
 					  Designator:func LPAREN ActPars RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
+					  	  if (func.getName().equals("chr") && !currentDesignator.getType().equals(Tab.intType))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode chr mora biti tipa int!", null);  
+					  	  else if (func.getName().equals("ord") && !currentDesignator.getType().equals(Tab.charType))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+					  	  else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null);  
 					  :}
 					  |
 					  Designator:func LPAREN RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
+					  	  if (func.getName().equals("chr"))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tMora postojati 1 parametar metode chr tipa int!", null);  
+					  	  else if (func.getName().equals("ord"))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+					  	  else if (func.getName().equals("len"))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null); 					  	  
 					  :}
 					  |
 					  Designator INC SEMI_COMMA
@@ -776,9 +796,9 @@ StatementMatched ::= Assignment
 						  if (parser.mainMethod) parser.main_method_calls++; 
 					  :}
 					  |
-					  PRINT LPAREN Expr RPAREN SEMI_COMMA 
+					  PRINT LPAREN Expr:exprName RPAREN SEMI_COMMA 
 					  {: 
-						  if (parser.mainMethod) parser.main_method_calls++; 
+						  if (parser.mainMethod) parser.main_method_calls++;
 					  :}
 					  |
 					  PRINT LPAREN Expr COMMA NUMBER RPAREN SEMI_COMMA 
@@ -857,14 +877,26 @@ FactorList ::= FactorList Mulop Factor
 
 Factor ::= Designator
 		   |
-		   Designator:funcName LPAREN RPAREN 
+		   Designator:func LPAREN RPAREN 
 		   {: 
 			   if (parser.mainMethod) parser.main_method_calls++;
+			   if (func.getName().equals("chr"))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tMora postojati 1 parametar metode chr tipa int!", null);  
+			   else if (func.getName().equals("ord"))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+			   else if (func.getName().equals("len"))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null); 	
 		   :}
 		   |
 		   Designator:func LPAREN ActPars RPAREN  
 		   {: 
 			   if (parser.mainMethod) parser.main_method_calls++;
+			   if (func.getName().equals("chr") && !currentDesignator.getType().equals(Tab.intType))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode chr mora biti tipa int!", null);  
+			   else if (func.getName().equals("ord") && !currentDesignator.getType().equals(Tab.charType))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+			   else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null);  
 		   :}
 		   |
 		   Val
