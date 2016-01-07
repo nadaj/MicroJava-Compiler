@@ -1,0 +1,4 @@
+INFO  20160107@16:59:53,834:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:59:53,846:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13	b se razlikuje od metode natklase po povratnom tipu!
+ERROR 20160107@16:59:53,847:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13	Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160107@16:59:53,864:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

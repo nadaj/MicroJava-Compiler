@@ -1,0 +1,4 @@
+INFO  20160107@17:13:50,131:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@17:13:50,150:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 44: imefdfds nije deklarisano! 
+ERROR 20160107@17:13:50,151:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 44	nekistring nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160107@17:13:50,163:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -1,0 +1,3 @@
+INFO  20160107@16:21:44,775:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:21:44,790:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30	Tip rs.etf.pp1.symboltable.concepts.Obj@2c634b je neispravan
+ERROR 20160107@16:21:44,808:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -1,0 +1,2 @@
+INFO  20160107@17:34:37,646:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@17:34:37,665:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 44	nekistring nije promenljiva, element niza ili polje unutar objekta!

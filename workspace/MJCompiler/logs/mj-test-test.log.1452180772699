@@ -1,0 +1,3 @@
+INFO  20160107@16:32:39,783:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:32:39,797:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 25	Semanticka greska u tipu!
+ERROR 20160107@16:32:39,813:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

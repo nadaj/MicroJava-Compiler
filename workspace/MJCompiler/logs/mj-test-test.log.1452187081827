@@ -1,0 +1,7 @@
+INFO  20160107@18:16:32,255:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@18:16:32,275:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 44	nekistring nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160107@18:16:32,275:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 44	Tip nije kompatibilan pri dodeli sa nekistring!
+ERROR 20160107@18:16:32,279:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 52	Tip nije kompatibilan pri dodeli sa u!
+ERROR 20160107@18:16:32,280:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 53	Tip nije kompatibilan pri dodeli sa u!
+ERROR 20160107@18:16:32,281:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 56	Tip nije kompatibilan pri dodeli sa theA!
+ERROR 20160107@18:16:32,286:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

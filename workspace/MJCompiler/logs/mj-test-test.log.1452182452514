@@ -1,0 +1,3 @@
+INFO  20160107@17:00:43,219:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@17:00:43,233:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14	Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160107@17:00:43,249:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

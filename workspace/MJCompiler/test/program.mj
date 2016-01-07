@@ -6,8 +6,8 @@ program MJProgram
 		}
 	}
 	
-	
-	class B extends A          {
+	const string pp = "jdshfs";
+	class B extends A         {
 		int i;int a; 
 		{
 			int b(int j)int k;char t;{return i;}
@@ -22,10 +22,13 @@ program MJProgram
 		int x[];
 		int i;
 	}
-	const int pp = "fdsfs";
+	
 	const string nekistring = "blabla";
 	const string nestotamo = "nestonesto";
+	const bool fleg = false;
+
 	const int a = 5;
+	
 	int x, y,e,g ;
    string dt[] ;
 {
@@ -38,6 +41,7 @@ program MJProgram
 	void main() A a; C c,r, u[]; int i, x[],g; string n;char fff;
 	
 	{
+		//nekistring = "fdfds";
 		n = nekistring;
 		a = new A;
 		a.x = new int[5];
@@ -46,7 +50,7 @@ program MJProgram
 		c = new C;
 		c.theA = new A;
 		u[0].theA = new A;
-		u[0].theA.x = 5;
+		u[0].theA.x[0] = 5;
 		{
 		c.theA = a;
 		c.theA.x = new int[3];
@@ -62,7 +66,7 @@ program MJProgram
 			inkrem(i);
 		}
 		print(c.theB.getValue(c.theA.x[0]));
-		fff = chr(c);
+		//fff = chr(c);
 	}
 }
 //Global vars = 5

@@ -1,0 +1,4 @@
+INFO  20160107@16:39:44,728:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:39:44,744:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	Klasa a nije deklarisana!
+ERROR 20160107@16:39:44,746:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 15: imex nije deklarisano! 
+ERROR 20160107@16:39:44,764:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

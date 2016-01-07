@@ -1,0 +1,6 @@
+INFO  20160107@16:17:17,373:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:17:17,389:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 28	Nije pronadjen tip cont u tabeli simbola!
+ERROR 20160107@16:17:17,389:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160107@16:17:17,389:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160107@16:17:17,390:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

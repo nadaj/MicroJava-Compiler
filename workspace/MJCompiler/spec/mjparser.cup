@@ -197,9 +197,12 @@ action code {:
 	public static final Struct stringType = new Struct(6);
 	
 	Obj currentMethod = null, currentClass = null, currentDesignator = null, baseClass = null, overridenMethod = null;
+	Obj arrayType = null;
 	Struct currentType = Tab.noType;
 	int lastClass = 0;
-	
+	boolean isVoid = false, returnExists=false;	// za kontekstni uslov (return)
+	boolean hasDes = false;
+	int numBrack = 0;
 :}
 
 terminal PROGRAM, IDENT, LBRACE, RBRACE;
@@ -285,7 +288,7 @@ MethodDeclarationList ::= MethodDeclarationList MethodDecl
      ConstDecl
 ***********************************************************************/
     				  
-ConstDecl ::= CONST Type ConstDeclIdentList SEMI_COMMA;
+ConstDecl ::= CONST Type:currentType ConstDeclIdentList SEMI_COMMA;
 
 ConstDeclIdentList ::= ConstDeclIdentList COMMA ConstDeclIdent
 					   |
@@ -301,7 +304,9 @@ ConstDeclIdent ::= IDENT:constName EQUALS Val:constValue
 				   		   Obj cons = Tab.insert(Obj.Con, constName.toString(), currentType);
 				   		   cons.setAdr(((Obj) constValue).getAdr());						// adr = value
 				   		   if(((Obj) constValue).getType() != currentType)
-				   			   parser.report_error("[Greska]Linija: " + constValueleft + "\tTip " + constValue + " je neispravan", null);
+				   		   {
+				   			   parser.report_error("[Greska]Linija: " + constValueleft + "\tSemanticka greska u tipu!", null);
+				   		   }
 				   	   }	   
 				   :}
 				   |
@@ -314,6 +319,8 @@ ConstDeclIdent ::= IDENT:constName EQUALS Val:constValue
 				   	   {
 				   		   Obj cons = Tab.insert(Obj.Con, constName.toString(), boolType);
 				   		   cons.setAdr((boolean)constValue? 1:0);						// adr = value
+				   		   if (currentType.getKind() != Struct.Bool)
+				   			parser.report_error("[Greska]Linija: " + constValueleft + "\tSemanticka greska u tipu!", null);
 				   	   }
 				   :}
 				   |
@@ -327,6 +334,8 @@ ConstDeclIdent ::= IDENT:constName EQUALS Val:constValue
 				   		   Obj cons = Tab.insert(Obj.Con, constName.toString(), stringType);
 				   		   cons.setAdr(parser.stringKonstante.size());
 				   		   parser.stringKonstante.add(constValue.toString());
+				   		   if (currentType.getKind() != 6)
+				   			parser.report_error("[Greska]Linija: " + constValueleft + "\tSemanticka greska u tipu!", null);
 				   	   }
 				   :};
 
@@ -408,7 +417,16 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 			  CLASS ClassName:className EXTENDS ClassBase:baseClassName OpenScope 
 			  {:
 				  baseClass = Tab.find(baseClassName.toString());
-				  
+				  if (baseClass == Tab.noObj)
+				  {
+					  parser.report_error("[Greska]Linija: " + baseClassNameleft + "\tKlasa " + baseClassName + " nije deklarisana!", null);
+				  }
+				  else if (baseClass.getType().getKind() != Struct.Class)
+				  {
+					  parser.report_error("[Greska]Linija: " + baseClassNameleft + "\tOcekivana natklasa!", null);
+				  }
+					  
+					  
 				  // "kopira" polja natklase
 				  for (Obj o: baseClass.getType().getMembers())
 				  {
@@ -490,9 +508,19 @@ LocalMethodDeclList ::= LocalMethodDeclList MethodDecl
      MethodDecl
 ***********************************************************************/				  
 
-MethodDecl ::= Type MethodDeclPart
+MethodDecl ::= Type:t MethodDeclPart
+			   {:
+				   isVoid = (t.equals(Tab.noType));
+			   :}
 			   |
-			   VOID {: currentType = Tab.noType; :} MethodDeclPart;
+			   VOID 
+			   {: 
+				   isVoid = true; currentType = Tab.noType; 
+			   :} 
+		       MethodDeclPart
+		       {: 
+		    	   isVoid = false; 
+		       :};
 				  
 MethodDeclPart ::= MethodName:methName OpenScope 
 				   {:
@@ -523,6 +551,12 @@ MethodDeclPart ::= MethodName:methName OpenScope
 				   :}
 				   RPAREN LocalVarDeclList LBRACE StatementList RBRACE
 				   {:
+					   if (!isVoid && !returnExists) 
+					   { 
+			             parser.report_error("[Greska]Linija: " + methNameleft + "\tMetod mora imati return iskaz jer nije deklarisan sa void!", null);
+			           }
+                       returnExists=false;
+
 					   if (!parser.wrongReturnTypeOverride)
 					   {
 						   Tab.chainLocalSymbols(currentMethod);
@@ -787,9 +821,19 @@ StatementMatched ::= Assignment
 					  |
 					  BREAK SEMI_COMMA
 					  |
-					  RETURN SEMI_COMMA	
+					  RETURN:dummy SEMI_COMMA
+					  {: 
+						  returnExists=true;
+			              if (!isVoid)
+			            	  parser.report_error("[Greska]Linija: " + dummyleft + "\tMetod mora imati return iskaz sa izrazom jer nije deklarisan sa void!", null);
+		              :}
 					  |
-					  RETURN Expr SEMI_COMMA 
+					  RETURN:dummy Expr SEMI_COMMA 
+					  {: 
+			               returnExists=true;
+				           if (isVoid)
+				        	   parser.report_error("[Greska]Linija: " + dummyleft + "\tMetod ne sme imati return sa izrazom jer je deklarisan sa void!", null);
+			          :}
 					  |
 					  READ LPAREN Designator RPAREN SEMI_COMMA 
 					  {: 
@@ -811,7 +855,17 @@ StatementMatched ::= Assignment
 						  parser.statement_cnt++; 
 					  :};
 
-Assignment ::= Designator EQUALS Expr SEMI_COMMA;
+Assignment ::= Designator:d EQUALS Expr:name SEMI_COMMA
+				{:
+					if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
+					{
+						parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
+					}
+					if (!((Struct)name).assignableTo(d.getType()))
+					{
+						parser.report_error("[Greska]Linija: " + nameleft + "\tTip nije kompatibilan pri dodeli sa " + d.getName() + "!", null);
+					}
+				:};
 
 /***********************************************************************
      ActPars
@@ -859,29 +913,53 @@ CondFact ::= Expr
      Expr
 ***********************************************************************/
 
-Expr ::= MINUS ExprPart 
+Expr ::= MINUS ExprPart:name 
+		 {:
+			 RESULT = name;
+		 :}
 		 |
-		 ExprPart;
+		 ExprPart:name
+		 {:
+			 RESULT = name;
+		 :};
 
-ExprPart ::= ExprPart Addop Term
+ExprPart ::= ExprPart Addop Term:name
+			 {:
+				 RESULT = name;
+			 :}
 			 |
-			 Term;
+			 Term:name
+			 {:
+				 RESULT = name;
+			 :};
 
 /***********************************************************************
      Term
 ***********************************************************************/
 
-Term ::= FactorList;
+Term ::= FactorList:name
+		 {:
+			 RESULT = name;
+		 :};
 
-FactorList ::= FactorList Mulop Factor
+FactorList ::= FactorList Mulop Factor:name
+			   {:
+				   RESULT = name;
+			   :}
 			   |
-			   Factor;
+			   Factor:name
+			   {:
+				   RESULT = name;
+			   :};
 
 /***********************************************************************
      Factor
 ***********************************************************************/
 
-Factor ::= Designator
+Factor ::= Designator:name
+		   {:
+			   RESULT = name.getType();
+		   :}
 		   |
 		   Designator:func LPAREN RPAREN 
 		   {: 
@@ -892,6 +970,7 @@ Factor ::= Designator
 				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
 			   else if (func.getName().equals("len"))
 				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null); 	
+			   RESULT = func.getType();
 		   :}
 		   |
 		   Designator:func LPAREN ActPars:numActPars RPAREN  
@@ -903,11 +982,18 @@ Factor ::= Designator
 		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija ord pri pozivu ima 1 parametar tipa char!", null);  
 		  	   else if (func.getName().equals("len") && ((currentDesignator.getType().getKind() != 6 && currentDesignator.getType().getKind() != Struct.Array)  || (int)numActPars > 1))
 		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija len pri pozivu ima 1 parametar tipa string ili array!", null);  
+		  	   RESULT = func.getType();
 		   :}
 		   |
-		   Val
+		   Val:name
+		   {:
+			   RESULT = name.getType();
+		   :}
 		   |
-		   STRCONST
+		   STRCONST:name
+		   {:
+			   RESULT = stringType;
+		   :}
 		   |
 		   NEW Type:someType
 		   {:
@@ -916,6 +1002,7 @@ Factor ::= Designator
 			   {
 				   parser.report_info("Pravljenje objekta unutrasnje klase: Pretraga na " + someTypeleft + "(" + obj.getName() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 			   }
+			   RESULT = currentType;
 		   :}
 		   |
 		   NEW Type:someType LBRACKET Expr RBRACKET
@@ -925,9 +1012,13 @@ Factor ::= Designator
 			   {
 				   parser.report_info("Pravljenje objekta unutrasnje klase: Pretraga na " + someTypeleft + "(" + obj.getName() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 			   }
+			   RESULT = new Struct(Struct.Array, currentType);
 		   :}
 		   |
-		   LPAREN Expr RPAREN;
+		   LPAREN Expr:name RPAREN
+		   {:
+			   RESULT = name;
+		   :};
 			
 /***********************************************************************
      Designator
@@ -951,6 +1042,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 					   {
 						   subobj = obj.getType().getMembersTable().searchKey(namesub.toString());
 						   RESULT = subobj;
+						   arrayType = subobj;
 						   if(subobj == null && !name.toString().equals("this"))
 							   parser.report_error("Greska na liniji " + namesubleft + ": ime " + namesub.toString() + " nije deklarisano! " , null);
 						   else
@@ -970,6 +1062,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 									   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + namesubleft + " (" + namesub.toString() + ")" + ", nadjeno " + parser.writeObj(prekoThis), null);
 								   }
 								   RESULT = prekoThis;
+								   arrayType = prekoThis;
 							   }
 							   else
 							   {
@@ -984,7 +1077,15 @@ Designator ::= IDENT:name DOT IDENT:namesub
 					   }
 				   }  
 			   :}
-			   DesignatorList
+			   DesignatorList:namePart
+			   {:
+				   if (hasDes)
+				   {
+					   RESULT = (Obj)namePart;
+					   hasDes = false;
+				   }
+				   arrayType = null;
+			   :}
 			   |
 			   IDENT:name LBRACKET Expr RBRACKET 
 			   {:
@@ -994,11 +1095,31 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   parser.report_error("Greska na liniji " + nameleft + ": ime" + name.toString() + " nije deklarisano! " , null);
 			   	   }
 			   	   else
+			   	   {
+			   		   if (obj.getType().getKind() == Struct.Array)
+			   		   {
+			   			   RESULT = new Obj(Obj.Elem, "", obj.getType().getElemType());
+			   			   arrayType = RESULT;
+			   		   }
+			   		   else
+			   		   {
+			   			   parser.report_error("Greska na liniji " + nameleft + ": ime" + name.toString() + " nije tipa niz! " , null);
+			   		   }
 			   		   currentDesignator = obj;
+			   	   }
 			   	   lastClass = nameleft;
-				   RESULT = obj;
+			   	   
+				   //RESULT = obj;
 			   :}
-			   DesignatorList
+			   DesignatorList:namePart
+			   {:
+				   if (hasDes)
+				   {
+					   RESULT = (Obj)namePart;
+					   hasDes = false;
+				   }
+			   	   arrayType = null;
+			   :}
 			   |
 			   IDENT:name
 			   {:
@@ -1068,14 +1189,34 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   	   	RESULT = obj;
 			   :};
 
-DesignatorList ::= DesignatorList DesignatorPart
+DesignatorList ::= DesignatorList:res DesignatorPart:namePart
+				   {:
+					   if (numBrack == 2)
+					   {
+						   hasDes = true;
+						   RESULT = namePart;
+						   arrayType = (Obj)RESULT;
+					   }
+					   else
+					   {
+						   RESULT = new Obj(Obj.Elem, "", arrayType.getType().getElemType());
+						   arrayType = (Obj)RESULT;
+					   }
+				   :}
 				   |
-				   /* epsilon */;
+				   /* epsilon */
+				   {:
+					  hasDes = false; 
+				   :};
 			   
 DesignatorPart ::= LBRACKET Expr RBRACKET
+				   {:
+					   numBrack = 1;
+				   :}
 				   |
 				   DOT IDENT:namePart
 				   {:
+					   numBrack = 2;
 					   Obj tempSubObj = Tab.noObj; 
 					   if (currentDesignator.getType().getKind() == Struct.Array)
 						   tempSubObj = currentDesignator.getType().getElemType().getMembersTable().searchKey(namePart.toString());
@@ -1093,6 +1234,7 @@ DesignatorPart ::= LBRACKET Expr RBRACKET
 						   lastClass = namePartleft;
 					   }
 					   RESULT = tempSubObj;
+					   arrayType = tempSubObj;
 				   :};
 
 /***********************************************************************

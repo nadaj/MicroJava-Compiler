@@ -1,0 +1,2 @@
+INFO  20160107@19:51:02,113:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@19:51:02,135:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 53	Tip nije kompatibilan pri dodeli sa x!

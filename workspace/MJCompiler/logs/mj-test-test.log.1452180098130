@@ -1,0 +1,3 @@
+INFO  20160107@16:19:58,915:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@16:19:58,930:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 28	Tip true je neispravan
+ERROR 20160107@16:19:58,947:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
