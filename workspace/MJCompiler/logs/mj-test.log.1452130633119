@@ -1,0 +1,3 @@
+INFO  02:36:40,784 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:36:40,820 - [Greska]Linija: 65	Funkcija len pri pozivu ima 1 parametar tipa string ili array!
+ERROR 02:36:40,821 - Parsiranje nije uspesno zavrseno!

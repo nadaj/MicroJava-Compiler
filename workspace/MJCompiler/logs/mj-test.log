@@ -1,3 +1,9 @@
-INFO  01:54:02,555 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 01:54:02,579 - [Greska]Linija: 65	Parametri pri pozivu metode len moraju biti tipa string ili array!
-ERROR 01:54:02,580 - Parsiranje nije uspesno zavrseno!
+INFO  02:43:09,349 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:46:31,037 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:46:40,965 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:46:40,991 - [Greska]Linija: 65	Funkcija len pri pozivu ima 1 parametar tipa string ili array!
+ERROR 02:46:40,993 - Parsiranje nije uspesno zavrseno!
+INFO  02:46:45,029 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+INFO  02:46:51,346 - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 02:46:51,377 - [Greska]Linija: 65	Funkcija len pri pozivu ima 1 parametar tipa string ili array!
+ERROR 02:46:51,379 - Parsiranje nije uspesno zavrseno!

@@ -762,7 +762,7 @@ StatementMatched ::= Assignment
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
 					  	  else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija ord pri pozivu ima 1 parametar tipa char!", null);  
-					  	  else if (func.getName().equals("len") && ((currentDesignator.getType().getKind() != 6 && currentDesignator.getType().getKind() != Struct.Array ) || (int)numActPars > 1))
+					  	  else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array  || (int)numActPars > 1)))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija len pri pozivu ima 1 parametar tipa string ili array!", null);  
 					  :}
 					  |
@@ -901,7 +901,7 @@ Factor ::= Designator
 		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
 		  	   else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
 		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija ord pri pozivu ima 1 parametar tipa char!", null);  
-		  	   else if (func.getName().equals("len") && ((currentDesignator.getType().getKind() != 6 && currentDesignator.getType().getKind() != Struct.Array)  || (int)numActPars > 1))
+		  	   else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array  || (int)numActPars > 1)))
 		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija len pri pozivu ima 1 parametar tipa string ili array!", null);  
 		   :}
 		   |

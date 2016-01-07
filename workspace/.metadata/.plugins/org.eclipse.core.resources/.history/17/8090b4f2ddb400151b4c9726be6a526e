@@ -755,15 +755,15 @@ StatementUnmatched ::= IF LPAREN ConditionFixed RPAREN Statement
 					   
 StatementMatched ::= Assignment
 					  |
-					  Designator:func LPAREN ActPars:numActPars RPAREN SEMI_COMMA  
+					  Designator:func LPAREN ActPars RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-					  	  if (func.getName().equals("chr") && (!currentDesignator.getType().equals(Tab.intType) || (int)numActPars > 1))
-					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
-					  	  else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
-					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija ord pri pozivu ima 1 parametar tipa char!", null);  
-					  	  else if (func.getName().equals("len") && ((currentDesignator.getType().getKind() != 6 && currentDesignator.getType().getKind() != Struct.Array ) || (int)numActPars > 1))
-					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija len pri pozivu ima 1 parametar tipa string ili array!", null);  
+					  	  if (func.getName().equals("chr") && !currentDesignator.getType().equals(Tab.intType))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode chr mora biti tipa int!", null);  
+					  	  else if (func.getName().equals("ord") && !currentDesignator.getType().equals(Tab.charType))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+					  	  else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array))
+					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null);  
 					  :}
 					  |
 					  Designator:func LPAREN RPAREN SEMI_COMMA  
@@ -817,15 +817,9 @@ Assignment ::= Designator EQUALS Expr SEMI_COMMA;
      ActPars
 ***********************************************************************/		  
 
-ActPars ::= Expr COMMA ActPars:numActPars
-			{:
-				RESULT = (int)numActPars + 1;
-			:}
+ActPars ::= Expr COMMA ActPars
 			|
-			Expr
-			{:
-				RESULT = 1;
-			:};	
+			Expr;	
 			 
 /***********************************************************************
      Condition
@@ -894,15 +888,15 @@ Factor ::= Designator
 				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null); 	
 		   :}
 		   |
-		   Designator:func LPAREN ActPars:numActPars RPAREN  
+		   Designator:func LPAREN ActPars RPAREN  
 		   {: 
 			   if (parser.mainMethod) parser.main_method_calls++;
-		  	   if (func.getName().equals("chr") && (!currentDesignator.getType().equals(Tab.intType) || (int)numActPars > 1))
-		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
-		  	   else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
-		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija ord pri pozivu ima 1 parametar tipa char!", null);  
-		  	   else if (func.getName().equals("len") && ((currentDesignator.getType().getKind() != 6 && currentDesignator.getType().getKind() != Struct.Array)  || (int)numActPars > 1))
-		  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija len pri pozivu ima 1 parametar tipa string ili array!", null);  
+			   if (func.getName().equals("chr") && !currentDesignator.getType().equals(Tab.intType))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode chr mora biti tipa int!", null);  
+			   else if (func.getName().equals("ord") && !currentDesignator.getType().equals(Tab.charType))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode ord mora biti tipa char!", null);  
+			   else if (func.getName().equals("len") && (currentDesignator.getType().getKind() != 6 || currentDesignator.getType().getKind() != Struct.Array))
+				   parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null);  
 		   :}
 		   |
 		   Val
