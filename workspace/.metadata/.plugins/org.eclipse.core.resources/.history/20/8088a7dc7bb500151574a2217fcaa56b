@@ -202,6 +202,7 @@ action code {:
 	int lastClass = 0;
 	boolean isVoid = false, returnExists=false;	// za kontekstni uslov (return)
 	boolean hasDes = false;
+	int inWhile = 0; 							// za proveru break-a
 	int numBrack = 0;
 :}
 
@@ -785,7 +786,14 @@ StatementUnmatched ::= IF LPAREN ConditionFixed RPAREN Statement
 					   |
 					   IF LPAREN ConditionFixed RPAREN StatementMatched ELSE StatementUnmatched
 					   |
-					   WHILE LPAREN ConditionFixed RPAREN StatementUnmatched;
+					   WHILE LPAREN ConditionFixed RPAREN 
+					   {:
+						   inWhile++;
+					   :}
+					   StatementUnmatched
+					   {:
+						   inWhile--;
+					   :};
 					   
 StatementMatched ::= Assignment
 					  |
@@ -841,9 +849,22 @@ StatementMatched ::= Assignment
 					  |
 					  IF LPAREN ConditionFixed RPAREN StatementMatched ELSE StatementMatched
 					  |
-					  WHILE LPAREN ConditionFixed RPAREN StatementMatched
+					  WHILE LPAREN ConditionFixed RPAREN 
+					  {:
+						  inWhile++;
+					  :}
+					  StatementMatched
+					  {:
+						  inWhile--;
+					  :}
 					  |
-					  BREAK SEMI_COMMA
+					  BREAK:dummy SEMI_COMMA
+					  {:
+						  if (inWhile == 0)
+						  {
+							  parser.report_error("[Greska]Linija: " + dummyleft + "\tBreak nije koriscen unutar while ciklusa!", null);
+						  }
+					  :}
 					  |
 					  RETURN:dummy SEMI_COMMA
 					  {: 

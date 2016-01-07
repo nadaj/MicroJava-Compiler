@@ -792,8 +792,6 @@ StatementMatched ::= Assignment
 					  Designator:func LPAREN ActPars:numActPars RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-						  if (func.getKind() != Obj.Meth)
-							  parser.report_error("[Greska]Linija: " + funcleft + "\t" + func.getName() + " nije metoda!", null);
 					  	  if (func.getName().equals("chr") && (!currentDesignator.getType().equals(Tab.intType) || (int)numActPars > 1))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
 					  	  else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
@@ -805,8 +803,6 @@ StatementMatched ::= Assignment
 					  Designator:func LPAREN RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-					  	  if (func.getKind() != Obj.Meth)
-							  parser.report_error("[Greska]Linija: " + funcleft + "\t" + func.getName() + " nije metoda!", null);
 					  	  if (func.getName().equals("chr"))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tMora postojati 1 parametar metode chr tipa int!", null);  
 					  	  else if (func.getName().equals("ord"))
@@ -815,29 +811,9 @@ StatementMatched ::= Assignment
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tParametri pri pozivu metode len moraju biti tipa string ili array!", null); 					  	  
 					  :}
 					  |
-					  Designator:d INC SEMI_COMMA
-					  {:
-						  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-						  {
-							  parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-						  }
-						  if (!d.getType().equals(Tab.intType))
-						  {
-							  parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije tipa int!", null);
-						  }
-					  :}
+					  Designator INC SEMI_COMMA
 					  |
-					  Designator:d DEC SEMI_COMMA
-					  {:
-						  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-						  {
-							  parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-						  }
-						  if (!d.getType().equals(Tab.intType))
-						  {
-							  parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije tipa int!", null);
-						  }
-					  :}
+					  Designator DEC SEMI_COMMA
 					  |
 					  IF LPAREN ConditionFixed RPAREN StatementMatched ELSE StatementMatched
 					  |
@@ -880,16 +856,16 @@ StatementMatched ::= Assignment
 					  :};
 
 Assignment ::= Designator:d EQUALS Expr:name SEMI_COMMA
-			   {:
-					  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-					  {
-						  parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-					  }
-					  if (!((Struct)name).assignableTo(d.getType()))
-					  {
-						  parser.report_error("[Greska]Linija: " + nameleft + "\tTip nije kompatibilan pri dodeli sa " + d.getName() + "!", null);
-					  }
-			   :};
+				{:
+					if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
+					{
+						parser.report_error("[Greska]Linija: " + dleft + "\t" + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
+					}
+					if (!((Struct)name).assignableTo(d.getType()))
+					{
+						parser.report_error("[Greska]Linija: " + nameleft + "\tTip nije kompatibilan pri dodeli sa " + d.getName() + "!", null);
+					}
+				:};
 
 /***********************************************************************
      ActPars

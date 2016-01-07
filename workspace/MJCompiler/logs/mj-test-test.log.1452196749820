@@ -1,0 +1,3 @@
+INFO  20160107@20:58:08,934:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@20:58:08,963:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 45: imeabc nije deklarisano! 
+ERROR 20160107@20:58:08,975:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -42,7 +42,7 @@ program MJProgram
 	
 	{
 		//nekistring = "fdfds";
-		a.b(i);
+		n++;
 		n = nekistring;
 		a = new A;
 		a.x = new int[5];

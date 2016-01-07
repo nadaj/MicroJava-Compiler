@@ -792,8 +792,6 @@ StatementMatched ::= Assignment
 					  Designator:func LPAREN ActPars:numActPars RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-						  if (func.getKind() != Obj.Meth)
-							  parser.report_error("[Greska]Linija: " + funcleft + "\t" + func.getName() + " nije metoda!", null);
 					  	  if (func.getName().equals("chr") && (!currentDesignator.getType().equals(Tab.intType) || (int)numActPars > 1))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tFunkcija chr pri pozivu ima 1 parametar tipa int!", null);  
 					  	  else if (func.getName().equals("ord") && (!currentDesignator.getType().equals(Tab.charType) || (int)numActPars > 1))
@@ -805,8 +803,6 @@ StatementMatched ::= Assignment
 					  Designator:func LPAREN RPAREN SEMI_COMMA  
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-					  	  if (func.getKind() != Obj.Meth)
-							  parser.report_error("[Greska]Linija: " + funcleft + "\t" + func.getName() + " nije metoda!", null);
 					  	  if (func.getName().equals("chr"))
 					  		  parser.report_error("[Greska]Linija: " + funcleft + "\tMora postojati 1 parametar metode chr tipa int!", null);  
 					  	  else if (func.getName().equals("ord"))
