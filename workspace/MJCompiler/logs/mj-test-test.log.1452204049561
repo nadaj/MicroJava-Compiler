@@ -1,0 +1,3 @@
+INFO  20160107@22:59:57,731:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@22:59:57,761:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 70	 Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160107@22:59:57,762:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -1,0 +1,4 @@
+INFO  20160108@01:46:19,051:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@01:46:19,071:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 47	Tipovi oba izraza moraju biti int!
+ERROR 20160108@01:46:19,072:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 47	Tip nije kompatibilan pri dodeli sa i!
+ERROR 20160108@01:46:19,087:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

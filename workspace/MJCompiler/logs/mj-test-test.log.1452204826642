@@ -1,0 +1,5 @@
+INFO  20160107@23:12:50,104:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@23:12:50,115:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 5	Povratni tip funkcije nije isti kao tip rs.etf.pp1.symboltable.concepts.Struct@2c634b!
+ERROR 20160107@23:12:50,118:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15	Povratni tip funkcije nije isti kao tip rs.etf.pp1.symboltable.concepts.Struct@2c634b!
+ERROR 20160107@23:12:50,122:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 38	Povratni tip funkcije nije isti kao tip rs.etf.pp1.symboltable.concepts.Struct@2c634b!
+ERROR 20160107@23:12:50,135:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

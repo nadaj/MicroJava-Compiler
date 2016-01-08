@@ -1,0 +1,2 @@
+INFO  20160108@00:40:55,867:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@00:40:55,885:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 45: imeb nije deklarisano! 

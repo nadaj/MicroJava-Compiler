@@ -1,0 +1,6 @@
+INFO  20160108@01:21:56,717:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@01:21:56,741:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 63	Tipovi oba izraza nisu kompatibilni!
+ERROR 20160108@01:21:56,742:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160108@01:21:56,742:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160108@01:21:56,743:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

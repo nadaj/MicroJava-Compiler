@@ -1,0 +1,5 @@
+INFO  20160108@01:38:44,042:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@01:38:44,061:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 45	Tipovi oba izraza nisu kompatibilni!
+ERROR 20160108@01:38:44,061:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 45	Tipovi oba izraza moraju biti int ili string!
+ERROR 20160108@01:38:44,061:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 45	Tip nije kompatibilan pri dodeli sa n!
+ERROR 20160108@01:38:44,074:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

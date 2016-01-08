@@ -42,6 +42,9 @@ program MJProgram
 	
 	{
 		//nekistring = "fdfds";
+		n = "mama" + "nada";
+		//i = 5 + c;
+
 		a.b(i);
 		n = nekistring;
 		a = new A;
@@ -66,7 +69,8 @@ program MJProgram
 			read(c.theA.x[i]);
 			inkrem(i);
 		}
-		print(c.theB.getValue(c.theA.x[0]));
+		print(c.theB.getValue(c.theA.x[0]),5);
+		
 		//fff = chr(c);
 	}
 }

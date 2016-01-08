@@ -1,0 +1,3 @@
+INFO  20160108@01:22:16,644:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@01:22:16,671:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 63	Tipovi oba izraza nisu kompatibilni!
+ERROR 20160108@01:22:16,674:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

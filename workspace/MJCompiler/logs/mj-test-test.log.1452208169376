@@ -1,0 +1,3 @@
+INFO  20160108@00:09:17,604:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@00:09:17,632:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 67	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije inkrem !
+ERROR 20160108@00:09:17,633:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

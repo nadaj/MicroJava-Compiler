@@ -1,0 +1,4 @@
+INFO  20160108@01:50:49,356:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@01:50:49,379:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 56	Tip za koji se kreira objekat mora da bude unutrasnja klasa!
+ERROR 20160108@01:50:49,379:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 56	Tip nije kompatibilan pri dodeli sa theA!
+ERROR 20160108@01:50:49,386:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

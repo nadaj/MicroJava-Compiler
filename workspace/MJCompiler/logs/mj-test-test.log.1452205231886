@@ -1,0 +1,3 @@
+INFO  20160107@23:20:18,787:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@23:20:18,798:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 5	Tip nije isti kao povratni tip funkcije!
+ERROR 20160107@23:20:18,818:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

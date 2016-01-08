@@ -1,0 +1,3 @@
+INFO  20160107@22:11:42,671:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160107@22:11:42,698:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 65	x nije tipa int, char, bool ili string!
+ERROR 20160107@22:11:42,700:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
