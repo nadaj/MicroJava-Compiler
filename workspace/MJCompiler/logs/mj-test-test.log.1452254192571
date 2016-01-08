@@ -1,0 +1,33 @@
+INFO  20160108@12:52:27,040:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@12:52:27,050:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 4	xc je vec deklarisano
+ERROR 20160108@12:52:27,052:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 10: ime sqrt nije deklarisano! 
+ERROR 20160108@12:52:27,052:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 10: ime sqr nije deklarisano! 
+ERROR 20160108@12:52:27,053:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije noObj !
+ERROR 20160108@12:52:27,053:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	noObj nije metoda!
+ERROR 20160108@12:52:27,054:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 10: ime sqr nije deklarisano! 
+ERROR 20160108@12:52:27,054:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije noObj !
+ERROR 20160108@12:52:27,054:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	noObj nije metoda!
+ERROR 20160108@12:52:27,055:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	Tipovi oba izraza moraju biti int ili string!
+ERROR 20160108@12:52:27,055:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije noObj !
+ERROR 20160108@12:52:27,055:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10	noObj nije metoda!
+ERROR 20160108@12:52:27,055:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9	Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160108@12:52:27,056:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14	Tip nije kompatibilan pri dodeli sa o!
+ERROR 20160108@12:52:27,057:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15	Tip nije isti kao povratni tip funkcije!
+ERROR 20160108@12:52:27,058:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19	Tip nije kompatibilan pri dodeli sa s!
+ERROR 20160108@12:52:27,058:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20	Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160108@12:52:27,058:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20	Tip nije isti kao povratni tip funkcije!
+ERROR 20160108@12:52:27,059:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 27	main mora da bude void metoda!
+ERROR 20160108@12:52:27,061:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 30: ime yc nije deklarisano! 
+ERROR 20160108@12:52:27,061:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30	noObj nije tipa int, char, bool ili string!
+ERROR 20160108@12:52:27,062:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 32	Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom x1!
+ERROR 20160108@12:52:27,063:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 34: ime yc nije deklarisano! 
+ERROR 20160108@12:52:27,063:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34	Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160108@12:52:27,063:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34	Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160108@12:52:27,063:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 37: ime yc nije deklarisano! 
+ERROR 20160108@12:52:27,064:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37	Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160108@12:52:27,064:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije distance !
+ERROR 20160108@12:52:27,065:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40	Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom a!
+ERROR 20160108@12:52:27,066:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40	Ne poklapa se broj formalnih i broj stvarnih parametara funkcije obim !
+ERROR 20160108@12:52:27,067:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 41	Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom b!
+ERROR 20160108@12:52:27,068:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 27	Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160108@12:52:27,069:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

@@ -1,0 +1,8 @@
+INFO  20160108@13:21:42,737:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@13:21:42,747:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 5 Klasa Nepostojeca nije deklarisana!
+ERROR 20160108@13:21:42,748:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 7 x je vec deklarisano
+ERROR 20160108@13:21:42,748:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 Nije pronadjen tip real u tabeli simbola!
+ERROR 20160108@13:21:42,749:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Ime y ne predstavlja tip 
+ERROR 20160108@13:21:42,751:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip nije kompatibilan pri dodeli sa this!
+ERROR 20160108@13:21:42,751:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160108@13:21:42,752:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19: ime zh nije deklarisano! 

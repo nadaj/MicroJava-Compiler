@@ -1,0 +1,10 @@
+INFO  20160108@13:19:04,122:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@13:19:04,134:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160108@13:19:04,134:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11: indeks nije tipa int!
+ERROR 20160108@13:19:04,135:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160108@13:19:04,135:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160108@13:19:04,135:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12 Tip nije kompatibilan pri dodeli sa !
+ERROR 20160108@13:19:04,137:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom arr!
+ERROR 20160108@13:19:04,137:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15 Funkcija len pri pozivu ima 1 parametar tipa string ili array!
+ERROR 20160108@13:19:04,138:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160108@13:19:04,139:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

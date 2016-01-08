@@ -1,0 +1,12 @@
+INFO  20160108@12:56:43,197:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@12:56:43,207:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 6	c je vec deklarisano
+ERROR 20160108@12:56:43,210:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11	Tipovi oba izraza nisu kompatibilni!
+ERROR 20160108@12:56:43,211:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12	Tipovi oba izraza moraju biti int!
+ERROR 20160108@12:56:43,214:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15	Tipovi oba izraza moraju biti int!
+ERROR 20160108@12:56:43,214:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15	Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160108@12:56:43,214:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 17: ime x nije deklarisano! 
+ERROR 20160108@12:56:43,215:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 18: ime x nije deklarisano! 
+ERROR 20160108@12:56:43,215:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18	noObj nije tipa int!
+ERROR 20160108@12:56:43,216:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 19: ime max nije deklarisano! 
+ERROR 20160108@12:56:43,216:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19	 Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160108@12:56:43,217:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

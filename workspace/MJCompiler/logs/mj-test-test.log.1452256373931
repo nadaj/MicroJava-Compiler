@@ -1,0 +1,5 @@
+INFO  20160108@13:26:21,966:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@13:26:21,978:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160108@13:26:21,979:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160108@13:26:21,979:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije isti kao povratni tip funkcije!
+ERROR 20160108@13:26:21,980:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21 saberi je vec deklarisano

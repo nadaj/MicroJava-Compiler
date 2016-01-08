@@ -1,0 +1,6 @@
+INFO  20160108@12:43:40,680:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@12:43:40,690:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 4	Nije pronadjen tip x u tabeli simbola!
+ERROR 20160108@12:43:40,690:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160108@12:43:40,690:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160108@12:43:40,691:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

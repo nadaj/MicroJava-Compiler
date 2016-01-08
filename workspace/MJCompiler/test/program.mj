@@ -1,88 +1,79 @@
-program MJProgram
-	class A{
-		int x[],y[];
-		{
-			int b(int i){return i;}
-		}
-	}
-	
-	const string pp = "jdshfs";
-	class B extends A         {
-		int i;int a; 
-		{
-			int b(int j)int k;char t;{return i;}
-			int getValue(int a)int b; bool c;
-			{ return this.i + this.x[0] + a; }
-		}
-	}
-	
-	class C {
-		A theA;
-		B theB;
-		int x[];
-		int i;
-	}
-	
-	const string nekistring = "blabla";
-	const string nestotamo = "nestonesto";
-	const bool fleg = false;
+//nivo C
 
-	const int a = 5;
-	
-	int x, y,e,g ;
-   string dt[] ;
-{
-	int inkrem(int a)
-	{
-		a++;
-		return a;
-	}
-	
-	void main() A a; C c,r, u[]; int i, x[],g; string n;char fff;
-	
-	{
-		//nekistring = "fdfds";
-		n = "mama" + "nada";
-		//i = 5 + c;
+program MJAlfabet
 
-		a.b(i);
-		n = nekistring;
-		a = new A;
-		a.x = new int[5];
-		a.y = new int[5];
-		u = new C[5];
-		c = new C;
-		c.theA = new A;
-		u[0].theA = new A;
-		u[0].theA.x[0] = 5;
-		{
-		c.theA = a;
-		c.theA.x = new int[3];
-		c.x = new int[5];
+string str1, str2;
+char i;
+class Alfa{
+	char a, b;
+	int rez;
+	{
+		void dodaj(int x, int y, int z){
+			a = x;                       //semanticka, tipovi se ne poklapaju
+			z = x + y;                   
+			return z;                    //semanticka, metoda vraca void
 		}
-		x = new int[3];
-		i=0;
-		read(c.i);
-		
-		while(i<5) {
-			read(c.x[i]); 
-			read(c.theA.x[i]);
-			inkrem(i);
+
+		void saberi (int x, int y) {
+			rez = x + y;                 
 		}
-		print(c.theB.getValue(c.theA.x[0]),5);
 		
-		//fff = chr(c);
+		void saberi (int x) {            //semanticka, metoda vec deklarisana
+			rez = rez + x;              
+		}
 	}
 }
-//Global vars = 5
-//Local (Main) vars = 6
-//Constant vars = 0
-//Array vars = 1
-//Function definitions = 2
-//Block count = 2
-//Function calls (Main) count = 5
-// Formal args count = 3
-//Class count = 2
-//Class Functions count = 1
-//Class Fields count = 4
 
+class Beta extends Alfa{
+	int c;
+	char d[];
+	{
+		void dodaj(int x, int y, int z) bool bulova; {
+			a = "Alfa";                  //semanticka, tipovi se ne poklapaju
+			d = "Delta";                 //semanticka, isto
+			b = 'b';                     
+			print(b);
+		}
+	}
+}
+
+class Gama extends Alfa{
+	int a;
+	{
+		void dodaj(int x, int y, int z)  {
+			
+			a = x;
+			i = 'i';                         
+			niz = new int[5];                //semanticka, niz nije deklarisan, tipovi se ne poklapaju
+			while(i < 5)                     //semanticka, tipovi se ne poklapaju  
+				niz[i] = x + y + z + i;      //semanticka, niz, i, isto
+				i++;                         //semanticka
+		}
+	}
+}
+
+class Delta{
+	{
+		bool stampaj(){
+			print("alfa" + "i" + "omega");    //semanticka, fali return
+		}
+	}
+}
+
+{
+	void main() Alfa a1, a2; Beta b; Gama g; Delta d;{
+		a1 = new Alfa;
+		a2 = new Beta;
+		b = new Alfa;                       //semanticka, ne poklapaju se tipovi
+		g = new Gama;
+		d = new Delta;
+		
+		a1.dodaj('1', str2, 3);             //semanticka, tipovi prvog i drugog parametra se ne poklapaju
+		if (a1 == a2)                   
+			print("AlfaBeta");    
+		else if(a1 > a2)                    //semanticka, nije dozvoljen operator > za klasne tipove
+			print("true");
+		else if (g != d && g != b)          // semanticka, tipovi se ne poklapaju
+			print("false");
+	}
+}

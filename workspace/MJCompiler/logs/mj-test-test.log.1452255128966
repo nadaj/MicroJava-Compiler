@@ -1,0 +1,27 @@
+INFO  20160108@13:08:24,767:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@13:08:24,778:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 4 xc je vec deklarisano
+ERROR 20160108@13:08:24,780:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqrt nije deklarisano! 
+ERROR 20160108@13:08:24,780:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160108@13:08:24,781:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160108@13:08:24,782:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160108@13:08:24,782:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160108@13:08:24,784:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije kompatibilan pri dodeli sa o!
+ERROR 20160108@13:08:24,784:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15 Tip nije isti kao povratni tip funkcije!
+ERROR 20160108@13:08:24,786:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19 Tip nije kompatibilan pri dodeli sa s!
+ERROR 20160108@13:08:24,786:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160108@13:08:24,786:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Tip nije isti kao povratni tip funkcije!
+ERROR 20160108@13:08:24,787:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 27 main mora da bude void metoda!
+ERROR 20160108@13:08:24,788:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30: ime yc nije deklarisano! 
+ERROR 20160108@13:08:24,788:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30 noObj nije tipa int, char, bool ili string!
+ERROR 20160108@13:08:24,790:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 32 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom x1!
+ERROR 20160108@13:08:24,791:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34: ime yc nije deklarisano! 
+ERROR 20160108@13:08:24,791:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160108@13:08:24,791:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160108@13:08:24,792:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37: ime yc nije deklarisano! 
+ERROR 20160108@13:08:24,792:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160108@13:08:24,792:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije distance !
+ERROR 20160108@13:08:24,795:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom a!
+ERROR 20160108@13:08:24,795:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije obim !
+ERROR 20160108@13:08:24,796:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 41 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom b!
+ERROR 20160108@13:08:24,797:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 27 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160108@13:08:24,798:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
