@@ -1,0 +1,4 @@
+INFO  20160108@02:18:55,496:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160108@02:18:55,524:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 68: Niz ne prethodi indeksu! 
+ERROR 20160108@02:18:55,524:rs.ac.bg.etf.pp1.MJParser - Greska na liniji 69: Niz ne prethodi indeksu! 
+ERROR 20160108@02:18:55,526:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
