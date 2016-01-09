@@ -1,0 +1,8 @@
+INFO  20160109@14:47:20,383:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@14:47:20,396:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Semanticka greska u tipu!
+ERROR 20160109@14:47:20,397:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11 Ocekivana natklasa!
+ERROR 20160109@14:47:20,398:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 16 Metod mora imati return iskaz sa izrazom jer nije deklarisan sa void!
+ERROR 20160109@14:47:20,399:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160109@14:47:20,400:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18 Nije pronadjen tip nekitip u tabeli simbola!
+ERROR 20160109@14:47:20,400:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18 Metod mora imati return iskaz sa izrazom jer nije deklarisan sa void!
+ERROR 20160109@14:47:20,419:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

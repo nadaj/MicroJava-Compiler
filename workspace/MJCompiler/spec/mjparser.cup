@@ -1334,7 +1334,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   }
 			   		   else
 			   		   {
-			   			   parser.report_error("[Greska]Linija: " + nameleft + ": ime" + name.toString() + " nije tipa niz! " , null);
+			   			   parser.report_error("[Greska]Linija: " + nameleft + ": ime " + name.toString() + " nije tipa niz! " , null);
 			   		   }
 			   		   currentDesignator = obj;
 			   	   }

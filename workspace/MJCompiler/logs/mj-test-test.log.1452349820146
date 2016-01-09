@@ -1,0 +1,34 @@
+INFO  20160109@15:29:14,812:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@15:29:14,825:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 6 Tip nije isti kao povratni tip funkcije!
+ERROR 20160109@15:29:14,825:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11 Semanticka greska u tipu!
+ERROR 20160109@15:29:14,826:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Ocekivana natklasa!
+ERROR 20160109@15:29:14,828:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18 Metod mora imati return iskaz sa izrazom jer nije deklarisan sa void!
+ERROR 20160109@15:29:14,829:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160109@15:29:14,830:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Nije pronadjen tip nekitip u tabeli simbola!
+ERROR 20160109@15:29:14,837:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 54 nekistring nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160109@15:29:14,838:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 55 Tip nije kompatibilan pri dodeli sa i!
+ERROR 20160109@15:29:14,839:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 56 Tip nije kompatibilan pri dodeli sa i!
+ERROR 20160109@15:29:14,839:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59 aaa nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160109@15:29:14,839:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 60 a nije tipa int!
+ERROR 20160109@15:29:14,840:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 61 aaa nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160109@15:29:14,841:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 62 a nije tipa int!
+ERROR 20160109@15:29:14,841:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 64 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije i !
+ERROR 20160109@15:29:14,841:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 64 i nije metoda!
+ERROR 20160109@15:29:14,842:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 66 aaa nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160109@15:29:14,842:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 67 c nije tipa int, char, bool ili string!
+ERROR 20160109@15:29:14,843:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 69  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160109@15:29:14,843:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 71 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom j!
+ERROR 20160109@15:29:14,852:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 90 BREAK nije koriscen unutar while ciklusa!
+ERROR 20160109@15:29:14,854:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 97 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije inkrem !
+ERROR 20160109@15:29:14,854:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 98 Uslov nije tipa bool!
+ERROR 20160109@15:29:14,855:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 99 Uslov nije tipa bool!
+ERROR 20160109@15:29:14,855:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 100 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@15:29:14,856:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 101 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@15:29:14,856:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 101 Uz klase i nizove mogu da se koriste samo != i == !
+ERROR 20160109@15:29:14,856:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 102 Uz klase i nizove mogu da se koriste samo != i == !
+ERROR 20160109@15:29:14,857:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 104 Tip izraza mora biti int!
+ERROR 20160109@15:29:14,857:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 104 Tip nije kompatibilan pri dodeli sa i!
+ERROR 20160109@15:29:14,858:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 106 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@15:29:14,858:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 106 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160109@15:29:14,859:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 109 Tipovi oba izraza moraju biti int!
+ERROR 20160109@15:29:14,860:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

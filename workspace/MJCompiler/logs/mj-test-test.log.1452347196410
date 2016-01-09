@@ -1,0 +1,5 @@
+INFO  20160109@14:46:07,364:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@14:46:07,391:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Semanticka greska u tipu!
+ERROR 20160109@14:46:07,391:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11 Ocekivana natklasa!
+ERROR 20160109@14:46:07,393:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 16 Metod mora imati return iskaz sa izrazom jer nije deklarisan sa void!
+ERROR 20160109@14:46:07,410:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

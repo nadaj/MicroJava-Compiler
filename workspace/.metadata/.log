@@ -1179,3 +1179,6 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.launching 4 150 2016-01-09 14:36:30.878
+!MESSAGE The archive: /MJCompiler/lib/mj-runtime.jar which is referenced by the classpath, does not exist.
