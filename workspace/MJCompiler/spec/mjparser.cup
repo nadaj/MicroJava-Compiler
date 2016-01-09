@@ -1015,23 +1015,39 @@ ConditionFixed ::= Condition;
 
 Condition ::= Condition OR CondTermFixed
 			  |
-			  CondTermFixed;
+			  CondTermFixed:t
+			  {:
+				  RESULT = t;
+				  if (t != null && ((Struct)t).getKind() != Struct.Bool)
+				  {
+					  parser.report_error("[Greska]Linija: " + tleft + " Uslov nije tipa bool!", null);
+				  }
+			  :};
 
 /***********************************************************************
      CondTerm
 ***********************************************************************/
 
-CondTermFixed ::= CondTerm;
+CondTermFixed ::= CondTerm:t
+				  {:
+					  RESULT = t;
+				  :};
 
 CondTerm ::= CondTerm AND CondFact
 			 |
-			 CondFact;
+			 CondFact:t
+			 {:
+			 	 RESULT = t;
+			 :};
 
 /***********************************************************************
      CondFact
 ***********************************************************************/
 
-CondFact ::= Expr
+CondFact ::= Expr:t
+			 {:
+				 RESULT = t;
+			 :}
 			 |
 			 Expr:t1 Relop:op Expr:t2
 			 {:

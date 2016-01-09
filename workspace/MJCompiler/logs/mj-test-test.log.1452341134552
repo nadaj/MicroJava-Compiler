@@ -1,0 +1,4 @@
+INFO  20160109@13:05:19,503:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@13:05:19,538:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 76 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:05:19,539:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 76 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160109@13:05:19,540:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
