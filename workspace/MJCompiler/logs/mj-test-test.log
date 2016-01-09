@@ -1,3 +1,7 @@
-INFO  20160109@13:17:03,697:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
-ERROR 20160109@13:17:03,749:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 76 Uslov nije tipa bool!
-ERROR 20160109@13:17:03,751:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
+INFO  20160109@13:48:53,840:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@13:48:53,855:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 pr je vec deklarisano
+ERROR 20160109@13:48:53,859:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 24 x je vec deklarisano
+ERROR 20160109@13:48:53,868:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160109@13:48:53,868:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160109@13:48:53,870:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

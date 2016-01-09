@@ -1,0 +1,30 @@
+INFO  20160109@13:48:05,005:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@13:48:05,022:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160109@13:48:05,023:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160109@13:48:05,023:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije isti kao povratni tip funkcije!
+ERROR 20160109@13:48:05,025:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21 saberi je vec deklarisano
+ERROR 20160109@13:48:05,026:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 22: ime x nije deklarisano! 
+ERROR 20160109@13:48:05,026:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 22 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:48:05,026:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 22 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160109@13:48:05,026:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 22 Tip nije kompatibilan pri dodeli sa rez!
+ERROR 20160109@13:48:05,028:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 33 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160109@13:48:05,029:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34 Tip nije kompatibilan pri dodeli sa d!
+ERROR 20160109@13:48:05,031:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 42 a je vec deklarisano
+ERROR 20160109@13:48:05,032:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 46 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160109@13:48:05,032:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 48: ime niz nije deklarisano! 
+ERROR 20160109@13:48:05,033:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 48 Tip nije kompatibilan pri dodeli sa noObj!
+ERROR 20160109@13:48:05,033:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 49 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:48:05,034:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50: indeks nije tipa int!
+ERROR 20160109@13:48:05,034:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50: ime niz nije deklarisano! 
+ERROR 20160109@13:48:05,035:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:48:05,035:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160109@13:48:05,035:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 51 i nije tipa int!
+ERROR 20160109@13:48:05,037:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 58 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160109@13:48:05,039:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 67 Tip nije kompatibilan pri dodeli sa a2!
+ERROR 20160109@13:48:05,040:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 68 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160109@13:48:05,041:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 72 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y!
+ERROR 20160109@13:48:05,041:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 72 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom x!
+ERROR 20160109@13:48:05,043:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 75 Uz klase i nizove mogu da se koriste samo != i == !
+ERROR 20160109@13:48:05,044:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 77 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:48:05,052:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 77 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160109@13:48:05,053:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
