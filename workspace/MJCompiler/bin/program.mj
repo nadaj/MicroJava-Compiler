@@ -1,5 +1,5 @@
 program MJProgram
-	int x;
+	int x, m;
 	
 	const bool flag = false;
 	const bool flagt = true;
@@ -9,53 +9,57 @@ program MJProgram
 		{
 			c = 0;
 			print(0);
-			return c + 3;
+			return c + 1;
+		}
+		
+		int inkrem(int i)
+		{
+			return i-1;
 		}
 		
 		void main()int y[];char t[];bool r[];int i;char u;bool v;
 		{
 			x = 3;
-			print(111);
-			print('c');
-			k();
+			m = -1;
+			print(k());	// 0 i 1
+			x = inkrem(x);
+			print(x);	//2
+			x = -x + m;	//-3
 			print(x);
-			print(flag);
+			x = x * 2;
+			print(x); 	//-6
+			x = x * m;
+			print(x);	//6
+			x = x / 2;
+			print(x);	//3
+			x = 6;
+			x = inkrem(0) * 1;
+			print(x);	//-1
 			y = new int[3];
 			y[0] = 1;
 			y[1] = 2;
 			y[2] = 3;
-			print(y[0]);
-			print(y[1]);
+			y[0] = -y[0];
+			print(y[0]);	//-1
+			y[2] = -y[2] + y[1];	//-1
 			print(y[2]);
-			t = new char[5];
-			t[0] = 'l';
-			t[1] = 'a';
-			t[2] = 'v';
-			t[3] = 'i';
-			t[4] = 'c';
-			print(t[0],1);
-			print(t[1],2);
-			print(t[2],3);
-			print(t[3],4);
-			print(t[4],5);
-			r = new bool[3];
-			r[0] = flag;
-			r[1] = flagt;
-			r[2] = flag;
-			print(r[0]);
-			print(r[1]);
-			print(r[2]);
-			// STAMPA 111c    0    30    1    2    3lavic010
-			x++;		//bilo je 3
+			y[0] = y[0] * y[2]; //1
+			print(y[0]);
+			x = -(x + m);	//-(-1+-1) = 2
 			print(x);
-			x--;		//bilo je 4
-			print(x);
-			read(x);	//int
-			print(x);
-			read(u);	//char
-			print('v');
-			print(u);
-			read(v);	//bool
-			print(v);
+			x = len(y);
+			print(x);		//3
+			print(len(y));	//3
+			x = 65;
+			u = chr(x);
+			print(u,2);		//A
+			x = ord(u);
+			print(x, 4);	//65
+			y[0] = 66;
+			u = chr(y[0]);
+			print(u,2);		//B
+			y[0] = ord(u);
+			print(y[0],3);	//66
+			
 		}
 	}

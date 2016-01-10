@@ -1,0 +1,28 @@
+program MJProgram
+	int x;
+	
+	const bool flag = false;
+	const bool flagt = true;
+	
+	{
+		int k()int c;
+		{
+			c = 0;
+			print(0);
+			return c + 3;
+		}
+		
+		void main()int y[];char t[];bool r[];int i;char u;bool v;
+		{
+			x = 3;
+			
+			print(x);
+			read(x);	//int
+			
+			read(u);	//char
+			print('v');
+			print(u);
+			read(v);	//bool
+			print(v);
+		}
+	}

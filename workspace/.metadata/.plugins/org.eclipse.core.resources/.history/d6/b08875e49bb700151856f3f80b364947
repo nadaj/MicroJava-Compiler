@@ -1,0 +1,31 @@
+program MJProgram
+	int x;
+	
+	const bool flag = false;
+	const bool flagt = true;
+	
+	{
+		int k()int c;
+		{
+			c = 0;
+			print(0);
+			return c + 1;
+		}
+		
+		int inkrem(int i)
+		{
+			return i-1;
+		}
+		
+		void main()int y[];char t[];bool r[];int i;char u;bool v;
+		{
+			x = 3;
+			
+			print(k());					// 0 1
+			x = inkrem(x);				
+			x = -x;
+			print(x);					//-2
+			x = -x + 10;				
+			print(x);					//12
+		}
+	}

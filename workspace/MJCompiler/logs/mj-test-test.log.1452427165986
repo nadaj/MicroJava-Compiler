@@ -1,0 +1,5 @@
+INFO  20160110@12:57:32,659:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160110@12:57:32,676:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160110@12:57:32,677:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160110@12:57:32,677:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
