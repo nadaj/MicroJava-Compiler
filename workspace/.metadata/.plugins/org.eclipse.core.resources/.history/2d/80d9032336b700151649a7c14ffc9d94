@@ -33,11 +33,11 @@ program MJProgram
 			t[2] = 'v';
 			t[3] = 'i';
 			t[4] = 'c';
-			print(t[0],1);
-			print(t[1],2);
-			print(t[2],3);
-			print(t[3],4);
-			print(t[4],5);
+			print(t[0]);
+			print(t[1]);
+			print(t[2]);
+			print(t[3]);
+			print(t[4]);
 			r = new bool[3];
 			r[0] = flag;
 			r[1] = flagt;

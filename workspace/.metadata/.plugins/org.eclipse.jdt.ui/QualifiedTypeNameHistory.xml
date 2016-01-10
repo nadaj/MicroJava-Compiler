@@ -11,4 +11,5 @@
 <fullyQualifiedTypeName name="java.util.LinkedList"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.structure.SymbolDataStructure"/>
 <fullyQualifiedTypeName name="rs.etf.pp1.symboltable.structure.HashTableDataStructure"/>
+<fullyQualifiedTypeName name="rs.etf.pp1.mj.runtime.Code"/>
 </qualifiedTypeNameHistroy>

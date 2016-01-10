@@ -945,26 +945,13 @@ StatementMatched ::= Assignment
 					  |
 					  Designator:d DEC SEMI_COMMA
 					  {:
-						  if (d != null)
+						  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
 						  {
-							  boolean ok = true;
-							  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-							  {
-								  ok = false;
-								  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-							  }
-							  if (!d.getType().equals(Tab.intType))
-							  {
-								  ok = false;
-								  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije tipa int!", null);
-							  }
-							  if (ok)
-							  {
-								  Code.load(d);
-		                          Code.loadConst(1);
-		                          Code.put(Code.sub);
-		                          Code.store(d);
-							  }
+							  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
+						  }
+						  if (!d.getType().equals(Tab.intType))
+						  {
+							  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije tipa int!", null);
 						  }
 					  :}
 					  |
@@ -999,92 +986,47 @@ StatementMatched ::= Assignment
 					  READ LPAREN Designator:d RPAREN SEMI_COMMA 
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++; 
-						  if (d != null)
+						  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
 						  {
-							  boolean ok = true;
-							  if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-							  {
-								  ok = false;
-								  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-							  }
-							  if (!d.getType().equals(Tab.intType) && !d.getType().equals(Tab.charType) && d.getType().getKind() != Struct.Bool && d.getType().getKind() != 6)
-							  {
-								  ok = false;
-								  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije tipa int, char, bool ili string!", null);
-							  }
-							  if (ok)
-							  {
-								  if (d.getType() == Tab.charType)
-								  {
-									  Code.put(Code.bread);
-		                              Code.store(d);
-								  }
-								  else
-								  {
-									  Code.put(Code.read);
-		                              Code.store(d);
-								  }
-							  }
+							  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
+						  }
+						  if (!d.getType().equals(Tab.intType) && !d.getType().equals(Tab.charType) && d.getType().getKind() != Struct.Bool && d.getType().getKind() != 6)
+						  {
+							  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije tipa int, char, bool ili string!", null);
 						  }
 					  :}
 					  |
 					  PRINT LPAREN Expr:exprName RPAREN SEMI_COMMA 
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-						  if (exprName != null)
+						  if (((Struct)exprName).getKind() != Struct.Int && ((Struct)exprName).getKind() != Struct.Char && ((Struct)exprName).getKind() != Struct.Bool && ((Struct)exprName).getKind() != 6)
 						  {
-							  if (((Struct)exprName).getKind() != Struct.Int && ((Struct)exprName).getKind() != Struct.Char && ((Struct)exprName).getKind() != Struct.Bool && ((Struct)exprName).getKind() != 6)
-							  {
-								  parser.report_error("[Greska]Linija: " + exprNameleft + "  Parametar funkcije print nije tipa int, char, bool ili string!", null);
-							  }
-							  else
-							  {
-								  if (((Struct)exprName).getKind() == Struct.Int)
-								  {
-									  Code.loadConst(5);	// sirina polja
-									  Code.put(Code.print);
-								  }
-								  else if (((Struct)exprName).getKind() == Struct.Char)
-								  {
-									  Code.loadConst(1);
-									  Code.put(Code.bprint);
-								  }
-								  else if (((Struct)exprName).getKind() == Struct.Bool)
-								  {
-									  Code.loadConst(1);
-		                              Code.put(Code.print);
-								  } 
-							  }
+							  parser.report_error("[Greska]Linija: " + exprNameleft + "  Parametar funkcije print nije tipa int, char, bool ili string!", null);
 						  }
+						  if (((Struct)exprName).getKind() == Struct.Int)
+						  {
+							  Code.loadConst(5);	// sirina polja
+							  Code.put(Code.print);
+						  }
+						  else if (((Struct)exprName).getKind() == Struct.Char)
+						  {
+							  Code.loadConst(1);
+							  Code.put(Code.bprint);
+						  }
+						  else if (((Struct)exprName).getKind() == Struct.Bool)
+						  {
+							  Code.loadConst(1);
+                              Code.put(Code.print);
+						  }
+						  
 					  :}
 					  |
-					  PRINT LPAREN Expr:exprName COMMA NUMBER:i RPAREN SEMI_COMMA 
+					  PRINT LPAREN Expr:exprName COMMA NUMBER RPAREN SEMI_COMMA 
 					  {: 
 						  if (parser.mainMethod) parser.main_method_calls++;
-						  if (exprName != null)
+						  if (((Struct)exprName).getKind() != Struct.Int && ((Struct)exprName).getKind() != Struct.Char && ((Struct)exprName).getKind() != Struct.Bool && ((Struct)exprName).getKind() != 6)
 						  {
-							  if (((Struct)exprName).getKind() != Struct.Int && ((Struct)exprName).getKind() != Struct.Char && ((Struct)exprName).getKind() != Struct.Bool && ((Struct)exprName).getKind() != 6)
-							  {
-								  parser.report_error("[Greska]Linija: " + exprNameleft + " Parametar funkcije print nije tipa int, char, bool ili string!", null);
-							  }
-							  else
-							  {
-								  if (((Struct)exprName).getKind() == Struct.Int)
-			                      {
-		                              Code.loadConst((int)i);
-		                              Code.put(Code.print);  
-			                      }
-			                      else if (((Struct)exprName).getKind() == Struct.Char)
-			                      {
-		                              Code.loadConst((int)i);
-		                              Code.put(Code.bprint);
-			                      }
-			                      else if (((Struct)exprName).getKind() == Struct.Bool)
-			                      {
-		                              Code.loadConst((int)i);
-		                              Code.put(Code.print);
-			                      }
-							  }
+							  parser.report_error("[Greska]Linija: " + exprNameleft + " Parametar funkcije print nije tipa int, char, bool ili string!", null);
 						  }
 					  :}
 					  |

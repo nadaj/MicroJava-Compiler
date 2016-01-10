@@ -1071,17 +1071,17 @@ StatementMatched ::= Assignment
 							  {
 								  if (((Struct)exprName).getKind() == Struct.Int)
 			                      {
-		                              Code.loadConst((int)i);
+		                              Code.loadConst(i);
 		                              Code.put(Code.print);  
 			                      }
 			                      else if (((Struct)exprName).getKind() == Struct.Char)
 			                      {
-		                              Code.loadConst((int)i);
+		                              Code.loadConst(i);
 		                              Code.put(Code.bprint);
 			                      }
 			                      else if (((Struct)exprName).getKind() == Struct.Bool)
 			                      {
-		                              Code.loadConst((int)i);
+		                              Code.loadConst(i);
 		                              Code.put(Code.print);
 			                      }
 							  }
