@@ -1,0 +1,3 @@
+INFO  20160109@20:09:40,533:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160109@20:09:40,547:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11 a ne sme da bude parametar main metode jer main nema parametre!
+ERROR 20160109@20:09:40,549:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

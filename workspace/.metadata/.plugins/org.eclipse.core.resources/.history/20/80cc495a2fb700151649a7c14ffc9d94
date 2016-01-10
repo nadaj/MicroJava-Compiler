@@ -1,0 +1,129 @@
+program MJProgram
+	class A{
+		int x[],y[];
+		{
+			int b(int i){return i;}
+			int b6()char v;{return v;}					// ne poklapa se povratni tip
+			int b9(int i, int j){return j;}
+		}
+	}
+	
+	const string pp = 5;								// tip nije kompatibilan 
+	
+	class S extends MJProgram {}						// ocekivana natklasa
+	
+	class B extends A {
+		int i;int a; 
+		{
+			int b(int j)int k;char t;{return;}			// nema povratnu vrednost
+			int b1(int j)int k;char t;{}				// nema povratnu vrednost
+			void b2(nekitip j)int k;char t;{return;}	// nekitip nije tip
+			int getValue(int a)int b; bool c;
+			{ return this.i + this.x[0] + a; }
+		}
+	}
+	
+	class C {
+		A theA;
+		B theB;
+		int x[];
+		int i;
+		bool fl;
+	}
+	
+	const string nekistring = "blabla";
+	const string nestotamo = "nestonesto";
+	const bool fleg = false;
+
+
+	const int aaa = 5;
+	
+	int x, y,e,g ;
+    string dt[] ;
+    
+	{
+		int inkrem(int a)
+		{
+			a++;
+			return a;
+		}
+		
+		void main() A a; C c,r, u[]; int i, x[],g, k[]; string n, n2;char fff;
+		
+		{
+			nekistring = "fdfds";				// nekistring nije promenljiva, element niza ni polje unutar objekta
+			i = 'c';							// nije kompatibilna dodela
+			i = a;								// nije kompatibilna dodela
+			n = "mama" + "nada";
+			
+			aaa++;								// aaa nije promenljiva, element niza ni polje unutar objekta
+			a++;								// a nije int
+			aaa--;								// aaa nije promenljiva, element niza ni polje unutar objekta
+			a--;								// a nije int
+			
+			i();								// nije metoda unutrasnje klase ni glavnog programa
+			
+			read(aaa);							// aaa nije promenljiva, element niza ni polje unutar objekta
+			read(c);							// c nije tipa int, char, bool ili string
+			
+			print(c);							// c nije tipa int, char, bool ili string
+			
+			a.b9(i, fff);						// nije kompatibilan tip parametra funkcije fff
+			a.b(i);					
+			n = nekistring;
+			a = new A;
+			a.x = new int[5];
+			a.y = new int[5];
+			u = new C[5];
+			c = new C;
+			c = new int;											// int nije unutrasnja klasa i tip nije kompatibilan
+			
+			c.theA = new A;
+			i.theA = new A;											// i nije unutrasnja klasa
+			c.nestotamo = 5;										// nestotamo nije ni metoda ni polje klase C
+			
+			u[0].theA = new A;
+			u[0].theA.x[0] = 5;
+			
+			c[0] = a;												//  c nije niz
+			u[c].theA = new A;										// indekser nije tipa int
+			
+			c.theA = a;
+			c.theA.x = new int[3];
+			c.x = new int[5];
+			{
+				x = new int[3];
+				x = new int['c'];									// indekser nije int
+				x = new int[c];										// indekser nije int
+				i=0;
+				read(c.i);
+				break;												// nije u okviru while ciklusa
+				
+				while(i<5) {
+					read(c.x[i]); 
+					read(c.theA.x[i]);
+					inkrem(i);
+				}
+				inkrem(i,g);										// nije isti broj stvarnih i formalnih parametara
+				if (i) {}											// uslov nije tipa int
+				if (i+g) {}											// uslov nije tipa int
+				if (i > fff) {}										// nisu kompatibilni tipovi oba izraza
+				if (c < a) {}										// za klase mogu samo == i !=
+				if (x < k) {}										// za nizove mogu samo == i !=
+				i = -g;
+				i = -fff;											// tip izraza mora da bude int i nije kompatibilna dodela
+				i = i + g;
+				i = fff + g;										// fff nije int i nije kompatibilna dodela
+				
+				i = i * g;
+				i = fff * g;										// fff nije int
+				
+				n = n + n2;
+				
+				i = inkrem(i);
+				i = nestonesto();									// nestonesto nije deklarisano, nije kompatibilno
+				
+				
+			}
+		}
+	}

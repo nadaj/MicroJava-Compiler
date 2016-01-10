@@ -1,0 +1,22 @@
+program MJProgram
+	int x, y;
+	
+	const bool flag = true;
+	{
+		int k()int c;
+		{
+			c = 0;
+			print(0);
+			return c + 3;
+		}
+		
+		void main()
+		{
+			x = 3;
+			print(111);
+			print('c');
+			k();
+			print(x);
+			print(flag);
+		}
+	}

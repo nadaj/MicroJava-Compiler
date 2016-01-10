@@ -42,6 +42,8 @@ program MJProgram
     string dt[] ;
     
 	{
+		void doIt() {}
+		
 		int inkrem(int a)
 		{
 			a++;
@@ -122,7 +124,7 @@ program MJProgram
 				
 				i = inkrem(i);
 				i = nestonesto();									// nestonesto nije deklarisano, nije kompatibilno
-				
+				i = doIt();
 				
 			}
 		}
