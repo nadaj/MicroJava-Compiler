@@ -213,6 +213,95 @@ action code {:
 	boolean mainDetected = false;
 	Obj currentIndex = null;
 	Obj theArr = null;
+	
+	int printStringAdr = 0;
+	int printStringAdrWithLength = 0;
+	
+	void printStr()
+    {
+            printStringAdr = Code.pc;
+
+            // (string), len, i
+            Code.put(Code.enter);
+            Code.put(1); 
+            Code.put(3);
+            
+            // i = 0
+            Code.put(Code.const_n);
+            Code.put(Code.store_2);
+            
+            // len = len(str);
+            Code.put(Code.load_n);
+            Code.put(Code.arraylength);
+            Code.put(Code.store_1);
+            
+            // while (i < len)
+            Code.put(Code.load_2);
+            Code.put(Code.load_1);
+            Code.put(Code.jcc + Code.ge);
+            Code.put2(15);
+
+            // print s[i];
+            Code.put(Code.load_n);
+            Code.put(Code.load_2);
+            Code.put(Code.baload);
+            Code.put(Code.const_1);
+            Code.put(Code.bprint);
+            // i++
+            Code.put(Code.load_2);
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            Code.put(Code.store_2);
+            
+            Code.put(Code.jmp);
+            Code.put2(-14);
+            
+            Code.put(Code.exit);
+            Code.put(Code.return_);
+    }
+	
+	void printStrWithLength()
+    {
+			printStringAdrWithLength = Code.pc;
+
+            // (string), (print length), len, i
+            Code.put(Code.enter);
+            Code.put(2); 
+            Code.put(4);
+            
+            // i = 0
+            Code.put(Code.const_n);
+            Code.put(Code.store_3);
+            
+            // len = len(str);
+            Code.put(Code.load_n);
+            Code.put(Code.arraylength);
+            Code.put(Code.store_2);
+            
+            // while (i < len)
+            Code.put(Code.load_3);
+            Code.put(Code.load_2);
+            Code.put(Code.jcc + Code.ge);
+            Code.put2(15);
+
+            // print s[i];
+            Code.put(Code.load_n);
+            Code.put(Code.load_3);
+            Code.put(Code.baload);
+            Code.put(Code.load_1);
+            Code.put(Code.bprint);
+            // i++
+            Code.put(Code.load_3);
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            Code.put(Code.store_3);
+            
+            Code.put(Code.jmp);
+            Code.put2(-14);
+            
+            Code.put(Code.exit);
+            Code.put(Code.return_);
+    }
 :}
 
 terminal PROGRAM, IDENT, LBRACE, RBRACE;
@@ -266,7 +355,12 @@ CloseScope ::= {: Tab.closeScope(); :};
      Program
 ***********************************************************************/
     
-Program ::= PROGRAM ProgramName:p OpenScope DeclarationList LBRACE 
+Program ::= PROGRAM ProgramName:p OpenScope
+			{:
+				printStr();
+				printStrWithLength();
+			:}
+			DeclarationList LBRACE 
 			{:
 				parser.isGlobal = false;
 			:}
@@ -1066,6 +1160,11 @@ StatementMatched ::= Assignment
 									  Code.loadConst(1);
 		                              Code.put(Code.print);
 								  } 
+								  else if (((Struct)exprName).getKind() == 6)
+								  {
+									  Code.put(Code.call);
+			                          Code.put2(printStringAdr - Code.pc + 1);
+								  }
 							  }
 						  }
 					  :}
@@ -1096,6 +1195,12 @@ StatementMatched ::= Assignment
 		                              Code.loadConst((int)i);
 		                              Code.put(Code.print);
 			                      }
+			                      else if (((Struct)exprName).getKind() == 6)
+								  {
+			                    	  Code.loadConst((int)i);
+									  Code.put(Code.call);
+			                          Code.put2(printStringAdrWithLength - Code.pc + 1);
+								  }
 							  }
 						  }
 					  :}
@@ -1453,6 +1558,19 @@ Factor ::= Designator:name
 		   STRCONST:name
 		   {:
 			   RESULT = stringType;
+		  	   Obj cons = Tab.insert(Obj.Con, "", stringType);
+		  	   
+		  	   Code.loadConst(((String)name).length());			// alokacija na heapu
+		  	   Code.put(Code.newarray);
+		  	   Code.put(0);
+		  	   
+               for (int i = 0; i < ((String)name).length(); i++)
+               {
+                   Code.put(Code.dup); 							// bastore skida adresu, pa mora da se izvrsi duplikacija
+                   Code.loadConst(i);							// indeks
+                   Code.loadConst(((String)name).charAt(i));	// karakter
+                   Code.put(Code.bastore);						// store elementa
+               }
 		   :}
 		   |
 		   NEW Type:someType

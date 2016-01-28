@@ -1,65 +1,9 @@
 program MJProgram
-	int x, m;
-	
-	const bool flag = false;
-	const bool flagt = true;
-	
 	{
-		int k()int c;
-		{
-			c = 0;
-			print(0);
-			return c + 1;
-		}
 		
-		int inkrem(int i)
+		void main()string a;
 		{
-			return i-1;
-		}
-		
-		void main()int y[];char t[];bool r[];int i;char u;bool v;
-		{
-			x = 3;
-			m = -1;
-			print(k());	// 0 i 1
-			x = inkrem(x);
-			print(x);	//2
-			x = -x + m;	//-3
-			print(x);
-			x = x * 2;
-			print(x); 	//-6
-			x = x * m;
-			print(x);	//6
-			x = x / 2;
-			print(x);	//3
-			x = 6;
-			x = inkrem(0) * 1;
-			print(x);	//-1
-			y = new int[3];
-			y[0] = 1;
-			y[1] = 2;
-			y[2] = 3;
-			y[0] = -y[0];
-			print(y[0]);	//-1
-			y[2] = -y[2] + y[1];	//-1
-			print(y[2]);
-			y[0] = y[0] * y[2]; //1
-			print(y[0]);
-			x = -(x + m);	//-(-1+-1) = 2
-			print(x);
-			x = len(y);
-			print(x);		//3
-			print(len(y));	//3
-			x = 65;
-			u = chr(x);
-			print(u,2);		//A
-			x = ord(u);
-			print(x, 4);	//65
-			y[0] = 66;
-			u = chr(y[0]);
-			print(u,2);		//B
-			y[0] = ord(u);
-			print(y[0],3);	//66
-			
+			a = "caocao";
+			print(a, 2);
 		}
 	}
