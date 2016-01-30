@@ -1,0 +1,25 @@
+program MJProgram
+	int x, m;
+	
+	const bool flag = false;
+	const bool flagt = true;
+	
+	{
+		int k()int c;
+		{
+			c = 0;
+			print(0);
+			return c + 1;
+		}
+		
+		int inkrem(int i)
+		{
+			return i-1;
+		}
+		
+		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
+		{
+			read(a);
+			print(a, 2);
+		}
+	}

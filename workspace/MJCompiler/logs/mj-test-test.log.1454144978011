@@ -1,0 +1,4 @@
+INFO  20160130@10:09:10,382:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160130@10:09:10,420:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 24: ime a nije deklarisano! 
+ERROR 20160130@10:09:10,420:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 24  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160130@10:09:10,421:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

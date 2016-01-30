@@ -213,6 +213,142 @@ action code {:
 	boolean mainDetected = false;
 	Obj currentIndex = null;
 	Obj theArr = null;
+	
+	int printStringAdr = 0;
+	int printStringAdrWithLength = 0;
+	int readStringAdr = 0;
+	
+	void printStr()
+    {
+            printStringAdr = Code.pc;
+
+            // (string), len, i
+            Code.put(Code.enter);
+            Code.put(1); 
+            Code.put(3);
+            
+            // i = 0
+            Code.put(Code.const_n);
+            Code.put(Code.store_2);
+            
+            // len = len(str);
+            Code.put(Code.load_n);
+            Code.put(Code.arraylength);
+            Code.put(Code.store_1);
+            
+            // while (i < len)
+            Code.put(Code.load_2);
+            Code.put(Code.load_1);
+            Code.put(Code.jcc + Code.ge);
+            Code.put2(15);
+
+            // print s[i];
+            Code.put(Code.load_n);
+            Code.put(Code.load_2);
+            Code.put(Code.baload);
+            Code.put(Code.const_1);
+            Code.put(Code.bprint);
+            // i++
+            Code.put(Code.load_2);
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            Code.put(Code.store_2);
+            
+            Code.put(Code.jmp);
+            Code.put2(-14);
+            
+            Code.put(Code.exit);
+            Code.put(Code.return_);
+    }
+	
+	void printStrWithLength()
+    {
+			printStringAdrWithLength = Code.pc;
+
+            // (string), (print length), len, i
+            Code.put(Code.enter);
+            Code.put(2); 
+            Code.put(4);
+            
+            // i = 0
+            Code.put(Code.const_n);
+            Code.put(Code.store_3);
+            
+            // len = len(str);
+            Code.put(Code.load_n);
+            Code.put(Code.arraylength);
+            Code.put(Code.store_2);
+            
+            // while (i < len)
+            Code.put(Code.load_3);
+            Code.put(Code.load_2);
+            Code.put(Code.jcc + Code.ge);
+            Code.put2(15);
+
+            // print s[i];
+            Code.put(Code.load_n);
+            Code.put(Code.load_3);
+            Code.put(Code.baload);
+            Code.put(Code.load_1);
+            Code.put(Code.bprint);
+            // i++
+            Code.put(Code.load_3);
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            Code.put(Code.store_3);
+            
+            Code.put(Code.jmp);
+            Code.put2(-14);
+            
+            Code.put(Code.exit);
+            Code.put(Code.return_);
+    }
+	
+	void readStr()
+    {
+            readStringAdr = Code.pc;
+            
+            // (string), readChar, i
+            Code.put(Code.enter);
+            Code.put(1); 
+            Code.put(3);
+
+            // i = 0
+            Code.put(Code.const_n);
+            Code.put(Code.store_2);
+            
+            // read(readChar);
+            Code.put(Code.bread);
+            Code.put(Code.store_1);
+
+            // while (readChar != '\n')
+            Code.put(Code.load_1);
+            Code.loadConst(13);			// carriage return
+            Code.put(Code.jcc + Code.eq);
+            Code.put2(16);
+
+            // s[i] = readChar;
+            Code.put(Code.load_n);	// adr
+            Code.put(Code.load_2);	// index
+            Code.put(Code.load_1);	// val = readChar
+            Code.put(Code.bastore);
+
+            // i++
+            Code.put(Code.load_2);
+            Code.put(Code.const_1);
+            Code.put(Code.add);
+            Code.put(Code.store_2);
+            
+            // read(readChar);
+            Code.put(Code.bread);
+            Code.put(Code.store_1);
+            
+            Code.put(Code.jmp);
+            Code.put2(-19);
+            
+            Code.put(Code.exit);
+            Code.put(Code.return_);
+    }
 :}
 
 terminal PROGRAM, IDENT, LBRACE, RBRACE;
@@ -266,7 +402,13 @@ CloseScope ::= {: Tab.closeScope(); :};
      Program
 ***********************************************************************/
     
-Program ::= PROGRAM ProgramName:p OpenScope DeclarationList LBRACE 
+Program ::= PROGRAM ProgramName:p OpenScope
+			{:
+				printStr();
+				printStrWithLength();
+				readStr();
+			:}
+			DeclarationList LBRACE 
 			{:
 				parser.isGlobal = false;
 			:}
@@ -1031,6 +1173,12 @@ StatementMatched ::= Assignment
 									  Code.put(Code.bread);
 		                              Code.store(d);
 								  }
+								  else if (d.getType().getKind() == 6)	// string
+								  {
+								  	  Code.load(d);
+		                              Code.put(Code.call);
+		                              Code.put2(readStringAdr - Code.pc + 1);
+								  }
 								  else
 								  {
 									  Code.put(Code.read);
@@ -1068,42 +1216,8 @@ StatementMatched ::= Assignment
 								  } 
 								  else if (((Struct)exprName).getKind() == 6)
 								  {
-									  
-							            // len = len(str)
-									  	Code.put(Code.dup);
-									  	Code.put(Code.store_n);				// local[0] = adr
-									  	
-							            Code.put(Code.arraylength);
-							            Code.put(Code.store_1);				// local[1] = len
-							            
-							            // i = 0
-							            Code.put(Code.const_n);
-							            Code.put(Code.store_2);				//local[2] = i;
-							            
-							            // while (i < len)
-							            Code.put(Code.load_2);
-							            Code.put(Code.load_1);
-							            Code.put(Code.jcc + Code.ge);
-							            Code.put2(13);
-
-							            // print s[i];
-							            Code.put(Code.load_n);
-							            Code.put(Code.load_2);
-							            Code.put(Code.baload);
-							            Code.put(Code.const_1);
-							            Code.put(Code.bprint);
-							            
-							            // i++
-							            Code.put(Code.load_2);
-							            Code.put(Code.const_1);
-							            Code.put(Code.add);
-							            Code.put(Code.store_2);
-							            
-							            Code.put(Code.jmp);
-							            Code.put2(-14);
-							            
-							            Code.put(Code.const_n);
-							            Code.put(Code.store_2);
+									  Code.put(Code.call);
+			                          Code.put2(printStringAdr - Code.pc + 1);
 								  }
 							  }
 						  }
@@ -1135,6 +1249,12 @@ StatementMatched ::= Assignment
 		                              Code.loadConst((int)i);
 		                              Code.put(Code.print);
 			                      }
+			                      else if (((Struct)exprName).getKind() == 6)
+								  {
+			                    	  Code.loadConst((int)i);
+									  Code.put(Code.call);
+			                          Code.put2(printStringAdrWithLength - Code.pc + 1);
+								  }
 							  }
 						  }
 					  :}
