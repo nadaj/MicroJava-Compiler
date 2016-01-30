@@ -230,192 +230,192 @@ action code {:
 	
 	void printStr()
     {
-            printStringAdr = Code.pc;
-            Code.put(Code.enter);
-            Code.put(1); 
-            Code.put(3);					// za duzinu niza i iterator kao lokalne prom
-            
-            Code.put(Code.const_n);			// i = 0;
-            Code.put(Code.store_2);
-            
-            Code.put(Code.load_n);			// length = arraylength(string);
-            Code.put(Code.arraylength);
-            Code.put(Code.store_1);
-            
-            Code.put(Code.load_2);			// while (i < length)
-            Code.put(Code.load_1);
-            Code.put(Code.jcc + Code.ge);
-            Code.put2(15);
+        printStringAdr = Code.pc;
+        Code.put(Code.enter);
+        Code.put(1); 
+        Code.put(3);					// za duzinu niza i iterator kao lokalne prom
+        
+        Code.put(Code.const_n);			// i = 0;
+        Code.put(Code.store_2);
+        
+        Code.put(Code.load_n);			// length = arraylength(string);
+        Code.put(Code.arraylength);
+        Code.put(Code.store_1);
+        
+        Code.put(Code.load_2);			// while (i < length)
+        Code.put(Code.load_1);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(15);
 
-            Code.put(Code.load_n);			// print(string[i]);
-            Code.put(Code.load_2);
-            Code.put(Code.baload);
-            Code.put(Code.const_1);
-            Code.put(Code.bprint);
-            
-            Code.put(Code.load_2);			// i++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_2);
-            
-            Code.put(Code.jmp);
-            Code.put2(-14);
-            Code.put(Code.exit);
-            Code.put(Code.return_);
+        Code.put(Code.load_n);			// print(string[i]);
+        Code.put(Code.load_2);
+        Code.put(Code.baload);
+        Code.put(Code.const_1);
+        Code.put(Code.bprint);
+        
+        Code.put(Code.load_2);			// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_2);
+        
+        Code.put(Code.jmp);
+        Code.put2(-14);
+        Code.put(Code.exit);
+        Code.put(Code.return_);
     }
 	
 	void printStrWithLength()
     {
-			printStringAdrWithLength = Code.pc;
-            Code.put(Code.enter);
-            Code.put(2); 					// string i razmak pri stampanju
-            Code.put(4); 					// za duzinu niza i iterator kao lokalne prom
-            
-            Code.put(Code.const_n);			// i = 0;
-            Code.put(Code.store_3);
-            
-            Code.put(Code.load_n); 			// length = arraylength(string);
-            Code.put(Code.arraylength);
-            Code.put(Code.store_2);
-            	
-            Code.put(Code.load_3);			// while (i < length)
-            Code.put(Code.load_2);
-            Code.put(Code.jcc + Code.ge);
-            Code.put2(15);
+		printStringAdrWithLength = Code.pc;
+        Code.put(Code.enter);
+        Code.put(2); 					// string i razmak pri stampanju
+        Code.put(4); 					// za duzinu niza i iterator kao lokalne prom
+        
+        Code.put(Code.const_n);			// i = 0;
+        Code.put(Code.store_3);
+        
+        Code.put(Code.load_n); 			// length = arraylength(string);
+        Code.put(Code.arraylength);
+        Code.put(Code.store_2);
+        	
+        Code.put(Code.load_3);			// while (i < length)
+        Code.put(Code.load_2);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(15);
 
-            Code.put(Code.load_n);			// print(string[i]);
-            Code.put(Code.load_3);
-            Code.put(Code.baload);
-            Code.put(Code.load_1);
-            Code.put(Code.bprint);
-            
-            Code.put(Code.load_3);			// i++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_3);
-            
-            Code.put(Code.jmp);
-            Code.put2(-14);
-            Code.put(Code.exit);
-            Code.put(Code.return_);
+        Code.put(Code.load_n);			// print(string[i]);
+        Code.put(Code.load_3);
+        Code.put(Code.baload);
+        Code.put(Code.load_1);
+        Code.put(Code.bprint);
+        
+        Code.put(Code.load_3);			// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_3);
+        
+        Code.put(Code.jmp);
+        Code.put2(-14);
+        Code.put(Code.exit);
+        Code.put(Code.return_);
     }
 	
 	void readStr()
     {
-            readStringAdr = Code.pc;
-            Code.put(Code.enter);
-            Code.put(1); 
-            Code.put(3);					// za duzinu niza i iterator kao lokalne prom
+        readStringAdr = Code.pc;
+        Code.put(Code.enter);
+        Code.put(1); 
+        Code.put(3);					// za duzinu niza i iterator kao lokalne prom
 
-            Code.put(Code.const_n);			// i = 0;
-            Code.put(Code.store_2);
-            
-            Code.put(Code.load_n);			// length = arraylength(string);
-            Code.put(Code.arraylength);
-            Code.put(Code.store_1);
+        Code.put(Code.const_n);			// i = 0;
+        Code.put(Code.store_2);
+        
+        Code.put(Code.load_n);			// length = arraylength(string);
+        Code.put(Code.arraylength);
+        Code.put(Code.store_1);
 
-            Code.put(Code.load_2);			// while (i < length)
-            Code.put(Code.load_1);
-            Code.put(Code.jcc + Code.ge);
-            Code.put2(14);
+        Code.put(Code.load_2);			// while (i < length)
+        Code.put(Code.load_1);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(14);
 
-            Code.put(Code.load_n);			// read(string[i]);
-            Code.put(Code.load_2);
-            Code.put(Code.bread);
-            Code.put(Code.bastore);
-            
-            Code.put(Code.load_2);			// i++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_2);
+        Code.put(Code.load_n);			// read(string[i]);
+        Code.put(Code.load_2);
+        Code.put(Code.bread);
+        Code.put(Code.bastore);
+        
+        Code.put(Code.load_2);			// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_2);
 
-            Code.put(Code.jmp);
-            Code.put2(-13);
-            Code.put(Code.exit);
-            Code.put(Code.return_);
+        Code.put(Code.jmp);
+        Code.put2(-13);
+        Code.put(Code.exit);
+        Code.put(Code.return_);
     }
 	
 	void stringConcatenate()
     {
-           	catStrAdr = Code.pc;
-            Code.put(Code.enter);
-            Code.put(2); 
-            Code.put(7);						// int i, j , lens1, lens2 i povratni nadovezan string s3
+       	catStrAdr = Code.pc;
+        Code.put(Code.enter);
+        Code.put(2); 
+        Code.put(7);						// int i, j , lens1, lens2 i povratni nadovezan string s3
 
-            Code.put(Code.load_n);				// lens1 = arraylength(s1);
-            Code.put(Code.arraylength);
-            Code.put(Code.store);
-            Code.put(4);
-            
-            Code.put(Code.load_1);				// lens2 = arraylength(s2);
-            Code.put(Code.arraylength);
-            Code.put(Code.store);
-            Code.put(5);
-            
-            Code.put(Code.load);				// s3 = new string; (duzine lens1 + lens2)
-            Code.put(4);
-            Code.put(Code.load);
-            Code.put(5);
-            Code.put(Code.add);
-            Code.put(Code.newarray);
-            Code.put(0);
-            Code.put(Code.store);
-            Code.put(6);
+        Code.put(Code.load_n);				// lens1 = arraylength(s1);
+        Code.put(Code.arraylength);
+        Code.put(Code.store);
+        Code.put(4);
+        
+        Code.put(Code.load_1);				// lens2 = arraylength(s2);
+        Code.put(Code.arraylength);
+        Code.put(Code.store);
+        Code.put(5);
+        
+        Code.put(Code.load);				// s3 = new string; (duzine lens1 + lens2)
+        Code.put(4);
+        Code.put(Code.load);
+        Code.put(5);
+        Code.put(Code.add);
+        Code.put(Code.newarray);
+        Code.put(0);
+        Code.put(Code.store);
+        Code.put(6);
 
-            Code.put(Code.load_2);				// while (i < lens1)
-            Code.put(Code.load);
-            Code.put(4);
-            Code.put(Code.jcc + Code.ge);
-            Code.put2(17);
+        Code.put(Code.load_2);				// while (i < lens1)
+        Code.put(Code.load);
+        Code.put(4);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(17);
 
-            // s[i] = s1[i];
-            Code.put(Code.load);				// s3[i] = s1[i];
-            Code.put(6);
-            Code.put(Code.load_2);
-            Code.put(Code.load_n);
-            Code.put(Code.load_2);
-            Code.put(Code.baload);
-            Code.put(Code.bastore);
+        // s[i] = s1[i];
+        Code.put(Code.load);				// s3[i] = s1[i];
+        Code.put(6);
+        Code.put(Code.load_2);
+        Code.put(Code.load_n);
+        Code.put(Code.load_2);
+        Code.put(Code.baload);
+        Code.put(Code.bastore);
 
-            Code.put(Code.load_2);				// i++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_2);
+        Code.put(Code.load_2);				// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_2);
 
-            Code.put(Code.jmp);
-            Code.put2(-17);
-            
-            Code.put(Code.load_3);				// while (j < lens2)
-            Code.put(Code.load);
-            Code.put(5);
-            Code.put(Code.jcc + Code.ge);
-            Code.put2(21);
+        Code.put(Code.jmp);
+        Code.put2(-17);
+        
+        Code.put(Code.load_3);				// while (j < lens2)
+        Code.put(Code.load);
+        Code.put(5);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(21);
 
-            Code.put(Code.load);				// s3[i] = s2[j];
-            Code.put(6);
-            Code.put(Code.load_2);
-            Code.put(Code.load_1);
-            Code.put(Code.load_3);
-            Code.put(Code.baload);
-            Code.put(Code.bastore);
-            
-            Code.put(Code.load_2);				// i++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_2);
+        Code.put(Code.load);				// s3[i] = s2[j];
+        Code.put(6);
+        Code.put(Code.load_2);
+        Code.put(Code.load_1);
+        Code.put(Code.load_3);
+        Code.put(Code.baload);
+        Code.put(Code.bastore);
+        
+        Code.put(Code.load_2);				// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_2);
 
-            Code.put(Code.load_3);				// j++;
-            Code.put(Code.const_1);
-            Code.put(Code.add);
-            Code.put(Code.store_3);
+        Code.put(Code.load_3);				// j++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_3);
 
-            Code.put(Code.jmp);
-            Code.put2(-21);
-            Code.put(Code.load);				// stavlja se s3 na stek
-            Code.put(6);
-            
-            Code.put(Code.exit);
-            Code.put(Code.return_);
+        Code.put(Code.jmp);
+        Code.put2(-21);
+        Code.put(Code.load);				// stavlja se s3 na stek
+        Code.put(6);
+        
+        Code.put(Code.exit);
+        Code.put(Code.return_);
     }
 	
 :}
