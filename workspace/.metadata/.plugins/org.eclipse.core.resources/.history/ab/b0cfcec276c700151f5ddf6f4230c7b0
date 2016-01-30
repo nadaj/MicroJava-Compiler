@@ -1,0 +1,21 @@
+//nivo B
+//ispravan test
+
+program test04
+	const string sa = "nesto";
+	string sb;
+	int x, y;
+	int a[];
+	bool log;
+{
+	
+	int sum(int z, int d){
+		return z + d;
+	}
+	
+	void main(){
+		sb = "cao";
+		sb = sb + sa;
+		
+	}
+}
