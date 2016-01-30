@@ -15,6 +15,9 @@ import rs.etf.pp1.mj.runtime.Code;
 import java.util.List;
 import java.util.LinkedList;
 import java.util.Collection;
+import java.util.Deque;
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 
 parser code {:
 	
@@ -217,47 +220,46 @@ action code {:
 	int printStringAdr = 0;
 	int printStringAdrWithLength = 0;
 	int readStringAdr = 0;
-	int addStringAdr = 0;
+	int catStrAdr = 0;
+	
+	Deque<ArrayList<Integer>> falseAdrFixS = new ArrayDeque<ArrayList<Integer>>();
+	Deque<Integer> elseAdrFix = new ArrayDeque<Integer>();
+	List<Integer> orPartAdr = null;
+	Deque<ArrayList<Integer>> breakAdr = new ArrayDeque<ArrayList<Integer>>();
+	Deque<Integer> whileStartRetAdr = new ArrayDeque<Integer>();
 	
 	void printStr()
     {
             printStringAdr = Code.pc;
-
-            // (string), len, i
             Code.put(Code.enter);
             Code.put(1); 
-            Code.put(3);
+            Code.put(3);					// za duzinu niza i iterator kao lokalne prom
             
-            // i = 0
-            Code.put(Code.const_n);
+            Code.put(Code.const_n);			// i = 0;
             Code.put(Code.store_2);
             
-            // len = len(str);
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);			// length = arraylength(string);
             Code.put(Code.arraylength);
             Code.put(Code.store_1);
             
-            // while (i < len)
-            Code.put(Code.load_2);
+            Code.put(Code.load_2);			// while (i < length)
             Code.put(Code.load_1);
             Code.put(Code.jcc + Code.ge);
             Code.put2(15);
 
-            // print s[i];
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);			// print(string[i]);
             Code.put(Code.load_2);
             Code.put(Code.baload);
             Code.put(Code.const_1);
             Code.put(Code.bprint);
-            // i++
-            Code.put(Code.load_2);
+            
+            Code.put(Code.load_2);			// i++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_2);
             
             Code.put(Code.jmp);
             Code.put2(-14);
-            
             Code.put(Code.exit);
             Code.put(Code.return_);
     }
@@ -265,42 +267,35 @@ action code {:
 	void printStrWithLength()
     {
 			printStringAdrWithLength = Code.pc;
-
-            // (string), (print length), len, i
             Code.put(Code.enter);
-            Code.put(2); 
-            Code.put(4);
+            Code.put(2); 					// string i razmak pri stampanju
+            Code.put(4); 					// za duzinu niza i iterator kao lokalne prom
             
-            // i = 0
-            Code.put(Code.const_n);
+            Code.put(Code.const_n);			// i = 0;
             Code.put(Code.store_3);
             
-            // len = len(str);
-            Code.put(Code.load_n);
+            Code.put(Code.load_n); 			// length = arraylength(string);
             Code.put(Code.arraylength);
             Code.put(Code.store_2);
-            
-            // while (i < len)
-            Code.put(Code.load_3);
+            	
+            Code.put(Code.load_3);			// while (i < length)
             Code.put(Code.load_2);
             Code.put(Code.jcc + Code.ge);
             Code.put2(15);
 
-            // print s[i];
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);			// print(string[i]);
             Code.put(Code.load_3);
             Code.put(Code.baload);
             Code.put(Code.load_1);
             Code.put(Code.bprint);
-            // i++
-            Code.put(Code.load_3);
+            
+            Code.put(Code.load_3);			// i++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_3);
             
             Code.put(Code.jmp);
             Code.put2(-14);
-            
             Code.put(Code.exit);
             Code.put(Code.return_);
     }
@@ -308,69 +303,56 @@ action code {:
 	void readStr()
     {
             readStringAdr = Code.pc;
-            
-            // (string), len, i
             Code.put(Code.enter);
             Code.put(1); 
-            Code.put(3);
+            Code.put(3);					// za duzinu niza i iterator kao lokalne prom
 
-            // i = 0
-            Code.put(Code.const_n);
+            Code.put(Code.const_n);			// i = 0;
             Code.put(Code.store_2);
             
-            // len = len(str);
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);			// length = arraylength(string);
             Code.put(Code.arraylength);
             Code.put(Code.store_1);
 
-            // while (i < len)
-            Code.put(Code.load_2);
+            Code.put(Code.load_2);			// while (i < length)
             Code.put(Code.load_1);
             Code.put(Code.jcc + Code.ge);
             Code.put2(14);
 
-            // read s[i];
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);			// read(string[i]);
             Code.put(Code.load_2);
             Code.put(Code.bread);
             Code.put(Code.bastore);
-
-            // i++
-            Code.put(Code.load_2);
+            
+            Code.put(Code.load_2);			// i++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_2);
 
             Code.put(Code.jmp);
             Code.put2(-13);
-            
             Code.put(Code.exit);
             Code.put(Code.return_);
     }
 	
 	void stringConcatenate()
     {
-           addStringAdr = Code.pc;
-
-            // (string s1, string s2); int i, j, m, n; string res;
+           	catStrAdr = Code.pc;
             Code.put(Code.enter);
             Code.put(2); 
-            Code.put(7);
+            Code.put(7);						// int i, j , lens1, lens2 i povratni nadovezan string s3
 
-            // m = len(s1);
-            Code.put(Code.load_n);
+            Code.put(Code.load_n);				// lens1 = arraylength(s1);
             Code.put(Code.arraylength);
             Code.put(Code.store);
             Code.put(4);
             
-            // n = len(s2);
-            Code.put(Code.load_1);
+            Code.put(Code.load_1);				// lens2 = arraylength(s2);
             Code.put(Code.arraylength);
             Code.put(Code.store);
             Code.put(5);
             
-            // res = new char[m+n]
-            Code.put(Code.load);
+            Code.put(Code.load);				// s3 = new string; (duzine lens1 + lens2)
             Code.put(4);
             Code.put(Code.load);
             Code.put(5);
@@ -380,15 +362,14 @@ action code {:
             Code.put(Code.store);
             Code.put(6);
 
-            // while (i < m)
-            Code.put(Code.load_2);
+            Code.put(Code.load_2);				// while (i < lens1)
             Code.put(Code.load);
             Code.put(4);
             Code.put(Code.jcc + Code.ge);
             Code.put2(17);
 
             // s[i] = s1[i];
-            Code.put(Code.load);
+            Code.put(Code.load);				// s3[i] = s1[i];
             Code.put(6);
             Code.put(Code.load_2);
             Code.put(Code.load_n);
@@ -396,8 +377,7 @@ action code {:
             Code.put(Code.baload);
             Code.put(Code.bastore);
 
-            // i++;
-            Code.put(Code.load_2);
+            Code.put(Code.load_2);				// i++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_2);
@@ -405,15 +385,13 @@ action code {:
             Code.put(Code.jmp);
             Code.put2(-17);
             
-            // while (j < n)
-            Code.put(Code.load_3);
+            Code.put(Code.load_3);				// while (j < lens2)
             Code.put(Code.load);
             Code.put(5);
             Code.put(Code.jcc + Code.ge);
             Code.put2(21);
 
-            // s[i] = s2[j];
-            Code.put(Code.load);
+            Code.put(Code.load);				// s3[i] = s2[j];
             Code.put(6);
             Code.put(Code.load_2);
             Code.put(Code.load_1);
@@ -421,23 +399,19 @@ action code {:
             Code.put(Code.baload);
             Code.put(Code.bastore);
             
-            // i++;
-            Code.put(Code.load_2);
+            Code.put(Code.load_2);				// i++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_2);
 
-            // j++;
-            Code.put(Code.load_3);
+            Code.put(Code.load_3);				// j++;
             Code.put(Code.const_1);
             Code.put(Code.add);
             Code.put(Code.store_3);
 
             Code.put(Code.jmp);
             Code.put2(-21);
-
-            // res left on stack
-            Code.put(Code.load);
+            Code.put(Code.load);				// stavlja se s3 na stek
             Code.put(6);
             
             Code.put(Code.exit);
@@ -482,7 +456,7 @@ non terminal Obj ProgramName, MethodName, Designator, Val, ClassName;
 non terminal Struct Type;
 non terminal OpenScope, CloseScope;
 non terminal String ClassBase;
-non terminal WhileStart, Cond;
+non terminal WhileStart, Cond, EndIf, BeforeElse, AfterElse;
 /*
  *  **********************
  */
@@ -1062,15 +1036,66 @@ Statement ::= StatementUnmatched
 			  |
 			  StatementMatched;
 
-StatementUnmatched ::= IF Cond Statement
+StatementUnmatched ::= IF Cond Statement EndIf
 					   |
-					   IF Cond StatementMatched ELSE StatementUnmatched
+					   IF Cond StatementMatched BeforeElse ELSE EndIf StatementUnmatched AfterElse
 					   |
-					   WHILE WhileStart Cond StatementUnmatched {: numWhile--; :};
+					   WHILE WhileStart Cond StatementUnmatched 
+					   {: 
+						   numWhile--; 
+						   Code.putJump(whileStartRetAdr.pop());	// skace nazad na while (cond)
+						   ArrayList<Integer> uslovi = falseAdrFixS.pop();	// preskace while, nije ispunjen
+						   for (Integer i: uslovi)
+						   {
+							   Code.fixup(i);
+						   }
+						   uslovi = breakAdr.pop();	// sredjivanje break-ova
+						   for (Integer i: uslovi)
+						   {
+							   Code.fixup(i);
+						   }
+					   :};
 
-WhileStart ::= {: numWhile++; :};
-					   
-Cond ::= LPAREN ConditionFixed RPAREN;
+WhileStart ::= {: 
+			   		numWhile++; 
+					breakAdr.push(new ArrayList<Integer>());
+					whileStartRetAdr.push(Code.pc);				// cuva se povratna adresa
+			   :};
+
+BeforeElse ::= {:
+			   		// ako je uslov bio true, preskace se else
+					Code.putJump(0);
+					elseAdrFix.push(Code.pc - 2);
+			   :};
+
+AfterElse ::= {:
+					Integer i = elseAdrFix.pop();
+			  		Code.fixup(i);
+			  :};
+EndIf ::= {:
+		  		ArrayList<Integer> uslovi = falseAdrFixS.peek();
+				if (uslovi != null)
+				{
+					for (Integer i: uslovi)
+					{
+						Code.fixup(i);
+					}
+					falseAdrFixS.pop();
+				}
+		  :};
+
+Cond ::= LPAREN 
+		{:
+			falseAdrFixS.push(new ArrayList<Integer>());
+			orPartAdr = new ArrayList<Integer>();
+		:}
+		ConditionFixed RPAREN
+		{:
+			for (Integer i: orPartAdr)	// ako je 1 deo uslova u OR true
+			{
+				Code.fixup(i);
+			}
+		:};
 
 StatementMatched ::= Assignment
 					  |
@@ -1218,14 +1243,33 @@ StatementMatched ::= Assignment
 						  }
 					  :}
 					  |
-					  IF Cond StatementMatched ELSE StatementMatched
+					  IF Cond StatementMatched BeforeElse ELSE EndIf StatementMatched AfterElse
 					  |
-					  WHILE WhileStart Cond StatementMatched {: numWhile--; :}
+					  WHILE WhileStart Cond StatementMatched
+					  {: 
+						   numWhile--; 
+						   Code.putJump(whileStartRetAdr.pop());	// skace nazad na while (cond)
+						   ArrayList<Integer> uslovi = falseAdrFixS.pop();	// preskace while, nije ispunjen
+						   for (Integer i: uslovi)
+						   {
+							   Code.fixup(i);
+						   }
+						   uslovi = breakAdr.pop();	// sredjivanje break-ova
+						   for (Integer i: uslovi)
+						   {
+							   Code.fixup(i);
+						   }
+					   :}
 					  |
 					  BREAK:d SEMI_COMMA
 					  {:
-						  if (numWhile == 0)
-							  parser.report_error("[Greska]Linija: " + dleft + " BREAK nije koriscen unutar while ciklusa!", null);
+						   if (numWhile == 0)
+							   parser.report_error("[Greska]Linija: " + dleft + " BREAK nije koriscen unutar while ciklusa!", null);
+						   else
+						   {
+							   Code.putJump(0);
+							   breakAdr.peek().add(Code.pc - 2);
+						   }
 					  :}
 					  |
 					  RETURN:dummy SEMI_COMMA
@@ -1233,7 +1277,9 @@ StatementMatched ::= Assignment
 						  returnExists=true;
 			              if (!isVoid)
 			            	  parser.report_error("[Greska]Linija: " + dummyleft + " Metod mora imati return iskaz sa izrazom jer nije deklarisan sa void!", null);
-		              :}
+			              Code.put(Code.exit);
+                          Code.put(Code.return_);
+			          :}
 					  |
 					  RETURN:dummy Expr:t SEMI_COMMA 
 					  {: 
@@ -1244,6 +1290,14 @@ StatementMatched ::= Assignment
 						   {
 							   parser.report_error("[Greska]Linija: " + tleft + " Tip nije isti kao povratni tip funkcije!", null);
 						   }
+				           else
+				           {
+				        	   if (!isVoid)
+				        	   {
+				        		   Code.put(Code.exit);
+			                       Code.put(Code.return_);
+				        	   }
+				           }
 				      :}
 					  |
 					  READ LPAREN Designator:d RPAREN SEMI_COMMA 
@@ -1423,7 +1477,18 @@ ActPars ::= Expr:t COMMA ActPars:numActPars
 
 ConditionFixed ::= Condition;
 
-Condition ::= Condition OR CondTermFixed
+Condition ::= Condition
+			  {:
+				  	Code.putJump(0);			// ako je deo OR tacan, preskace se provera ostatka
+			  		orPartAdr.add(Code.pc - 2);
+                    ArrayList<Integer> uslovi = falseAdrFixS.pop();	// za false jump deo, da se skace na odgovarajuci deo
+                    for (Integer i: uslovi)
+                	{
+                    	Code.fixup(i);
+                	}
+                    falseAdrFixS.push(new ArrayList<Integer>()); // kako bi se ponovilo stavlja se opet	
+			  :}
+			  OR CondTermFixed
 			  |
 			  CondTermFixed:t
 			  {:
@@ -1457,19 +1522,31 @@ CondTerm ::= CondTerm AND CondFact
 CondFact ::= Expr:t
 			 {:
 				 RESULT = t;
+				 if (t != null && ((Struct)t).getKind() == Struct.Bool)
+				 {
+					 // poredi se taj bool i 1 ==> bool == 1
+					 Code.loadConst(1);
+					 Code.putFalseJump(Code.eq, 0); // uslovni skok- adr je 0, i not equal
+					 falseAdrFixS.peek().add(Code.pc - 2);
+				 }
 			 :}
 			 |
 			 Expr:t1 Relop:op Expr:t2
 			 {:
 				 if (!((Struct)t1).compatibleWith((Struct)t2))
-				 {
 					 parser.report_error("[Greska]Linija: " + opleft + " Tipovi oba izraza nisu kompatibilni!", null);
+				 else
+				 {
+					 Code.putFalseJump((int)op, 0);
+					 falseAdrFixS.peek().add(Code.pc - 2);
 				 }
+				 
 				 if ((((Struct)t1).getKind() == Struct.Array || ((Struct)t1).getKind() == Struct.Class 
 						 || ((Struct)t2).getKind() == Struct.Array || ((Struct)t2).getKind() == Struct.Class) &&
-						 (int)op != 24 && (int)op != 25)
+						 (int)op != Code.ne && (int)op != Code.eq)
 					 parser.report_error("[Greska]Linija: " + opleft + " Uz klase i nizove mogu da se koriste samo != i == !", null);
-			 :};
+				 
+		     :};
 
 /***********************************************************************
      Expr
@@ -1499,7 +1576,7 @@ Expr ::= Expr:t1 Addop:op Term:name
 					 {
 						 // konkatenacija stringova
 						 Code.put(Code.call);
-                         Code.put2(addStringAdr - Code.pc + 1);
+                         Code.put2(catStrAdr - Code.pc + 1);
 					 }
 				 }
 				 else if (!((Struct)t1).equals(Tab.noType) && !((Struct)t1).equals(Tab.noType) && (((Struct)t1).getKind() != Struct.Int || ((Struct)name).getKind() != Struct.Int))
@@ -2020,32 +2097,32 @@ DesignatorPart ::= LBRACKET:lb
 
 Relop ::= EQUAL:rel
 		  {:
-			  RESULT = 24;
+			  RESULT = Code.eq;
 		  :}
 		  |
 		  NOT_EQUAL:rel
 		  {:
-			  RESULT = 25;
+			  RESULT = Code.ne;
 		  :}
 		  |
 		  GREATER:rel
 		  {:
-			  RESULT = 26;
+			  RESULT = Code.gt;
 		  :}
 		  |
 		  GREATER_OR_EQUAL:rel
 		  {:
-			  RESULT = 27;
+			  RESULT = Code.ge;
 		  :}
 		  |
 		  LESS:rel
 		  {:
-			  RESULT = 28;
+			  RESULT = Code.lt;
 		  :}
 		  |
 		  LESS_OR_EQUAL:rel
 		  {:
-			  RESULT = 29;
+			  RESULT = Code.le;
 		  :};
 		  
 /***********************************************************************
