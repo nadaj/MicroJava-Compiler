@@ -19,6 +19,7 @@ program MJProgram
 		
 		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
 		{
+			read(i);
 			read(u);
 			print(u);
 		}

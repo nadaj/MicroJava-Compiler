@@ -1,48 +1,25 @@
-//nivo B
-//ispravan test
-
-program test04
-	const string sa = "nesto";
-	string sb;
-	int x, y;
-	int a[];
-	bool log;
+program MJProgram
+	int x, m;
 	
-	class C {int j;}
+	const bool flag = false;
+	const bool flagt = true;
 	
-	class A { 
-		C c;int i; int f[];
+	{
+		int k()int c;
 		{
-		void k(C l)C o;
+			c = 0;
+			print(0);
+			return c + 1;
+		}
+		
+		int inkrem(int i)
 		{
-			o.j = 4;
-			l.j = 1;
-			c.j = 3;
+			return i-1;
 		}
+		
+		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
+		{
+			read(u);
+			print(u);
 		}
 	}
-	A globA;
-{
-	
-	int sum(int z, int d){
-		return z + d;
-	}
-	
-	int arr0(int b[])int a[]; {return a[0];}
-	
-	void main()int a[];A objA;C c;{
-		read(sb);
-		sb = sb + sa;
-		a = new int[5];
-		x = 0; y = 3;
-		while(log){
-			a[x] = sum(y,x) + 1;
-			x = sum(x,1);
-			if(x == 5) break;
-		}
-		print(a[3]);
-		print(sb + "jos nesto");
-		objA.c.j = 4;
-		globA.i = 5;
-	}
-}

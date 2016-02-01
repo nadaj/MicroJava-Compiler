@@ -1548,8 +1548,6 @@ StatementMatched ::= Assignment
 								  {
 									  Code.put(Code.read);
 		                              Code.store(d);
-		                              Code.put(Code.bread);
-		                              Code.put(Code.pop);
 								  }
 							  }
 						  }
