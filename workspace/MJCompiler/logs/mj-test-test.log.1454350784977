@@ -1,0 +1,18 @@
+INFO  20160201@19:18:03,998:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@19:18:15,322:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 4 xc je vec deklarisano
+ERROR 20160201@19:18:15,323:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@19:18:15,325:rs.ac.bg.etf.pp1.MJParser - [Definicija globalne promenljive] Izvrsen oporavak do ; u liniji 6
+ERROR 20160201@19:18:33,807:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqrt nije deklarisano! 
+ERROR 20160201@19:18:33,808:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160201@19:18:33,811:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160201@19:18:33,813:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160201@19:18:36,674:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije kompatibilan pri dodeli sa o!
+ERROR 20160201@19:18:36,674:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15 Tip nije isti kao povratni tip funkcije!
+ERROR 20160201@19:18:39,523:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19 Tip nije kompatibilan pri dodeli sa s!
+ERROR 20160201@19:18:39,524:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160201@19:18:39,524:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Tip nije isti kao povratni tip funkcije!
+ERROR 20160201@19:18:39,524:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 23 Nije pronadjen tip z u tabeli simbola!
+ERROR 20160201@19:18:39,525:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@19:18:39,525:rs.ac.bg.etf.pp1.MJParser - [Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji 23

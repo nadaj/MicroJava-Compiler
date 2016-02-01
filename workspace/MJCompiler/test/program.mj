@@ -19,7 +19,7 @@ program MJProgram
 		
 		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
 		{
-			read(u);
-			print(u);
+			a = "caocao";
+			print(a);
 		}
 	}

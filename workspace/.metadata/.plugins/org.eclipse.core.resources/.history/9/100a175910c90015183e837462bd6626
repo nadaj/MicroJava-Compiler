@@ -991,7 +991,7 @@ MethodDeclPart ::= MethodName:methName OpenScope
 				   LPAREN MethodPars:numForPars 
 				   {:
 					   	// level = broj formalnih parametara
-					   if (!parser.wrongReturnTypeOverride && !parser.mainMethod && numForPars != null)
+					   if (!parser.wrongReturnTypeOverride && !parser.mainMethod)
 					   {
 						   	currentMethod.setLevel(currentMethod.getLevel() + (int)numForPars);
 						    if (overridenMethod != null)

@@ -1,0 +1,18 @@
+INFO  20160201@19:13:11,200:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@19:13:11,215:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@19:13:11,218:rs.ac.bg.etf.pp1.MJParser - [Definicija globalne promenljive] Izvrsen oporavak do ; u liniji 7
+ERROR 20160201@19:13:11,218:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 c je vec deklarisano
+ERROR 20160201@19:13:11,219:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@19:13:11,219:rs.ac.bg.etf.pp1.MJParser - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 10
+ERROR 20160201@19:13:11,222:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160201@19:13:11,223:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tipovi oba izraza moraju biti int!
+ERROR 20160201@19:13:11,223:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@19:13:11,224:rs.ac.bg.etf.pp1.MJParser - [Logicki izraz] Izvrsen oporavak do ) u liniji 15
+ERROR 20160201@19:13:11,225:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tipovi oba izraza moraju biti int!
+ERROR 20160201@19:13:11,225:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160201@19:13:11,226:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21: ime max nije deklarisano! 
+ERROR 20160201@19:13:11,226:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160201@19:13:11,227:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

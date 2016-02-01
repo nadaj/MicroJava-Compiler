@@ -733,9 +733,33 @@ Val ::= NUMBER:val
      VarDecl
 ***********************************************************************/
 
-VarDecl ::= Type:currentType VarDeclList SEMI_COMMA;
+VarDecl ::= Type:currentType VarDeclList SEMI_COMMA
+			|
+			Type error:l SEMI_COMMA
+			{: 
+				if (parser.isGlobal)
+					parser.report_error("[Definicija globalne promenljive] Izvrsen oporavak do ; u liniji "+lleft,null);
+				else if (parser.inner && !parser.local)
+					parser.report_error("[Deklaracija polja unutrasnje klase] Izvrsen oporavak do ; u liniji "+lleft,null);
+				else
+					parser.report_error("[Deklaracija lokalne promenljive] Izvrsen oporavak do ; u liniji "+lleft,null);
+			:}
+			|
+			Type error:e
+			{:
+				if (parser.inner && !parser.local)
+					parser.report_error("[Deklaracija polja unutrasnje klase] Izvrsen oporavak do { u liniji "+eleft,null);
+				else
+					parser.report_error("[Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji "+eleft,null);
+			:};
 
 VarDeclList ::= VarDeclList COMMA VarDeclPart
+				|
+				error:l COMMA VarDeclPart
+				{: 
+					if (parser.isGlobal)
+						parser.report_error("[Definicija globalne promenljive] Izvrsen oporavak do , u liniji "+lleft,null); 
+				:}
 				|
 				VarDeclPart;
 				
@@ -967,7 +991,7 @@ MethodDeclPart ::= MethodName:methName OpenScope
 				   LPAREN MethodPars:numForPars 
 				   {:
 					   	// level = broj formalnih parametara
-					   if (!parser.wrongReturnTypeOverride && !parser.mainMethod)
+					   if (!parser.wrongReturnTypeOverride && !parser.mainMethod && numForPars != null)
 					   {
 						   	currentMethod.setLevel(currentMethod.getLevel() + (int)numForPars);
 						    if (overridenMethod != null)
@@ -1134,7 +1158,17 @@ MethodPars ::= FormPars:numForPars
 			   /* epsilon */
 			   {: 
 				   RESULT = 0; 
-			   :};					
+			   :}
+			   |
+			   error:e COMMA FormPars:n
+			   {:
+				   parser.report_error("[Deklaracija form. parametra funkcije] Izvrsen oporavak do , u liniji "+eleft,null);
+			   :}
+			   |
+			   error:e
+			   {:
+				   parser.report_error("[Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji "+eleft,null);
+			   :};
 					
 StatementList ::= StatementList Statement
 				  |
@@ -1646,6 +1680,11 @@ Assignment ::= Designator:d EQUALS Expr:name SEMI_COMMA
 						  if (d != null)
 							  Code.store(d);
 					  }
+			   :}
+			   |
+			   error:l SEMI_COMMA
+			   {:
+				   parser.report_error("[Konstrukcija iskaza dodele] Izvrsen oporavak do ; u liniji "+lleft,null);
 			   :};
 
 /***********************************************************************
@@ -1692,7 +1731,12 @@ ActPars ::= Expr:t COMMA ActPars:numActPars
      Condition
 ***********************************************************************/	  
 
-ConditionFixed ::= Condition;
+ConditionFixed ::= Condition
+				   |
+				   error:e
+				   {: 
+					   parser.report_error("[Logicki izraz] Izvrsen oporavak do ) u liniji "+eleft,null); 
+				   :};
 
 Condition ::= Condition
 			  {:
@@ -2361,6 +2405,11 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   			   
 			   	   }
 			   	   	RESULT = obj;
+			   :}
+			   |
+			   IDENT LBRACKET error:e RBRACKET
+			   {:
+				   parser.report_error("[Izraz za indeksiranje niza] Izvrsen oporavak do ] u liniji "+eleft,null);
 			   :};
 
 DesignatorList ::= DesignatorList:res DesignatorPart:namePart
@@ -2424,6 +2473,11 @@ DesignatorPart ::= LBRACKET:lb
 					   }
 					   RESULT = tempSubObj;
 					   arrayType = tempSubObj;
+				   :}
+				   |
+				   LBRACKET error:e RBRACKET
+				   {:
+					   parser.report_error("[Izraz za indeksiranje niza] Izvrsen oporavak do ] u liniji "+eleft,null);
 				   :};
 
 /***********************************************************************

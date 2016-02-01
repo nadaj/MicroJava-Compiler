@@ -19,7 +19,8 @@ program MJProgram
 		
 		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
 		{
-			a = "caocao";
-			print(a);
+			y = new int[3];
+			y[0] = 0;
+			print(y[y[0]]);
 		}
 	}
