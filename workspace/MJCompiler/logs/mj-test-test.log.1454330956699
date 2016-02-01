@@ -1,0 +1,6 @@
+INFO  20160201@13:48:47,890:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@13:48:47,905:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 c je vec deklarisano
+ERROR 20160201@13:48:47,906:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@13:48:47,907:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160201@13:48:47,908:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

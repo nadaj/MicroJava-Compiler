@@ -18,6 +18,8 @@ import java.util.Collection;
 import java.util.Deque;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
+import java.util.Set;
+import java.util.HashSet;
 
 parser code {:
 	
@@ -203,7 +205,7 @@ action code {:
 	Logger log = Logger.getLogger(getClass());
 
 	public static final Struct boolType = new Struct(Struct.Bool);
-	//public static final Struct stringType = new Struct(Struct.Array, Tab.charType);
+	
 	public static final Struct stringType = new Struct(6);
 	
 	Obj currentMethod = null, currentClass = null, currentDesignator = null, baseClass = null, overridenMethod = null;
@@ -216,6 +218,7 @@ action code {:
 	boolean mainDetected = false;
 	Obj currentIndex = null;
 	Obj theArr = null;
+	Obj currentTypeObj = null;
 	
 	int printStringAdr = 0;
 	int printStringAdrWithLength = 0;
@@ -223,11 +226,14 @@ action code {:
 	int catStrAdr = 0;
 	int eqStrAdr = 0;
 	
+	MethodTable methodTable = new MethodTable();
 	Deque<ArrayList<Integer>> falseAdrFixS = new ArrayDeque<ArrayList<Integer>>();
 	Deque<Integer> elseAdrFix = new ArrayDeque<Integer>();
 	List<Integer> orPartAdr = null;
 	Deque<ArrayList<Integer>> breakAdr = new ArrayDeque<ArrayList<Integer>>();
 	Deque<Integer> whileStartRetAdr = new ArrayDeque<Integer>();
+	List<Obj> classes = new ArrayList<Obj>();
+	Deque<Obj> poziviObj = new ArrayDeque<Obj>();
 	
 	void printStr()
     {
@@ -490,6 +496,61 @@ action code {:
         Code.put(Code.exit);
         Code.put(Code.return_);
     }
+	
+	void createvTable()
+    {
+        if (parser.errorFound) 
+        {
+        	return;
+        }
+        
+        Set<Obj> methods = null;
+        Set<String> methodNames = null;
+        boolean firstMethod = true;
+
+        for (Obj o :classes)
+        {
+            Struct typeCl = o.getType();
+            while (typeCl != null)
+            {
+                for (Obj obj : typeCl.getMembers())
+                {
+                    if (obj.getKind() != Obj.Meth) 
+                    {
+                    	continue;
+                    }
+
+                    if (firstMethod) 
+                    {
+                    	methods = new HashSet<Obj>();
+                    	methodNames = new HashSet<String>();
+                        o.setAdr(Code.dataSize);				// postavlja vTable adresu u polje Adr obj cvora klase
+                        firstMethod = false;
+                    } 
+                        
+                    if (methodNames.contains(obj.getName() + obj.getLevel()))
+                	{
+                    	continue;
+                	}
+                    
+                    methods.add(obj);
+                    methodNames.add(obj.getName() + obj.getLevel());
+                }
+                typeCl = typeCl.getElemType();
+            } 
+
+            if (!firstMethod)
+            {
+                for (Obj method : methods)
+                {
+                	methodTable.addFunctionEntry(method.getName(), method.getAdr());
+                }
+
+                methodTable.addTableTerminator();
+                firstMethod = true;
+            }
+        } 
+    }
 :}
 
 terminal PROGRAM, IDENT, LBRACE, RBRACE;
@@ -554,10 +615,11 @@ Program ::= PROGRAM ProgramName:p OpenScope
 			DeclarationList LBRACE 
 			{:
 				parser.isGlobal = false;
+				Code.dataSize = Tab.currentScope.getnVars();
+				createvTable();
 			:}
 			MethodDeclarationList RBRACE
 			{:
-				Code.dataSize = Tab.currentScope.getnVars();
 				Tab.chainLocalSymbols(p);
 			:}
 			CloseScope
@@ -686,7 +748,14 @@ VarDeclPart ::= IDENT:varName
 					
 					// da li je ime vec deklarisano u ovom scope-u
 					if (Tab.currentScope.findSymbol(varName.toString()) == null)
+					{
 						RESULT = Tab.insert(parser.inner && !parser.local? Obj.Fld: Obj.Var, varName.toString(), currentType);
+						if (parser.inner && !parser.local && currentClass != null)
+						{
+							currentClass.setAdr(currentClass.getAdr() + 1);
+							((Obj)RESULT).setAdr(currentClass.getAdr());
+						}
+					}
 					else
 						parser.report_error("[Greska]Linija: " + varNameleft + " " + varName + " je vec deklarisano", null);
 				:}
@@ -702,7 +771,14 @@ VarDeclPart ::= IDENT:varName
 					s.setElementType(currentType);
 					// da li je ime vec deklarisano u ovom scope-u
 					if (Tab.currentScope.findSymbol(varName.toString()) == null)
+					{
 						RESULT = Tab.insert(parser.inner && !parser.local? Obj.Fld: Obj.Var, varName.toString(), s);
+						if (parser.inner && !parser.local && currentClass != null)
+						{
+							currentClass.setAdr(currentClass.getAdr() + 1);
+							((Obj)RESULT).setAdr(currentClass.getAdr());
+						}
+					}
 					else
 						parser.report_error("[Greska]Linija: " + varNameleft + " " + varName + " je vec deklarisano", null);
 				:};
@@ -711,7 +787,12 @@ VarDeclPart ::= IDENT:varName
      ClassDecl
 ***********************************************************************/
 
-ClassDecl ::= CLASS ClassName:className OpenScope LBRACE 
+ClassDecl ::= CLASS ClassName:className OpenScope 
+			  {:
+				  Obj tempObj = Tab.insert(Obj.Fld, "vTableAddress", Tab.intType);
+				  tempObj.setAdr(0);
+			  :}
+			  LBRACE 
 			  {: 
 				  parser.inner = true;
 				  parser.isGlobal = false; 
@@ -726,11 +807,15 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 				  parser.inner = false;
 				  parser.isGlobal = true;
 				  
-				  Tab.chainLocalSymbols(currentClass.getType());
+				  if (currentClass != null)
+					  Tab.chainLocalSymbols(currentClass.getType());
 			  :}
 			  CloseScope
+			  {:
+				  currentClass = null;
+			  :}
 			  |
-			  CLASS ClassName:className EXTENDS ClassBase:baseClassName OpenScope 
+			  CLASS ClassName:className EXTENDS ClassBase:baseClassName
 			  {:
 				  baseClass = Tab.find(baseClassName.toString());
 				  if (baseClass == Tab.noObj)
@@ -741,14 +826,29 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 				  {
 					  parser.report_error("[Greska]Linija: " + baseClassNameleft + " Ocekivana natklasa!", null);
 				  }
-					  
-					  
-				  // "kopira" polja natklase
+				  else
+				  {
+					  if (currentClass != null)
+					  {
+						  currentClass.setAdr(baseClass.getAdr());
+						  currentClass.getType().setElementType(baseClass.getType());
+					  }
+				  }
+			  :}
+			  OpenScope 
+			  {: 
+				  Obj tempObj = Tab.insert(Obj.Fld, "vTableAddress", Tab.intType);  
+				  tempObj.setAdr(0);
+				  
+				  // "kopira" polja natklase osim vTable
 				  for (Obj o: baseClass.getType().getMembers())
 				  {
 					  if (o.getKind() == Obj.Meth) break;
-					  Obj attr = Tab.insert(o.getKind(), o.getName(), o.getType());
-					  attr.setAdr(o.getAdr());
+					  if (!o.getName().equals("vTableAddress"))
+					  {
+						  Obj attr = Tab.insert(o.getKind(), o.getName(), o.getType());
+						  attr.setAdr(o.getAdr());
+					  }
 				  }
 			  :}
 			  LBRACE 
@@ -760,27 +860,29 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 			  LocalVarDeclList 
 			  {:
 				  parser.local = true;
-			  
-				  // "kopira" metode natklase
-				  for (Obj o: baseClass.getType().getMembers())
-				  {
-					  if (o.getKind() == Obj.Meth)
+			  	  if (currentClass != null)
+			  	  {
+			  		// "kopira" metode natklase
+					  for (Obj o: baseClass.getType().getMembers())
 					  {
-						  Obj attr = Tab.insert(o.getKind(), o.getName(), o.getType());
-						  attr.setAdr(o.getAdr());
-						  attr.setLevel(o.getLevel());
-						  SymbolDataStructure locals = new HashTableDataStructure();
-						  for (Obj member:o.getLocalSymbols())
+						  if (o.getKind() == Obj.Meth)
 						  {
-							  if (member.getName().equals("this"))
-								  locals.insertKey(new Obj(Obj.Var, "this", currentClass.getType()));
-							  else
-								  locals.insertKey(member);
+							  Obj attr = Tab.insert(o.getKind(), o.getName(), o.getType());
+							  attr.setAdr(o.getAdr());
+							  attr.setLevel(o.getLevel());
+							  SymbolDataStructure locals = new HashTableDataStructure();
+							  for (Obj member:o.getLocalSymbols())
+							  {
+								  if (member.getName().equals("this"))
+									  locals.insertKey(new Obj(Obj.Var, "this", currentClass.getType()));
+								  else
+									  locals.insertKey(member);
+							  }
+							  attr.setLocals(locals);
+							  attr.setFpPos(o.getFpPos());
 						  }
-						  attr.setLocals(locals);
-						  attr.setFpPos(o.getFpPos());
 					  }
-				  }
+			  	  }
 			  :}
 			  ClassDeclMethodDeclaration RBRACE 
 			  {:
@@ -788,9 +890,13 @@ ClassDecl ::= CLASS ClassName:className OpenScope LBRACE
 				  parser.isGlobal = true;
 				  baseClass = null;
 				  
-				  Tab.chainLocalSymbols(currentClass.getType());
+				  if (currentClass != null)
+					  Tab.chainLocalSymbols(currentClass.getType());
 			  :}
-			  CloseScope;
+			  CloseScope
+			  {:
+				  currentClass = null;
+			  :};
 
 ClassName ::= IDENT:className
 			  {:
@@ -798,6 +904,8 @@ ClassName ::= IDENT:className
 				  {
 					  parser.inner_class_cnt++;
 					  currentClass = Tab.insert(Obj.Type, className.toString(), new Struct(Struct.Class));
+					  currentClass.setAdr(0);
+					  classes.add(currentClass);
 				  }
 				  else
 					  parser.report_error("[Greska]Linija: " + classNameleft + " " + className + " je vec deklarisano", null);
@@ -909,11 +1017,16 @@ MethodDeclPart ::= MethodName:methName OpenScope
 						   		}
 					   		}  
 					   }
-					   //if (isVoid)
-					   //{
+					   if (isVoid)
+					   {
 						   Code.put(Code.exit);
 						   Code.put(Code.return_);
-					   //}
+					   }
+					   else
+					   {
+						   Code.put(Code.trap);			// ako se zaobidje return -> runtime error
+						   Code.put(1);
+					   }
 					   
 			   	   	   parser.mainMethod = false;
 			   		   parser.wrongReturnTypeOverride = false;
@@ -947,6 +1060,12 @@ MethodName ::= IDENT:methName
 						   {
 							   mainDetected = true;
 							   Code.mainPc = currentMethod.getAdr();
+							   Object niz[] = methodTable.toArray(); 			// vTable bajtkod
+							   for (int i = 0; i < niz.length; i++) 
+							   {
+								   Code.buf[Code.pc++] = ((Byte)niz[i]).byteValue(); 
+							   }
+							   methodTable.clear();
 						   }
 					   }
 					   else
@@ -989,7 +1108,7 @@ MethodName ::= IDENT:methName
 							   		   }
 							   		   overridenMethod.setLocals(ht);
 									   currentMethod = Tab.insert(Obj.Meth, "this." + methName.toString(), currentType);
-									   //currentMethod.setAdr(Code.pc);
+									   currentMethod.setAdr(Code.pc);
 								   }
 								   else
 								   {
@@ -1097,14 +1216,15 @@ Type ::= IDENT:typeName
 				 //ime ne postoji u tabeli simbola, treba prijaviti semanticku gresku
 				 parser.report_error("[Greska]Linija: " + typeNameleft + " Nije pronadjen tip " + typeName + " u tabeli simbola!", null);
 				 currentType = Tab.noType;
+				 currentTypeObj = Tab.noObj;
 			 }
 			 else
 			 {
 				 if (Obj.Type == typeNode.getKind())
 				 {
+					 currentTypeObj = typeNode;
 					 currentType = typeNode.getType();
 					 RESULT = currentType;
-					 
 				 }
 				 else
 				 {
@@ -1204,7 +1324,14 @@ StatementMatched ::= Assignment
 						  {
 							   if (!func.equals(Tab.noObj) && func.getLevel() - 1 != (int)numActPars && func.getKind() == Obj.Meth)
 								   parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);
-							   
+							   else
+							   {
+								   
+								   if (func.getType() != Tab.noType)	//nije void
+								   {
+									   Code.put(Code.pop);	// ostavlja prazan expression stack
+								   }
+							   }
 						  }
 						  else
 						  {
@@ -1920,6 +2047,15 @@ Factor ::= Designator:name
 			   if (Struct.Class == someType.getKind())	// da li je klasa
 			   {
 				   parser.report_info("Pravljenje objekta unutrasnje klase: Pretraga na " + someTypeleft + "(" + obj.getName() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   
+				   Code.put(Code.new_);
+				   Code.put2(someType.getNumberOfFields() * 4); 	// * 4 jer ima 2B 
+				   
+				   Code.put(Code.dup);
+                   Code.loadConst(currentTypeObj.getAdr());
+                   
+                   Code.put(Code.putfield);
+                   Code.put2(0);				// init vTable
 			   }
 			   else
 			   {
@@ -1972,6 +2108,46 @@ Designator ::= IDENT:name DOT IDENT:namesub
 				   }
 				   else
 				   {
+					   if (obj.getKind() == Obj.Var)
+			   		   {
+			   			   if (obj.getLevel() == 0)//globalna
+			   			   {
+			   				   parser.report_info("Globalna promenljiva: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   }
+			   			   else
+			   			   {
+			   				   // da li je lokalna ili form param
+			   				   Collection<Obj> scopeLocals = Tab.currentScope.getOuter().getLocals().symbols();
+			   				   int numLocals = Tab.currentScope.getOuter().getLocals().numSymbols();
+			   				   Obj methodObj = null;
+			   				   int i = 0;
+			   				   for (Obj o:scopeLocals)
+			   				   {
+			   					   if (i == numLocals - 1) {methodObj = o; break;}
+			   					   i++;
+			   				   }
+			   				   numLocals = methodObj.getLevel();						//broj param
+			   				   scopeLocals = Tab.currentScope.getLocals().symbols();	// u opsegu metode
+			   				   i = 0;
+			   				   for (Obj o:scopeLocals)
+			   				   {
+			   					   if (o.getName().equals(name.toString()))
+			   					   {
+			   						   if (i < numLocals)
+			   							   parser.report_info("Formalni argument funkcije: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   						   else
+			   							   parser.report_info("Lokalna promenljiva: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   					   break;
+			   					   }
+			   					   i++;
+			   				   }
+			   			   }
+			   		   }
+					   else if (obj.getKind() == Obj.Fld)
+					   {
+						   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+					   }
+					   
 					   if(obj.getType().getKind() != Struct.Class)
 					   {
 						   parser.report_error("[Greska]Linija: " + nameleft + ": ocekivana klasa! " , null);
@@ -2042,6 +2218,50 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   			   Code.load(obj);
 			   			   arrayType = RESULT;
 			   			   theArr = RESULT;
+			   			   
+			   			   if (obj.getType().getElemType().getKind() == 6)	//string
+			   			   {
+				   			   parser.report_info("String: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   }
+			   			   if (obj.getKind() == Obj.Fld)
+			   			   {
+				   			   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   }
+			   			   else if (obj.getKind() == Obj.Var)
+				   		   {
+				   			   if (obj.getLevel() == 0)//globalna
+				   			   {
+				   				   parser.report_info("Globalna promenljiva: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+				   			   }
+				   			   else
+				   			   {
+				   				   // da li je lokalna ili form param
+				   				   Collection<Obj> scopeLocals = Tab.currentScope.getOuter().getLocals().symbols();
+				   				   int numLocals = Tab.currentScope.getOuter().getLocals().numSymbols();
+				   				   Obj methodObj = null;
+				   				   int i = 0;
+				   				   for (Obj o:scopeLocals)
+				   				   {
+				   					   if (i == numLocals - 1) {methodObj = o; break;}
+				   					   i++;
+				   				   }
+				   				   numLocals = methodObj.getLevel();						//broj param
+				   				   scopeLocals = Tab.currentScope.getLocals().symbols();	// u opsegu metode
+				   				   i = 0;
+				   				   for (Obj o:scopeLocals)
+				   				   {
+				   					   if (o.getName().equals(name.toString()))
+				   					   {
+				   						   if (i < numLocals)
+				   							   parser.report_info("Formalni argument funkcije: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+				   						   else
+				   							   parser.report_info("Lokalna promenljiva: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+				   					   break;
+				   					   }
+				   					   i++;
+				   				   }
+				   			   }
+				   		   }
 			   		   }
 			   		   else
 			   		   {
@@ -2072,6 +2292,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   IDENT:name
 			   {:
 				   Obj obj = Tab.find(name.toString());
+			   	   
 			   	   if (obj == Tab.noObj)
 			   	   {
 			   		   parser.report_error("[Greska]Linija: " + nameleft + ": ime " + name.toString() + " nije deklarisano! " , null);
@@ -2087,7 +2308,10 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   
 			   		   if (obj.getKind() == Obj.Meth)
 		   			   {
-			   			   parser.report_info("Poziv globalne funkcije: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   if (currentClass != null)
+			   				   parser.report_info("Poziv metode unutrasnje klase: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   else
+			   				   parser.report_info("Poziv globalne funkcije: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 		   			   }
 			   		   else if (obj.getKind() == Obj.Fld)
 		   			   {
@@ -2130,7 +2354,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   }
 			   		   else if (obj.getKind() == Obj.Con)
 			   		   {
-			   			parser.report_info("Konstanta: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   parser.report_info("Konstanta: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 			   		   }
 			   			   
 			   	   }

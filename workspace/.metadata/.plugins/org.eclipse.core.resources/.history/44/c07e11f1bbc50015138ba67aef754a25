@@ -1,8 +1,0 @@
-program MJProgram
-	{
-		
-		void main()string a;
-		{
-			a = "caocao";
-		}
-	}

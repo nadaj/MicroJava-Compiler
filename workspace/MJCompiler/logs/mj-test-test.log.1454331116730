@@ -1,0 +1,8 @@
+INFO  20160201@13:50:08,852:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@13:50:08,867:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 c je vec deklarisano
+ERROR 20160201@13:50:08,871:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160201@13:50:08,871:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tipovi oba izraza moraju biti int!
+ERROR 20160201@13:50:08,872:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@13:50:08,872:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160201@13:50:08,874:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

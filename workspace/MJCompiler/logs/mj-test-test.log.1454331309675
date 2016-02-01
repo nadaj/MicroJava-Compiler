@@ -1,0 +1,11 @@
+INFO  20160201@13:51:56,735:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@13:51:56,752:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 c je vec deklarisano
+ERROR 20160201@13:51:56,755:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160201@13:51:56,756:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tipovi oba izraza moraju biti int!
+ERROR 20160201@13:51:56,758:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tipovi oba izraza moraju biti int!
+ERROR 20160201@13:51:56,759:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160201@13:51:56,759:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19 x nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160201@13:51:56,760:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 x nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160201@13:51:56,760:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21: ime max nije deklarisano! 
+ERROR 20160201@13:51:56,760:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160201@13:51:56,761:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

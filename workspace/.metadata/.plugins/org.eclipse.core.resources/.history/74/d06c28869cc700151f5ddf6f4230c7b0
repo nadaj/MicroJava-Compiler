@@ -1,0 +1,30 @@
+program MJProgram
+	int x, m;
+	
+	const bool flag = false;
+	const bool flagt = true;
+	
+	class A {}
+	{
+		int k()int c;int x;
+		{
+			c = 0;
+			print(0);
+			return c + 1;
+		}
+		
+		int inkrem(int i)
+		{
+			return i-1;
+		}
+		
+		void main()int y[];char t[];bool r[];int i, j;char u;bool v;string a1, a2, s1, s2;
+		{
+			s1 = "cao";
+			s2 = "cyo";
+			if (s1 != s2)
+				print("1");
+			else
+				print("2");
+		}
+	}
