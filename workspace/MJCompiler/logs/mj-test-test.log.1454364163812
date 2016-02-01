@@ -1,0 +1,3 @@
+INFO  20160201@23:00:58,698:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@23:00:58,719:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom arr!
+ERROR 20160201@23:00:58,725:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

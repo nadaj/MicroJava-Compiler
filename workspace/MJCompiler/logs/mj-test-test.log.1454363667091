@@ -1,0 +1,3 @@
+INFO  20160201@22:53:36,529:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@22:53:36,545:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 h nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160201@22:53:36,546:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

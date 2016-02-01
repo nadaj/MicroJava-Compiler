@@ -1,25 +1,19 @@
-program MJProgram
-	int x, m;
+//nivo B
+//ispravan test
+
+program test04
+	const string sa = "nesto";
+	string sb;
+	int x, y;
+	int a[];
+	const bool log = true;
+{
 	
-	const bool flag = false;
-	const bool flagt = true;
-	
-	{
-		int k()int c;
-		{
-			c = 0;
-			print(0);
-			return c + 1;
-		}
-		
-		int inkrem(int i)
-		{
-			return i-1;
-		}
-		
-		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
-		{
-			a = "caocao";
-			print(a);
-		}
+	int sum(int z, int d){
+		return z + d;
 	}
+	
+	void main()string s[];int let;{
+		sum(1,2);
+	}
+}

@@ -1,0 +1,11 @@
+//nivo B
+//ispravan test
+
+program test04
+	string sb;
+{
+	
+	void main(){
+		read(sb);
+	}
+}

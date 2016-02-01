@@ -1,0 +1,5 @@
+INFO  20160201@22:54:27,095:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160201@22:54:27,114:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160201@22:54:27,115:rs.ac.bg.etf.pp1.MJParser - [Konstrukcija iskaza dodele] Izvrsen oporavak do ; u liniji 20
+ERROR 20160201@22:54:27,121:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

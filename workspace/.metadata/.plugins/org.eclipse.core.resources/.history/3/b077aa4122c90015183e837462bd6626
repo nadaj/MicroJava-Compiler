@@ -1,0 +1,29 @@
+program MJProgram
+	int x, m;
+	int gl[];
+	const bool flag = false;
+	const bool flagt = true;
+	
+	{
+		int k()int c;
+		{
+			c = 0;
+			print(0);
+			return c + 1;
+		}
+		
+		int inkrem(int i)
+		{
+			return i-1;
+		}
+		
+		void main()int y[];char t[];bool r[];int i;char u;bool v;string a;
+		{
+			gl = new int[5];
+			gl[2]= 2;
+			//gl[4] = 25;
+			print(gl[gl[2]]);
+			read(gl[gl[2]]);
+			print(gl[gl[2]]);
+		}
+	}

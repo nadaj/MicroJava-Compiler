@@ -1,0 +1,11 @@
+program MJProgram
+
+	const string h = "bla";
+	string t;
+	{
+		void main()string a, b;
+		{
+			h = "fdsf";
+			print(b);
+		}
+	}
