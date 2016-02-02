@@ -1578,28 +1578,9 @@ StatementMatched ::= Assignment
 		                              Code.put(Code.call);
 		                              Code.put2(readStringAdr - Code.pc + 1);
 								  }
-								  else if (d.getType() == Tab.intType)
+								  else
 								  {
 									  Code.put(Code.read);
-		                              Code.store(d);
-		                              Code.put(Code.bread);
-		                              Code.put(Code.pop);
-								  }
-								  else if (d.getType().getKind() == 5)
-								  {
-									  Code.put(Code.read);
-									  Code.put(Code.const_n);
-									  Code.putFalseJump(Code.eq, 0);
-									  int adr = Code.pc - 2;
-									  
-									  Code.put(Code.const_n);
-									  Code.putJump(0);
-									  int adr2 = Code.pc - 2;
-									  Code.fixup(adr); 
-									  
-									  Code.put(Code.const_1);
-									  Code.fixup(adr2); 
-									  
 		                              Code.store(d);
 		                              Code.put(Code.bread);
 		                              Code.put(Code.pop);

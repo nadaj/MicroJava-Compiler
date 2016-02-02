@@ -1590,15 +1590,11 @@ StatementMatched ::= Assignment
 									  Code.put(Code.read);
 									  Code.put(Code.const_n);
 									  Code.putFalseJump(Code.eq, 0);
-									  int adr = Code.pc - 2;
 									  
 									  Code.put(Code.const_n);
-									  Code.putJump(0);
-									  int adr2 = Code.pc - 2;
-									  Code.fixup(adr); 
+									  Code.putJump(4);
 									  
 									  Code.put(Code.const_1);
-									  Code.fixup(adr2); 
 									  
 		                              Code.store(d);
 		                              Code.put(Code.bread);
