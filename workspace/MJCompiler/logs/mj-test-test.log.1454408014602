@@ -1,0 +1,6 @@
+INFO  20160202@11:12:28,155:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160202@11:12:28,210:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59: ime inkrem nije deklarisano! 
+ERROR 20160202@11:12:28,211:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59 Tip nije kompatibilan pri dodeli sa i1!
+ERROR 20160202@11:12:28,213:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 66: ime inkrem nije deklarisano! 
+ERROR 20160202@11:12:28,214:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 66 Tip nije kompatibilan pri dodeli sa i3!
+ERROR 20160202@11:12:28,220:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

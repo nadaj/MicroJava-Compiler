@@ -1,0 +1,19 @@
+//nivo B
+//ispravan test
+
+program test04
+	const string sa = "nesto";
+	string sb;
+	int x, y;
+	int a[];
+	const bool log = true;
+{
+	
+	int sum(int z, int d){
+		return z + d;
+	}
+	
+	void main()string s[];int let;{
+		sum(1,2);
+	}
+}

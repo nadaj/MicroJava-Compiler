@@ -671,20 +671,6 @@ ConstDeclIdent ::= IDENT:constName EQUALS Val:constValue
 				   	   }	   
 				   :}
 				   |
-				   IDENT:constName EQUALS BOOLCONST:constValue 
-				   {: 
-					   if (parser.isGlobal) parser.const_count++;
-					   if (Tab.currentScope.findSymbol(constName.toString()) != null)
-				   		   parser.report_error("[Greska]Linija: " + constNameleft + " " + constName + " je vec deklarisano", null);
-				   	   else
-				   	   {
-				   		   Obj cons = Tab.insert(Obj.Con, constName.toString(), boolType);
-				   		   cons.setAdr((boolean)constValue? 1:0);						// adr = value
-				   		   if (currentType.getKind() != Struct.Bool)
-				   			   parser.report_error("[Greska]Linija: " + constValueleft + " Semanticka greska u tipu!", null);
-				   	   }
-				   :}
-				   |
 				   IDENT:constName EQUALS STRCONST:constValue 
 				   {: 
 					   if (parser.isGlobal) parser.const_count++;
@@ -724,6 +710,12 @@ Val ::= NUMBER:val
 		{:
 			RESULT = new Obj(Obj.Con, "", Tab.intType);  
 			((Obj) RESULT).setAdr((int)val); 
+		:}
+		|
+		BOOLCONST:val
+		{:
+			RESULT = new Obj(Obj.Con, "", boolType);
+			((Obj) RESULT).setAdr((boolean)val? 1:0);
 		:}
 		|
 		CHARCONST:val

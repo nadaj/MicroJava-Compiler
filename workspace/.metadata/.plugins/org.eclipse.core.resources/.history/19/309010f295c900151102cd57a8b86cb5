@@ -1,0 +1,98 @@
+program MJProgram
+
+	int i3, i4[];
+	char c3, c4[];
+	bool b3, b4[];
+	string s3, s4[];
+{
+	int inkremC()int c;
+	{
+		c = 0;
+		print("-inkremC-");
+		return c + 1;
+	}
+	
+	int inkrem(int i)
+	{
+		return i+1;
+	}
+		
+	void main()
+	int i1; char c1; bool b1; string s1;
+	int i2[]; char c2[]; bool b2[]; string s2[];
+	{
+		print(1);
+		print('1');
+		print("pocetak");
+		print(inkremC());							// -inkremC-    1
+		
+		// TESTIRANJE SMENE ASSIGNMENT I EXPR
+		
+		i1 = 100;
+		c1 = 's';
+		s1 = "i4";
+		print(i1);print(c1,3);print(s1);
+		
+		i3 = 200;
+		c3 = 'p';
+		s3 = "p1";
+		print(i3);print(c3,3);print(s3);
+		
+		i2 = new int[5];
+		c2 = new char[5];
+		b2 = new bool[5];
+		s2 = new string[5]; s2[0] = "cao";
+		i2[0] = 300;
+		c2[0]= 's';
+		s2[0] = "i4pp1";
+		print(i2[0]);print(c2[0]);print(s2[0]);
+		
+		i4 = new int[5];
+		c4 = new char[5];
+		b4 = new bool[5];
+		s4 = new string[5]; s4[0] = "cao";
+		i4[0] = 400;
+		c4[0]= 's';
+		s4[0] = "i4pp1";
+		print(i4[0]);print(c4[0]);print(s4[0]);
+		
+		i1 = inkrem(i1);
+		i1 = -i1;
+		print(i1);									// -101
+		
+		i1 = -i1 + 10;
+		print(i1);									// 111
+		
+		i3 = inkrem(i3);
+		i3 = -i3;
+		print(i3);									// -201
+		
+		i3 = -i3 + 10;
+		print(i3);									// 211
+		
+		i1 = 100;
+		i3 = 300;
+		// DESIGNATOR++
+		i1++;										// 101
+		print(i1);
+		i1--;										// 100
+		print(i1);
+		
+		i3++;										// 201
+		print(i3);
+		i3--;										// 200
+		print(i3);
+		
+		i2[0]++;									// 301
+		print(i2[0]);
+		i2[0]--;									// 300
+		print(i2[0]);
+		
+		i4[0]++;									// 401
+		print(i4[0]);
+		i4[0]--;									// 400
+		print(i4[0]);
+		
+	}
+
+}

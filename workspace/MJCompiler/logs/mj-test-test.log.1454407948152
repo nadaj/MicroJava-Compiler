@@ -1,0 +1,13 @@
+INFO  20160202@11:11:52,594:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160202@11:11:52,647:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59: ime inkrem nije deklarisano! 
+ERROR 20160202@11:11:52,648:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59 Tip nije kompatibilan pri dodeli sa i1!
+ERROR 20160202@11:11:52,650:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 66: ime inkrem nije deklarisano! 
+ERROR 20160202@11:11:52,651:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 66 Tip nije kompatibilan pri dodeli sa i2!
+ERROR 20160202@11:11:52,651:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 67 Tip izraza mora biti int!
+ERROR 20160202@11:11:52,653:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 68  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160202@11:11:52,654:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 70 Tip izraza mora biti int!
+ERROR 20160202@11:11:52,654:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 70 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160202@11:11:52,654:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 70 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160202@11:11:52,654:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 71  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160202@11:11:52,655:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 74 Tip nije kompatibilan pri dodeli sa i2!
+ERROR 20160202@11:11:52,660:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
