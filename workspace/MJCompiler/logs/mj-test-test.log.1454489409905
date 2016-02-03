@@ -1,0 +1,16 @@
+INFO  20160203@09:42:26,876:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@09:42:26,893:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 Tip nije kompatibilan pri dodeli sa a!
+ERROR 20160203@09:42:26,893:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@09:42:26,894:rs.ac.bg.etf.pp1.MJParser - [Izraz za indeksiranje niza] Izvrsen oporavak do ] u liniji 11
+ERROR 20160203@09:42:26,895:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 12: indeks nije tipa int!
+ERROR 20160203@09:42:26,896:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160203@09:42:26,897:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160203@09:42:26,897:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tip nije kompatibilan pri dodeli sa !
+ERROR 20160203@09:42:26,899:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@09:42:26,899:rs.ac.bg.etf.pp1.MJParser - [Konstrukcija iskaza dodele] Izvrsen oporavak do ; u liniji 16
+ERROR 20160203@09:42:26,900:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom arr!
+ERROR 20160203@09:42:26,900:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Funkcija len pri pozivu ima 1 parametar tipa string ili array!
+ERROR 20160203@09:42:26,901:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19  Parametar funkcije print nije tipa int, char, bool ili string!
+ERROR 20160203@09:42:26,902:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

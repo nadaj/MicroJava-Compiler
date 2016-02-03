@@ -1,0 +1,28 @@
+INFO  20160203@10:41:03,030:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@10:41:03,053:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 pr je vec deklarisano
+ERROR 20160203@10:41:03,056:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 24 x je vec deklarisano
+ERROR 20160203@10:41:03,064:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,066:rs.ac.bg.etf.pp1.MJParser - [Deklaracija polja unutrasnje klase] Izvrsen oporavak do ; u liniji 46
+ERROR 20160203@10:41:03,067:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,068:rs.ac.bg.etf.pp1.MJParser - [Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji 49
+ERROR 20160203@10:41:03,069:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,069:rs.ac.bg.etf.pp1.MJParser - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 49
+ERROR 20160203@10:41:03,071:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50: ime c nije deklarisano! 
+ERROR 20160203@10:41:03,072:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160203@10:41:03,072:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160203@10:41:03,072:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160203@10:41:03,073:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,073:rs.ac.bg.etf.pp1.MJParser - [Deklaracija prosirenja natklase] Izvrsen oporavak do { u liniji 56
+ERROR 20160203@10:41:03,073:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,074:rs.ac.bg.etf.pp1.MJParser - [Definicija globalne promenljive] Izvrsen oporavak do , u liniji 58
+ERROR 20160203@10:41:03,074:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:41:03,074:rs.ac.bg.etf.pp1.MJParser - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 58
+ERROR 20160203@10:41:03,099:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 73 strin nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160203@10:41:03,100:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 74 Tip izraza mora biti int!
+ERROR 20160203@10:41:03,122:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 104 Tip nije kompatibilan pri dodeli sa a!

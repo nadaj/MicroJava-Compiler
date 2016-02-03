@@ -1,0 +1,22 @@
+INFO  20160203@09:53:12,981:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@09:53:12,996:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 5 Klasa Nepostojeca nije deklarisana!
+ERROR 20160203@09:53:12,997:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 7 x je vec deklarisano
+ERROR 20160203@09:53:12,997:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 8 Nije pronadjen tip real u tabeli simbola!
+ERROR 20160203@09:53:12,997:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Ime y ne predstavlja tip 
+ERROR 20160203@09:53:13,000:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 Tip nije kompatibilan pri dodeli sa this!
+ERROR 20160203@09:53:13,004:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 18 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160203@09:53:13,004:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19: ime zh nije deklarisano! 
+ERROR 20160203@09:53:13,005:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160203@09:53:13,006:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 21 Tip nije isti kao povratni tip funkcije!
+ERROR 20160203@09:53:13,010:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 42 b je vec deklarisano
+ERROR 20160203@09:53:13,013:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 53: ime this nije deklarisano! 
+ERROR 20160203@09:53:13,013:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 53 Tip nije kompatibilan pri dodeli sa noObj!
+ERROR 20160203@09:53:13,013:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 55 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom this!
+ERROR 20160203@09:53:13,014:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 55 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije setA !
+ERROR 20160203@09:53:13,015:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 56 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije setAB !
+ERROR 20160203@09:53:13,015:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 57 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom bb!
+ERROR 20160203@09:53:13,016:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 57 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom aa!
+ERROR 20160203@09:53:13,016:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 58 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom aa!
+ERROR 20160203@09:53:13,018:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom bb!
+ERROR 20160203@09:53:13,019:rs.ac.bg.etf.pp1.MJParser - [Greska]Program nema main metodu!
+ERROR 20160203@09:53:13,020:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

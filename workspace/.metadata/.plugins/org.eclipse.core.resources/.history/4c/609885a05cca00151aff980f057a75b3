@@ -1,0 +1,46 @@
+program MJProgram
+
+	int i3, i4[];
+	char c3, c4[];
+	bool b3, b4[];
+	string s3, s4[];
+{
+
+	void main()
+	int i1; char c1; bool b1; string s1;
+	int i2[]; char c2[]; bool b2[]; string s2[];
+	{
+	
+	// UCITAVANJE LOKALNIH PROMENLJIVIH I ISPISIVANJE
+	
+		read(i1);read(c1);read(b1);
+		s1 = "cao";
+		read(s1);
+		print(i1,5);print(c1,5);print(b1,5);print(s1,5);
+		
+		i2 = new int[5];
+		c2 = new char[5];
+		b2 = new bool[5];
+		s2 = new string[5]; s2[0] = "cao";
+		
+		read(i2[0]);read(c2[0]);read(b2[0]);read(s2[0]);
+		print(i2[0]);print(c2[0]);print(b2[0]);print(s2[0]);
+		
+	// UCITAVANJE GLOBALNIH PROMENLJIVIH I ISPISIVANJE
+	
+		read(i3);read(c3);read(b3);
+		s3 = "cao";
+		read(s3);
+		print(i3);print(c3,3);print(b3,2);print(s3,1);
+		
+		i4 = new int[5];
+		c4 = new char[5];
+		b4 = new bool[5];
+		s4 = new string[5]; s4[0] = "cao";
+		
+		read(i4[0]);read(c4[0]);read(b4[0]);read(s4[0]);
+		print(i4[0]);print(c4[0]);print(b4[0]);print(s4[0]);
+		
+	}
+
+}

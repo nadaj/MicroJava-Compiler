@@ -1,0 +1,7 @@
+INFO  20160203@10:52:06,902:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@10:52:06,922:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 a nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160203@10:52:06,923:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 11 a nije promenljiva, element niza ili polje unutar objekta!
+ERROR 20160203@10:52:06,924:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 13 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160203@10:52:06,925:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije kompatibilan pri dodeli sa z!
+ERROR 20160203@10:52:06,927:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 17 BREAK nije koriscen unutar while ciklusa!
+ERROR 20160203@10:52:06,928:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

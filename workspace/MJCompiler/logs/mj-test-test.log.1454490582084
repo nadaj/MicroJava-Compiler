@@ -1,0 +1,20 @@
+INFO  20160203@10:06:14,809:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@10:06:14,826:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10 pr je vec deklarisano
+ERROR 20160203@10:06:14,830:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 24 x je vec deklarisano
+ERROR 20160203@10:06:14,837:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:06:14,839:rs.ac.bg.etf.pp1.MJParser - [Deklaracija polja unutrasnje klase] Izvrsen oporavak do ; u liniji 46
+ERROR 20160203@10:06:14,839:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:06:14,840:rs.ac.bg.etf.pp1.MJParser - [Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji 49
+ERROR 20160203@10:06:14,841:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:06:14,851:rs.ac.bg.etf.pp1.MJParser - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 49
+ERROR 20160203@10:06:14,852:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50: ime c nije deklarisano! 
+ERROR 20160203@10:06:14,852:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza nisu kompatibilni!
+ERROR 20160203@10:06:14,852:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Tipovi oba izraza moraju biti int ili string!
+ERROR 20160203@10:06:14,853:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 50 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160203@10:06:14,854:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@10:06:14,855:rs.ac.bg.etf.pp1.MJParser - Fatalna greska, parsiranje se ne moze nastaviti
+ERROR 20160203@10:06:14,856:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
