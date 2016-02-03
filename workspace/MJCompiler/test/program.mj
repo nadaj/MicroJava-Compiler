@@ -1,149 +1,77 @@
-program MJProgram
-	
-	const bool flagT = true;
-	const bool flagF = false;
-	
-	int i3, i4[];
-	char c3, c4[];
-	bool b3, b4[];
-	string s3, s4[];
-{
-	int inkremC()int c;
-	{
-		c = 0;
-		print("-inkremC-");
-		return c + 1;
-	}
-	
-	int inkrem(int i)
-	{
-		return i+1;
-	}
-	
-	int k()int c;
-	{
-		c = 0;
-		print(0);
-		return c + 3;
-	}
-			
-	void main()
-	int i1; char c1; bool b1; string s1;
-	int i2[]; char c2[]; bool b2[]; string s2[];
-	{
-		print(1);
-		print('1');
-		print("pocetak");
-		print(inkremC());							// -inkremC-    1
-		
-		// TESTIRANJE SMENE ASSIGNMENT I EXPR
-		
-		i1 = 100;
-		c1 = 's';
-		s1 = "i4";
-		print(i1);print(c1,3);print(s1);
-		
-		i3 = 200;
-		c3 = 'p';
-		s3 = "p1";
-		print(i3);print(c3,3);print(s3);
-		
-		i2 = new int[5];
-		c2 = new char[5];
-		b2 = new bool[5];
-		s2 = new string[5]; s2[0] = "cao";
-		i2[0] = 300;
-		c2[0]= 's';
-		s2[0] = "i4pp1";
-		print(i2[0]);print(c2[0]);print(s2[0]);
-		
-		i4 = new int[5];
-		c4 = new char[5];
-		b4 = new bool[5];
-		s4 = new string[5]; s4[0] = "cao";
-		i4[0] = 400;
-		c4[0]= 's';
-		s4[0] = "i4pp1";
-		print(i4[0]);print(c4[0]);print(s4[0]);
-		
-		i1 = inkrem(i1);
-		i1 = -i1;
-		print(i1);									// -101
-		i1 = i1 * 2;
-		print(i1);									// -202
-		i1 = i1 / 2;
-		print(i1);									// -101
-		
-		i1 = -i1 + 10;
-		print(i1);									// 111
-		
-		i3 = inkrem(i3);
-		i3 = -i3;
-		print(i3);									// -201
-		i3 = i3 * 2;
-		print(i3);									// -402
-		i3 = i3 / 2;
-		print(i3);									// -201
-		
-		i3 = -i3 + 10;
-		print(i3);									// 211
-		
-		i1 = 100;
-		i3 = 200;
-		
-		i2[1] = 300;
-		i4[1] = 400;
-		
-		i2[1] = inkrem(i2[1]);
-		i2[1] = -i2[1];
-		print(i2[1]);								// -301
-		i2[1] = i2[1] * 2;
-		print(i2[1]);								// -602
-		i2[1] = i2[1] / 2;
-		print(i2[1]);								// -301
-		
-		i2[1] = -i2[1] + 10;
-		print(i2[1]);								// 311
-		
-		i4[1] = inkrem(i4[1]);
-		i4[1] = -i4[1];
-		print(i4[1]);								// -401
-		i4[1] = i4[1] * 2;
-		print(i4[1]);								// -802
-		i4[1] = i4[1] / 2;
-		print(i4[1]);								// -401
-		
-		i4[1] = -i4[1] + 10;
-		print(i4[1]);								// 411
-		
-		// DESIGNATOR++
-		i1++;										// 101
-		print(i1);
-		i1--;										// 100
-		print(i1);
-		
-		i3++;										// 201
-		print(i3);
-		i3--;										// 200
-		print(i3);
-		
-		i2[0]++;									// 301
-		print(i2[0]);
-		i2[0]--;									// 300
-		print(i2[0]);
-		
-		i4[0]++;									// 401
-		print(i4[0]);
-		i4[0]--;									// 400
-		print(i4[0]);
-		
-		k();
-		b1 = flagT;	print(b1);
-		b3 = flagF;	print(b3);
-		b2[0] = flagT; print(b2[0]);
-		b4[0] = flagT; print(b4[0]);				// 01011
-		
-		
-	}
+//Test 302
 
+program test302
+
+const string str1 = "prvi";
+string str2;
+string ulaz;
+
+int i;
+bool ijedva;
+
+int niz[];
+{
+	
+	int sum(int z, int d){
+		return z + d;
+	}
+	
+	int inkrement(int a) int pom; {
+		pom = 1;
+		return sum(a,pom);
+	}
+	
+	void main(){
+
+			//provera da li valja IF
+		if(1!=1) print(-6);
+		else print(0);
+
+			//while i if izrazi
+		i = 0; ijedva = false;
+		while(i < 5){
+			i++;
+			if(i == 2) ijedva = true;
+		}
+		if(ijedva)
+			if(i == 5) print(1);
+			else print(-1);
+		
+			//konkatenacija i poredjenje stringova
+		str2 = "drugi";
+		str2 = str2 + str1;
+		if(str2 == "drugiprvi") print(2);
+		else print(-2);
+		
+			//poziv globalnih funkcija
+		niz = new int[3];
+		niz[0] = 1;
+		niz[1] = 2;
+		niz[2] = sum(niz[1], niz[0])  + 1;
+		if(niz[2] == 4) print(3);
+		else print(-3);
+		
+			//break u while-u, funkcija poziva funkciju
+		i = 0;
+		while(i < 10){			
+			if(i == 3) break;
+			i = inkrement(i);
+		}
+		if(i == 3) print(4);
+		else print(-4);
+		
+			//citanje string i konkatenacija
+		read(ulaz);
+		ulaz = "glava_" + ulaz;
+		ulaz = ulaz + "_rep";
+		print(ulaz);		
+	}
 }
+
+//	Izlazi: 
+//	0
+//	1
+//	2
+//	3
+//	4
+// "glava_" + "ulaz" + "_rep";

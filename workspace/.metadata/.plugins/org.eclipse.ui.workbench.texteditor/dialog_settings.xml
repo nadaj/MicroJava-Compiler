@@ -2,20 +2,20 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="PRINT" key="selection"/>
+		<item value="ERROR" key="selection"/>
 		<item value="true" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="true" key="wholeword"/>
 		<list key="findhistory">
+			<item value="ERROR"/>
+			<item value="ActPars"/>
+			<item value="// poredi se taj bool i 1 ==&gt; bool == 1"/>
+			<item value="numObj"/>
+			<item value="Funkcija chr pri pozivu ima 1 parametar tipa int!"/>
+			<item value="currentMethod"/>
+			<item value="je vec deklarisano"/>
 			<item value="PRINT"/>
-			<item value="DEC"/>
-			<item value="currentIndex"/>
-			<item value="INC"/>
-			<item value="Expr"/>
-			<item value="theArr"/>
-			<item value="arrayType"/>
-			<item value="Code.enter"/>
 		</list>
 		<list key="replacehistory">
 			<item value="strConstCode"/>
@@ -32,7 +32,7 @@
 		<item value="257" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="432" key="DIALOG_HEIGHT"/>
-		<item value="966" key="DIALOG_X_ORIGIN"/>
-		<item value="331" key="DIALOG_Y_ORIGIN"/>
+		<item value="964" key="DIALOG_X_ORIGIN"/>
+		<item value="119" key="DIALOG_Y_ORIGIN"/>
 	</section>
 </section>

@@ -217,6 +217,7 @@ action code {:
 	Obj currentTypeObj = null;
 	Obj strC = null;
 	Struct numObj = null;
+	Obj stringBufferInit = new Obj(Obj.Var,  "###", stringType);
 	
 	int printStringAdr = 0;
 	int printStringAdrWithLength = 0;
@@ -311,32 +312,70 @@ action code {:
         readStringAdr = Code.pc;
         Code.put(Code.enter);
         Code.put(1); 
-        Code.put(3);					// za duzinu niza i iterator kao lokalne prom
+        Code.put(4);					// za duzinu niza i iterator kao lokalne prom, i char c
 
         Code.put(Code.const_n);			// i = 0;
         Code.put(Code.store_2);
         
-        Code.put(Code.load_n);			// length = arraylength(string);
-        Code.put(Code.arraylength);
-        Code.put(Code.store_1);
+        Code.put(Code.bread);			// read(c);
+        Code.put(Code.store_3);
+        
+        Code.put(Code.load_3);			// while (c != '\n')
+        Code.loadConst(13);
+        Code.put(Code.jcc + Code.eq);
+        Code.put2(18);
 
-        Code.put(Code.load_2);			// while (i < length)
-        Code.put(Code.load_1);
-        Code.put(Code.jcc + Code.ge);
-        Code.put2(14);
-
-        Code.put(Code.load_n);			// read(string[i]);
+        Code.put(Code.getstatic);		// stringBufferInit[i] = c;
+        Code.put2(0);
         Code.put(Code.load_2);
-        Code.put(Code.bread);
+        Code.put(Code.load_3);
         Code.put(Code.bastore);
         
         Code.put(Code.load_2);			// i++;
         Code.put(Code.const_1);
         Code.put(Code.add);
         Code.put(Code.store_2);
-
+        
+        Code.put(Code.bread);			// read(c);
+        Code.put(Code.store_3);
+        
         Code.put(Code.jmp);
-        Code.put2(-13);
+        Code.put2(-21);
+        
+        Code.put(Code.load_2);			// length = i;
+        Code.put(Code.store_1);
+        
+        Code.put(Code.const_n);			// i = 0;
+        Code.put(Code.store_2);
+        
+        Code.put(Code.load_1);			// string = new char[length];
+        Code.put(Code.newarray);		
+        Code.put(0);
+        Code.put(Code.store_n);
+        
+        Code.put(Code.load_2);			// while (i < len)
+        Code.put(Code.load_1);
+        Code.put(Code.jcc + Code.ge);
+        Code.put2(18);
+        
+        Code.put(Code.load_n);			// string[i] = stringBufferInit[i];
+        Code.put(Code.load_2);
+        Code.put(Code.getstatic);
+        Code.put2(0);
+        Code.put(Code.load_2);
+        Code.put(Code.baload);
+        Code.put(Code.bastore);
+        
+        Code.put(Code.load_2);			// i++;
+        Code.put(Code.const_1);
+        Code.put(Code.add);
+        Code.put(Code.store_2);
+        
+        Code.put(Code.jmp);
+        Code.put2(-17);
+        
+        Code.put(Code.load_n);
+        
         Code.put(Code.exit);
         Code.put(Code.return_);
     }
@@ -605,6 +644,7 @@ CloseScope ::= {: Tab.closeScope(); :};
     
 Program ::= PROGRAM ProgramName:p OpenScope
 			{:
+				stringBufferInit = Tab.insert(Obj.Var,  "###", stringType);
 				printStr();
 				printStrWithLength();
 				readStr();
@@ -1103,10 +1143,18 @@ MethodName ::= IDENT:methName
 							   }
 							   methodTable.clear();
 							   
-			                    for (int i = 0; i < strConstCode.size(); i++) 
-			                    {
-			                    	Code.buf[Code.pc++] = (strConstCode.getBuffer())[i];
-			                    }
+							   // string buffer 
+							   strConstCode.loadConst(100);
+				               strConstCode.put(Code.newarray);
+				               strConstCode.put(0);
+
+				               strConstCode.put(Code.putstatic);
+					           strConstCode.put2(stringBufferInit.getAdr());
+					           
+			                   for (int i = 0; i < strConstCode.size(); i++) 
+			                   {
+			                	   Code.buf[Code.pc++] = (strConstCode.getBuffer())[i];
+			                   }
 						   }
 					   }
 					   else
@@ -1596,6 +1644,7 @@ StatementMatched ::= Assignment
 								  	  Code.load(d);
 		                              Code.put(Code.call);
 		                              Code.put2(readStringAdr - Code.pc + 1);
+		                              Code.store(d);
 								  }
 								  else if (d.getType() == Tab.intType)
 								  {
