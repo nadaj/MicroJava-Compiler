@@ -1,0 +1,47 @@
+program MJProgram
+const int dj = 3;
+const bool boo = true;
+int baba;
+string str;
+int stt[];
+{
+ 
+ 
+ void main() char a; int c[],r; int i; bool x,g;char ca;
+ {
+ print("nada",3);
+ 
+  c= new int[3];
+  
+  c[0] = 1;
+  c[1]= 49;
+  c[c[0]] = c[c[0]] + 1;
+  
+  print(c[1]);
+  print(i);
+  read(i);
+  print(i);
+  i++;
+  print(i);
+  i--;
+  print(i);
+  
+  
+//  a.x = new int[5];
+//  a.y = new int[5];
+//  c = new C;
+//  {
+//  c.theA = a;
+//  c.x = new int[5];
+//  }
+//  x = new int[3];
+//  i=0;
+//  read(c.i);
+//  while(i<5) {
+//   read(c.x[i]); read(c.theA.x[i]);
+//   i++;
+//  }
+//  print(c.getValue(c.theA.x[0]));
+ }
+ 
+}

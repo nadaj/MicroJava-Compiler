@@ -275,7 +275,7 @@ action code {:
     {
 		printStringAdrWithLength = Code.pc;
         Code.put(Code.enter);
-        Code.put(2); 					// string i razmak pri stampanju
+        Code.put(2); 					// string i sirina pri stampanju
         Code.put(4); 					// za duzinu niza i iterator kao lokalne prom
         
         Code.put(Code.const_n);			// i = 0;
@@ -285,6 +285,28 @@ action code {:
         Code.put(Code.arraylength);
         Code.put(Code.store_2);
         	
+        Code.put(Code.load_1);			// sirina = sirina - duzina stringa
+        Code.put(Code.load_2);
+        Code.put(Code.sub);
+        Code.put(Code.store_1);
+        
+        Code.put(Code.load_1);			// while (sirina > 0)
+        Code.put(Code.const_n);
+        Code.put(Code.jcc + Code.le);
+        Code.put2(13);
+        
+        Code.put(Code.const_n);			// print(' ');
+        Code.put(Code.const_n);
+        Code.put(Code.bprint);
+        
+        Code.put(Code.load_1);			// sirina--;
+        Code.put(Code.const_1);
+        Code.put(Code.sub);
+        Code.put(Code.store_1);
+        
+        Code.put(Code.jmp);
+        Code.put2(-12);
+        
         Code.put(Code.load_3);			// while (i < length)
         Code.put(Code.load_2);
         Code.put(Code.jcc + Code.ge);
@@ -293,7 +315,7 @@ action code {:
         Code.put(Code.load_n);			// print(string[i]);
         Code.put(Code.load_3);
         Code.put(Code.baload);
-        Code.put(Code.load_1);
+        Code.loadConst(1);
         Code.put(Code.bprint);
         
         Code.put(Code.load_3);			// i++;
@@ -303,6 +325,7 @@ action code {:
         
         Code.put(Code.jmp);
         Code.put2(-14);
+        
         Code.put(Code.exit);
         Code.put(Code.return_);
     }

@@ -1,0 +1,39 @@
+INFO  20160203@14:52:36,701:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160203@14:52:36,717:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 4 xc je vec deklarisano
+ERROR 20160203@14:52:36,718:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@14:52:36,719:rs.ac.bg.etf.pp1.MJParser - [Definicija globalne promenljive] Izvrsen oporavak do ; u liniji 6
+ERROR 20160203@14:52:36,721:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqrt nije deklarisano! 
+ERROR 20160203@14:52:36,721:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160203@14:52:36,724:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 10: ime sqr nije deklarisano! 
+ERROR 20160203@14:52:36,725:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 9 Metod mora imati return iskaz jer nije deklarisan sa void!
+ERROR 20160203@14:52:36,728:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 14 Tip nije kompatibilan pri dodeli sa o!
+ERROR 20160203@14:52:36,728:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 15 Tip nije isti kao povratni tip funkcije!
+ERROR 20160203@14:52:36,730:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 19 Tip nije kompatibilan pri dodeli sa s!
+ERROR 20160203@14:52:36,731:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Metod ne sme imati return sa izrazom jer je deklarisan sa void!
+ERROR 20160203@14:52:36,731:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 20 Tip nije isti kao povratni tip funkcije!
+ERROR 20160203@14:52:36,732:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 23 Nije pronadjen tip z u tabeli simbola!
+ERROR 20160203@14:52:36,732:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@14:52:36,732:rs.ac.bg.etf.pp1.MJParser - [Deklaracija form. parametra funkcije] Izvrsen oporavak do ) u liniji 23
+ERROR 20160203@14:52:36,733:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 27 main mora da bude void metoda!
+ERROR 20160203@14:52:36,733:rs.ac.bg.etf.pp1.MJParser - 
+Sintaksna greska
+ERROR 20160203@14:52:36,733:rs.ac.bg.etf.pp1.MJParser - [Deklaracija lokalne promenljive] Izvrsen oporavak do { u liniji 27
+ERROR 20160203@14:52:36,734:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30: ime yc nije deklarisano! 
+ERROR 20160203@14:52:36,734:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 30 noObj nije tipa int, char, bool ili string!
+ERROR 20160203@14:52:36,735:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 32 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom x1!
+ERROR 20160203@14:52:36,736:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34: ime yc nije deklarisano! 
+ERROR 20160203@14:52:36,737:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160203@14:52:36,737:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 34 Tip nije kompatibilan pri dodeli sa b!
+ERROR 20160203@14:52:36,737:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37: ime c nije deklarisano! 
+ERROR 20160203@14:52:36,738:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37: ime yc nije deklarisano! 
+ERROR 20160203@14:52:36,739:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom y2!
+ERROR 20160203@14:52:36,739:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije distance !
+ERROR 20160203@14:52:36,739:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 37 Tip nije kompatibilan pri dodeli sa noObj!
+ERROR 20160203@14:52:36,743:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom a!
+ERROR 20160203@14:52:36,744:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 40 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije obim !
+ERROR 20160203@14:52:36,744:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 41: ime c nije deklarisano! 
+ERROR 20160203@14:52:36,745:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 41 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom c!
+ERROR 20160203@14:52:36,745:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 41 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom b!
+ERROR 20160203@14:52:36,761:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
