@@ -296,7 +296,7 @@ action code {:
         Code.put2(13);
         
         Code.put(Code.const_n);			// print(' ');
-        Code.put(Code.const_n);
+        Code.put(Code.const_1);
         Code.put(Code.bprint);
         
         Code.put(Code.load_1);			// sirina--;
@@ -1461,12 +1461,15 @@ StatementMatched ::= Assignment
 								   parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);   
 							   else
 							   {
-								   int destAdr = func.getAdr() - Code.pc;
-								   Code.put(Code.call);
-								   Code.put2(destAdr);
-								   if (func.getType() != Tab.noType)	//nije void
+								   if (!func.getName().equals("chr") && !func.getName().equals("ord") && !func.getName().equals("len"))
 								   {
-									   Code.put(Code.pop);	// ostavlja prazan expression stack
+									   int destAdr = func.getAdr() - Code.pc;
+									   Code.put(Code.call);
+									   Code.put2(destAdr);
+									   if (func.getType() != Tab.noType)	//nije void
+									   {
+										   Code.put(Code.pop);	// ostavlja prazan expression stack
+									   }
 								   }
 							   }
 						  }

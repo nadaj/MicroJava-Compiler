@@ -1,0 +1,4 @@
+INFO  20160204@23:20:44,985:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160204@23:20:45,013:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 46 Tip stvarnog argumenta nije kompatibilan pri dodeli sa formalnim parametrom i!
+ERROR 20160204@23:20:45,013:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 46 Funkcija chr pri pozivu ima 1 parametar tipa int!
+ERROR 20160204@23:20:45,041:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!
