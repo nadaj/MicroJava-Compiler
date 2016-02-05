@@ -1448,10 +1448,23 @@ StatementMatched ::= Assignment
 								   parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);
 							   else
 							   {
-								   
+								   Obj objekatKlase = poziviObj.peek();
+								   if (objekatKlase != null)
+								   {
+									   	poziviObj.pop();
+					                    Code.load(objekatKlase);
+								   }
+								   Code.put(Code.getfield);
+						           Code.put2(0);
+						           Code.put(Code.invokevirtual);
+						           String methName = func.getName();
+						           for (int i = 0; i < methName.length(); i++)
+						                 Code.put4(methName.charAt(i));
+						           Code.put4(-1);
+						           
 								   if (func.getType() != Tab.noType)	//nije void
 								   {
-									   Code.put(Code.pop);	// ostavlja prazan expression stack
+									   Code.put(Code.pop);				// ostavlja prazan expression stack
 								   }
 							   }
 						  }
@@ -1502,6 +1515,22 @@ StatementMatched ::= Assignment
 					   	  {
 					   		  if (!func.equals(Tab.noObj) && func.getLevel() - 1 != 0 && func.getKind() == Obj.Meth)
 					   			  parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);  
+					   		  else
+					   		  {
+					   			   Obj objekatKlase = poziviObj.peek();
+								   if (objekatKlase != null)
+								   {
+									   	poziviObj.pop();
+					                    Code.load(objekatKlase);
+								   }
+								   Code.put(Code.getfield);
+						           Code.put2(0);
+						           Code.put(Code.invokevirtual);
+						           String methName = func.getName();
+						           for (int i = 0; i < methName.length(); i++)
+						                 Code.put4(methName.charAt(i));
+						           Code.put4(-1);
+					   		  }
 					   	  }
 					   	  else
 					   	  {
@@ -1780,19 +1809,47 @@ StatementMatched ::= Assignment
 
 Assignment ::= Designator:d EQUALS Expr:name SEMI_COMMA
 			   {:
-					  if (d != null && d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
-					  {
-						  parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
-					  }
-					  else if (d != null && !((Struct)name).assignableTo(d.getType()))
-					  {
-						  parser.report_error("[Greska]Linija: " + nameleft + " Tip nije kompatibilan pri dodeli sa " + d.getName() + "!", null);
-					  }
-					  else
-					  {
-						  if (d != null)
-							  Code.store(d);
-					  }
+				   if (d != null)
+				   {
+					   if (d.getKind() != Obj.Var && d.getKind() != Obj.Elem && d.getKind() != Obj.Fld)
+					   {
+						   parser.report_error("[Greska]Linija: " + dleft + " " + d.getName() + " nije promenljiva, element niza ili polje unutar objekta!", null);
+					   }
+					   else if (d.getType().getKind() == Struct.Class && ((Struct)name).getKind() == Struct.Class)
+					   {
+						   if (!d.getType().equals((Struct)name))
+						   {
+								// provera elemType-ova cvorova
+							  	Struct tempPoli = ((Struct)name).getElemType();
+							  	while (tempPoli != null)
+							  	{
+							  		if (d.getType().equals(tempPoli)) break;
+							  		tempPoli = tempPoli.getElemType();
+							  	}
+							  	
+							  	if (tempPoli == null)
+							  	{
+							  		parser.report_error("[Greska]Linija: " + nameleft + " Tip nije kompatibilan pri dodeli sa " + d.getName() + "!", null); 
+							  	}
+							  	else
+							  	{
+							  		Code.store(d);
+							  	}
+						   }
+						   else
+						   {
+							   Code.store(d);
+						   }
+					   }
+					   else if (!((Struct)name).assignableTo(d.getType()))
+					   {
+						   parser.report_error("[Greska]Linija: " + nameleft + " Tip nije kompatibilan pri dodeli sa " + d.getName() + "!", null);	  
+					   }
+					   else
+					   {
+						   Code.store(d);
+					   }
+				   }
 			   :}
 			   |
 			   error:l SEMI_COMMA
@@ -2082,6 +2139,22 @@ Factor ::= Designator:name
 				   {
 					   if (!func.equals(Tab.noObj) && func.getLevel() - 1 != 0 && func.getKind() == Obj.Meth)
 						   parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);  
+					   else
+			   		   {
+			   			   Obj objekatKlase = poziviObj.peek();
+						   if (objekatKlase != null)
+						   {
+							   	poziviObj.pop();
+			                    Code.load(objekatKlase);
+						   }
+						   Code.put(Code.getfield);
+				           Code.put2(0);
+				           Code.put(Code.invokevirtual);
+				           String methName = func.getName();
+				           for (int i = 0; i < methName.length(); i++)
+				                 Code.put4(methName.charAt(i));
+				           Code.put4(-1);
+			   		   }
 				   }
 				   else
 				   {
@@ -2178,6 +2251,22 @@ Factor ::= Designator:name
 				   	   {
 				   		   if (!func.equals(Tab.noObj) && func.getLevel() - 1 != (int)numActPars && func.getKind() == Obj.Meth)
 				   			   parser.report_error("[Greska]Linija: " + funcleft + " Ne poklapa se broj formalnih i broj stvarnih parametara funkcije " + func.getName() + " !", null);  
+				   		   else
+				   		   {
+				   			   Obj objekatKlase = poziviObj.peek();
+							   if (objekatKlase != null)
+							   {
+								   	poziviObj.pop();
+				                    Code.load(objekatKlase);
+							   }
+							   Code.put(Code.getfield);
+					           Code.put2(0);
+					           Code.put(Code.invokevirtual);
+					           String methName = func.getName();
+					           for (int i = 0; i < methName.length(); i++)
+					                 Code.put4(methName.charAt(i));
+					           Code.put4(-1);
+				   		   }
 				   	   }
 				   	   else
 				   	   {
@@ -2339,6 +2428,14 @@ Designator ::= IDENT:name DOT IDENT:namesub
 					   }
 					   else
 					   {
+						   if (!name.toString().equals("this"))
+						   {
+							   Code.load(obj);
+						   }
+						   else
+						   {
+							   Code.put(Code.load_n + 0); 
+						   }
 						   subobj = obj.getType().getMembersTable().searchKey(namesub.toString());
 						   RESULT = subobj;
 						   arrayType = subobj;
@@ -2369,7 +2466,10 @@ Designator ::= IDENT:name DOT IDENT:namesub
 							   {
 								   currentDesignator = subobj;
 								   if (subobj.getKind() == Obj.Meth)
+								   {
+									   poziviObj.push(obj);
 									   parser.report_info("Poziv metode unutrasnje klase: Pretraga na " + namesubleft + " (" + namesub.toString() + ")" + ", nadjeno " + parser.writeObj(subobj), null);
+								   }
 								   else
 									   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + namesubleft + " (" + namesub.toString() + ")" + ", nadjeno " + parser.writeObj(subobj), null);
 							   }
@@ -2494,12 +2594,17 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   if (obj.getKind() == Obj.Meth)
 		   			   {
 			   			   if (currentClass != null)
+			   			   {
+			   				   Code.put(Code.load_n + 0); 
+			   				   poziviObj.push(currentClass);
 			   				   parser.report_info("Poziv metode unutrasnje klase: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
+			   			   }
 			   			   else
 			   				   parser.report_info("Poziv globalne funkcije: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 		   			   }
 			   		   else if (obj.getKind() == Obj.Fld)
 		   			   {
+			   			   Code.put(Code.load_n + 0);
 			   			   parser.report_info("Pristup polju unutrasnje klase: Pretraga na " + nameleft + " (" + name.toString() + ")" + ", nadjeno " + parser.writeObj(obj), null);
 		   			   }
 			   		   else if (obj.getKind() == Obj.Var)
@@ -2547,7 +2652,7 @@ Designator ::= IDENT:name DOT IDENT:namesub
 			   		   }
 			   			   
 			   	   }
-			   	   	RESULT = obj;
+			   	   RESULT = obj;
 			   :}
 			   |
 			   IDENT LBRACKET error:e RBRACKET
@@ -2605,6 +2710,7 @@ DesignatorPart ::= LBRACKET:lb
 						   parser.report_error("[Greska]Linija: " + namePartleft + ": ime " + namePart.toString() + " nije deklarisano! " , null);
 					   else
 					   {
+						   Code.load(currentDesignator);
 						   currentDesignator = tempSubObj;
 						   if (tempSubObj.getKind() == Obj.Meth)
 							   parser.report_info("Poziv metode unutrasnje klase: Pretraga na " + namePartleft + " (" + namePart.toString() + ")" + ", nadjeno " + parser.writeObj(tempSubObj), null);

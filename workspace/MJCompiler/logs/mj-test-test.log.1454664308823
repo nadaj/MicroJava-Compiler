@@ -1,0 +1,5 @@
+INFO  20160205@10:24:11,962:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160205@10:24:12,002:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 54 Tip nije kompatibilan pri dodeli sa r2!
+ERROR 20160205@10:24:12,003:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 55 Tip nije kompatibilan pri dodeli sa r3!
+ERROR 20160205@10:24:12,006:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 59 Tip nije kompatibilan pri dodeli sa pomocnik!
+ERROR 20160205@10:24:12,026:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

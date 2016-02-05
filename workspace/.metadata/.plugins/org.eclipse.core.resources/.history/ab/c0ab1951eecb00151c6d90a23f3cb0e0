@@ -1,0 +1,59 @@
+program test303 
+
+	class Radnik{
+		string ime;
+		int godinaRodjenja;
+		char p[];
+		{
+			void postaviIme(string ime){
+				this.ime = ime;
+			}
+			
+			void stampajGodinu(){
+				print(this.godinaRodjenja);
+				print(eol);
+			}		
+		}
+	}
+	
+	class Pekar extends Radnik{
+		char z[];
+		{
+			void postaviIme(string ime){
+				this.ime = "Pekar " + ime;
+			}
+		}
+	}
+	
+	class Poslasticar extends Pekar{
+		Radnik pomocnik;
+		{
+			void postaviIme(string ime){
+				this.ime = "Poslasticar " + ime;
+			}
+		}
+	}
+	
+	const string izlaz = "Unesite ceo broj\n";
+	int i;
+	Radnik rr;
+	
+{
+	string uporedi(string a, string b){
+		if (a == b) 
+			return "isti";
+		return "razliciti";
+	}
+	
+	void stampaj(string s){
+		print(s);
+		print(eol);
+	}
+
+	void main() Radnik r1, r2, r3; Pekar pe; Poslasticar ps;{
+		r1 = new Radnik;
+		r1.postaviIme("nada");
+		print(r1.ime);
+	}
+}
+	

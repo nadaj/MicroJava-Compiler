@@ -1,0 +1,4 @@
+INFO  20160205@00:18:38,369:rs.ac.bg.etf.pp1.MJParser - Compiling source file: C:\pp1domaci\PP1\workspace\MJCompiler\test\program.mj
+ERROR 20160205@00:18:38,404:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 16 Ne poklapa se broj formalnih i broj stvarnih parametara funkcije do2 !
+ERROR 20160205@00:18:38,404:rs.ac.bg.etf.pp1.MJParser - [Greska]Linija: 16 Tip nije kompatibilan pri dodeli sa i!
+ERROR 20160205@00:18:38,410:rs.ac.bg.etf.pp1.MJParser - Parsiranje nije uspesno zavrseno!

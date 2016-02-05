@@ -1,0 +1,96 @@
+program test303 
+
+	class Radnik{
+		string ime;
+		int godinaRodjenja;
+		char p[];
+		{
+			void postaviIme(string ime){
+				this.ime = ime;
+			}
+			
+			void stampajGodinu(){
+				print(this.godinaRodjenja);
+				print(eol);
+			}		
+		}
+	}
+	
+	class Pekar extends Radnik{
+		char z[];
+		{
+			void postaviIme(string ime){
+				this.ime = "Pekar " + ime;
+			}
+		}
+	}
+	
+	class Poslasticar extends Pekar{
+		Radnik pomocnik;
+		{
+			void postaviIme(string ime){
+				this.ime = "Poslasticar " + ime;
+			}
+		}
+	}
+	
+	const string izlaz = "Unesite ceo broj\n";
+	int i;
+	
+{
+	string uporedi(string a, string b){
+		if (a == b) 
+			return "isti";
+		return "razliciti";
+	}
+	
+	void stampaj(string s){
+		print(s);
+		print(eol);
+	}
+
+	void main() Radnik r1, r2, r3; Pekar pe; Poslasticar ps;{
+		r1 = new Radnik;  
+		r2 = new Pekar;
+		r3 = new Poslasticar;
+		pe = new Pekar;
+		ps = new Poslasticar;
+		
+		
+		ps.pomocnik.p = new char[4];
+		
+		r1.postaviIme("Zoran");  // ime = Zoran
+		r2.postaviIme("Goran");  // ime = Pekar Goran
+		r3.postaviIme("Goran");  // ime = Poslasticar Goran
+		pe.postaviIme("Bojan");  // ime = Pekar Bojan
+		ps.postaviIme("Mira");   // ime = Poslasticar Mira
+		
+		
+		stampaj(r1.ime);    //izlaz Zoran
+		stampaj(r2.ime);    //izlaz Pekar Goran
+		stampaj(r3.ime);    //izlaz Poslasticar Goran
+		stampaj(pe.ime);    //izlaz Pekar Bojan
+		stampaj(ps.ime);    //izlaz Poslasticar Mira
+		
+		
+		print(uporedi(r2.ime, r3.ime));  // izlaz razliciti
+		print(eol);
+		ps.pomocnik = pe;
+		
+	}
+}
+//izlazi : Zoran
+	//	   Pekar Goran
+	//	   Poslasticar Goran
+	//	   Pekar Ceca
+	//	   razliciti
+	//	   radi
+	
+// ako je unet pozitivan broj:
+    //    Pekar Bojan
+// inace:
+    //    Poslasticar Mira
+//dalje:
+    //     1970
+	//     1980
+	

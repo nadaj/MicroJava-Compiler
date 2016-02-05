@@ -1,0 +1,60 @@
+program test303 
+
+	class Radnik{
+		string ime;
+		int godinaRodjenja;
+		char p[];
+		{
+			void postaviIme(string ime){
+				this.ime = ime;
+			}
+			
+			void stampajGodinu(){
+				print(this.godinaRodjenja);
+				print(eol);
+			}		
+		}
+	}
+	
+	
+	
+	const string izlaz = "Unesite ceo broj\n";
+	int i;
+	
+{
+	string uporedi(string a, string b){
+		if (a == b) 
+			return "isti";
+		return "razliciti";
+	}
+	
+	void stampaj(string s){
+		print(s);
+		print(eol);
+	}
+
+	void main() Radnik r1, r2, r3; {
+		r1 = new Radnik;  
+		
+		
+		
+		
+		
+		
+	}
+}
+//izlazi : Zoran
+	//	   Pekar Goran
+	//	   Poslasticar Goran
+	//	   Pekar Ceca
+	//	   razliciti
+	//	   radi
+	
+// ako je unet pozitivan broj:
+    //    Pekar Bojan
+// inace:
+    //    Poslasticar Mira
+//dalje:
+    //     1970
+	//     1980
+	
